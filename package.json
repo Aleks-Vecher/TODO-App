@@ -12,7 +12,7 @@
     "open bundle-report": "webpack-bundle-analyzer ./dist/stats.json",
     "server": "node server.js",
     "lint": "eslint src/**/*.{js,jsx,css}",
-    "lint:write": "eslint src/**/*.{js,jsx} --fix",
+    "lint:write": "eslint . --fix",
     "prettier": "prettier --check src/**",
     "prettier:": "prettier --write src/**"
   },
