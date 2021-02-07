@@ -17,8 +17,8 @@ app.use(
 app.use(
   require('webpack-hot-middleware')(compiler, {
     log: false,
-    path: '/__webpack_hmr',
-    // path: "/",
+    // path: '/__webpack_hmr',
+    path: "/",
     heartbeat: 1000,
   }),
 );

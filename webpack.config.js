@@ -13,8 +13,9 @@ module.exports = {
   mode: "development",
   devtool: 'eval-cheap-module-source-map',
   entry: {
-    main: ['webpack-hot-middleware/client?path=/__webpack_hmr&timeout=2000&overlay=false', path.resolve(__dirname, './src/main.jsx')]
+    main: [ path.resolve(__dirname, './src/index.jsx')]
   },
+  // 'webpack-hot-middleware/client?path=/__webpack_hmr&timeout=2000&overlay=false'
   output: {
     path: path.resolve(__dirname, './dist'),
     filename: 'main.bundle.js',
