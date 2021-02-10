@@ -1,6 +1,9 @@
-// const initialState = {
-//   category: {},
-// };
+const initialState = {
+  completed: false,
+  active: false,
+  subCategory: null,
+  todo: [{ nameTodo: 77777, active: false }],
+};
 
 // const SET_CATEGORY_NAME = 'SET_CATEGORY_NAME';
 const ADD_CATEGORY = 'ADD_CATEGORY';
@@ -12,14 +15,15 @@ const ADD_CATEGORY = 'ADD_CATEGORY';
 export const addCategory = (nameCategory) => ({
   type: ADD_CATEGORY,
   payload: nameCategory,
+  completed: false,
 });
 
-export const categoryReducer = (state = {}, action) => {
+export const categoryReducer = (state = initialState, action) => {
   switch (action.type) {
     case ADD_CATEGORY:
       return {
         ...state,
-        name: action.payload,
+        nameCategory: action.payload,
       };
     default:
   }

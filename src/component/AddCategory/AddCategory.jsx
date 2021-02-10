@@ -8,7 +8,11 @@ const AddCategory = ({ addCategory }) => {
   const onSubmit = (e) => {
     e.preventDefault();
     console.log(textInput.current.value);
-    addCategory(textInput.current.value);
+    if (textInput.current.value.length) {
+      addCategory(textInput.current.value);
+    } else {
+      alert('Please Enter Category Title');
+    }
     textInput.current.value = '';
     textInput.current.focus();
   };
