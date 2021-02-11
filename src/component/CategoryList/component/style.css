@@ -1,0 +1,8 @@
+.colorCategory {
+  color: #ea0b0b;
+}
+
+.nameCategory:hover {
+  cursor: pointer;
+  background: #e8efed;
+}

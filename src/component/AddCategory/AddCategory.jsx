@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-// import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 
 const AddCategory = ({ addCategory }) => {
   const textInput = React.createRef();
@@ -8,7 +8,11 @@ const AddCategory = ({ addCategory }) => {
   const onSubmit = (e) => {
     e.preventDefault();
     console.log(textInput.current.value);
-    addCategory(textInput.current.value);
+    if (textInput.current.value.length) {
+      addCategory(textInput.current.value);
+    } else {
+      alert('Please Enter Category Title');
+    }
     textInput.current.value = '';
     textInput.current.focus();
   };
@@ -20,8 +24,8 @@ const AddCategory = ({ addCategory }) => {
   );
 };
 
-// AddCategory.propTypes = {
-//   addCategory: PropTypes.func,
-// };
+AddCategory.propTypes = {
+  addCategory: PropTypes.func.isRequired,
+};
 
 export default AddCategory;

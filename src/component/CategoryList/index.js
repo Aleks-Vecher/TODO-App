@@ -1,3 +1,3 @@
-// import Form from './CategoryContainer';
-//
-// export default Form;
+import CategoryList from './CategoryListContainer';
+
+export default CategoryList;
