@@ -1,4 +1,5 @@
 import { categoryReducer } from './category';
+import { todoReducer } from './todo';
 
 const initialState = {
   categories: [],
@@ -7,6 +8,7 @@ const initialState = {
 
 const ADD_CATEGORY = 'ADD_CATEGORY';
 const SHOW_TODO = 'SHOW_TODO';
+const ADD_TODO = 'ADD_TODO';
 
 export const addCategory = (nameCategory) => ({
   type: ADD_CATEGORY,
@@ -21,20 +23,39 @@ export const showTodo = (nameCategory) => ({
 
 export const categoriesReducer = (state = initialState, action) => {
   switch (action.type) {
-    case ADD_CATEGORY:
+    case ADD_CATEGORY: {
+      const nextCategories = state.categories;
+      nextCategories.push(categoryReducer(undefined, action));
       return {
-        ...state,
-        categories: [...state.categories, categoryReducer(undefined, action)],
+        categories: [...nextCategories],
       };
+    }
     case SHOW_TODO: {
       const nextTodoItems = Array.from(state.categories);
-      nextTodoItems.map((category) => ({
-        ...category,
-        active: action.payload === category.nameCategory && !category.active,
-      }));
+      nextTodoItems.forEach((category) => {
+        const categoryNew = category;
+        categoryNew.active =
+          action.payload === category.nameCategory && !category.active;
+        return categoryNew;
+      });
       return {
         ...state,
         categories: [...nextTodoItems],
+      };
+    }
+    case ADD_TODO: {
+      const nextCategories = state.categories.map((category) => {
+        if (category.nameCategory === action.nameCategory) {
+          return {
+            ...category,
+            todo: [...category.todo, todoReducer(undefined, action)],
+          };
+        }
+        return category;
+      });
+      return {
+        ...state,
+        categories: [...nextCategories],
       };
     }
     default:

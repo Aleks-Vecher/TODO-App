@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-// import PropTypes from 'prop-types';
+import PropTypes from 'prop-types';
 
 const AddCategory = ({ addCategory }) => {
   const textInput = React.createRef();
@@ -24,8 +24,8 @@ const AddCategory = ({ addCategory }) => {
   );
 };
 
-// AddCategory.propTypes = {
-//   addCategory: PropTypes.func,
-// };
+AddCategory.propTypes = {
+  addCategory: PropTypes.func.isRequired,
+};
 
 export default AddCategory;

@@ -2,6 +2,8 @@ import React from 'react';
 import AddCategory from './component/AddCategory';
 import CategoryList from './component/CategoryList';
 import TodoList from './component/TodoList';
+import AddTodo from './component/AddTodo';
+import ProgressBar from './component/ProgressBar';
 
 const App = () => (
   <div className="start-screen-container m-4">
@@ -13,6 +15,7 @@ const App = () => (
     <div className="row ">
       <div className="col-12 progressBar">
         <p>progressBar</p>
+        <ProgressBar />
       </div>
     </div>
     <div className="row">
@@ -21,6 +24,7 @@ const App = () => (
         <CategoryList />
       </div>
       <div className="col-6 task">
+        <AddTodo />
         <TodoList />
       </div>
     </div>
