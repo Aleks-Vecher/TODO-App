@@ -1,6 +1,7 @@
 // import { createSelector } from 'reselect';
 
-const getCategories = (state) => state.data.categories;
+export const getCategories = (state) => state.data.categories;
+export const getSubCategories = (state) => state.data.subCategories;
 
 export const checkCategoryStatus = (categories) => {
   const newStateCategory = categories;
@@ -8,7 +9,7 @@ export const checkCategoryStatus = (categories) => {
   let newCategory;
   /* eslint-disable-next-line */
   for (const category of newStateCategory) {
-    if (!category.subCategory.length) {
+    if (category.subCategory.length) {
       /* eslint-disable-next-line */
       for (const subCategory of category.subCategory) {
         if (subCategory.active) {
@@ -25,5 +26,3 @@ export const checkCategoryStatus = (categories) => {
   }
   return tempValue ? newCategory : null;
 };
-
-export default getCategories;

@@ -9,13 +9,19 @@ const AddTodo = ({ categories, addTodo }) => {
   const onSubmit = (e) => {
     e.preventDefault();
     if (textInput.current.value.length) {
-      if (checkCategoryStatus(categories)) {
+      if (
+        checkCategoryStatus(categories) &&
+        !checkCategoryStatus(categories).subCategories
+      ) {
         addTodo(
           textInput.current.value,
           checkCategoryStatus(categories).nameCategory,
+          checkCategoryStatus(categories).id,
+          checkCategoryStatus(categories).nameSubCategory,
+          Date.now(),
         );
       } else {
-        alert('Please Enter and Choose Category');
+        alert('Please Enter and Choose Category or SubCategory');
       }
     } else {
       alert('Please Enter Todo');

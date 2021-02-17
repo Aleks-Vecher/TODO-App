@@ -1,0 +1,8 @@
+.colorSubCategory {
+  color: #ea0b0b;
+}
+
+.nameSubCategory:hover {
+  cursor: pointer;
+  background: #e8efed;
+}
