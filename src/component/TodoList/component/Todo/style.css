@@ -1,0 +1,8 @@
+.colorTodoItem {
+  background: #008000;
+}
+
+.todoItem:hover {
+  cursor: pointer;
+  background: #e8efed;
+}

@@ -1,6 +1,4 @@
 import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEdit } from '@fortawesome/free-solid-svg-icons';
 import './style.css';
 
 const SubCategory = ({
@@ -36,7 +34,9 @@ const SubCategory = ({
           >
             {name}
           </span>
-          <FontAwesomeIcon icon={faEdit} />
+          <button type="button" data-id={id}>
+            edit
+          </button>
         </div>
         <div className="col-6 trash">
           <button

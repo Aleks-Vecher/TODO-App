@@ -1,22 +1,76 @@
-import React from 'react';
+import React, { useCallback } from 'react';
 
-const EditTodo = ({ editTodoNew, editTodoItem }) => (
-  <>
-    <div>
-      <button type="button" onClick={editTodoNew}>
-        Save Changes
-      </button>
-      <button type="button" onClick={editTodoNew}>
-        Cancel
-      </button>
-    </div>
-    <h3>{editTodoItem.nameTodo}</h3>
-    <input type="checkbox" />
-    <input value={editTodoItem.nameTodo} type="text" />
-    <textarea value={editTodoItem.description}>
-      {editTodoItem.description}
-    </textarea>
-  </>
-);
+const EditTodo = ({
+  editTodoItem,
+  setTextarea,
+  setInput,
+  editTodoToggle,
+  saveTodoItem,
+  cancelTodoItem,
+  toggleDoneTodo,
+}) => {
+  const setTextareaValue = useCallback(
+    (e) => {
+      setTextarea(e.target.value);
+    },
+    [setTextarea],
+  );
+
+  const setInputValue = useCallback(
+    (e) => {
+      setInput(e.target.value);
+    },
+    [setInput],
+  );
+
+  const saveTodo = useCallback(() => {
+    editTodoToggle();
+    saveTodoItem();
+  }, [editTodoToggle, saveTodoItem]);
+
+  const cancelTodo = useCallback(() => {
+    editTodoToggle();
+    cancelTodoItem();
+  }, [editTodoToggle, cancelTodoItem]);
+
+  const toggleDone = useCallback(
+    (e) => {
+      toggleDoneTodo(e.target.checked);
+    },
+    [toggleDoneTodo],
+  );
+
+  return (
+    <form>
+      <div>
+        <button type="button" onClick={saveTodo}>
+          Save Changes
+        </button>
+        <button type="button" onClick={cancelTodo}>
+          Cancel
+        </button>
+      </div>
+      <h4>Name: {editTodoItem.nameTodo}</h4>
+      <input
+        type="checkbox"
+        onClick={toggleDone}
+        checked={editTodoItem.completed ? 'checked' : null}
+      />{' '}
+      Done
+      <div>
+        <input
+          value={editTodoItem.nameTodo}
+          type="text"
+          onChange={setInputValue}
+        />
+      </div>
+      <div>
+        <textarea placeholder="Description" onChange={setTextareaValue}>
+          {editTodoItem.description}
+        </textarea>
+      </div>
+    </form>
+  );
+};
 
 export default EditTodo;

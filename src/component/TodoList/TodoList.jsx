@@ -10,13 +10,27 @@ const TodoList = ({
   todoToggle,
   editTodo,
   editTodoItem,
+  setTextarea,
+  setInput,
+  saveTodoItem,
+  cancelTodoItem,
+  toggleDoneTodo,
+  setDoneTodo,
 }) => {
   const editTodoNew = (e) => {
     editTodoToggle();
-    editTodo(e.target.id);
+    editTodo(Number(e.target.id));
   };
   return todoToggle ? (
-    <EditTodo editTodoNew={editTodoNew} editTodoItem={editTodoItem} />
+    <EditTodo
+      editTodoItem={editTodoItem}
+      setTextarea={setTextarea}
+      setInput={setInput}
+      saveTodoItem={saveTodoItem}
+      editTodoToggle={editTodoToggle}
+      cancelTodoItem={cancelTodoItem}
+      toggleDoneTodo={toggleDoneTodo}
+    />
   ) : (
     <ul>
       {todo.map(
@@ -27,7 +41,10 @@ const TodoList = ({
               nameTodo={item.nameTodo}
               key={item.nameTodo}
               id={item.idTodo}
+              editTodoToggle={editTodoToggle}
               editTodoNew={editTodoNew}
+              completed={item.completed}
+              setDoneTodo={setDoneTodo}
             />
           ),
       )}

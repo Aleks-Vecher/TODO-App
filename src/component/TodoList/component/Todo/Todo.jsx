@@ -1,19 +1,34 @@
-import React from 'react';
+import React, { useCallback } from 'react';
+import './style.css';
 
-const Todo = ({ nameTodo, editTodoNew, id }) => (
-  <li key={nameTodo}>
-    <div className="row">
-      <div className="col-8">
-        <input type="checkbox" />
-        <span>{nameTodo}</span>
+const Todo = ({ nameTodo, editTodoNew, id, completed, setDoneTodo }) => {
+  const setDone = useCallback(
+    (e) => {
+      setDoneTodo(Number(e.target.id));
+    },
+    [setDoneTodo],
+  );
+  return (
+    <li key={nameTodo}>
+      <div className="row">
+        <div className="col-8">
+          <span
+            role="link"
+            aria-hidden="true"
+            className={completed ? 'todoItem colorTodoItem' : 'todoItem'}
+            onClick={setDone}
+            id={id}
+          >
+            {nameTodo}
+          </span>
+        </div>
+        <div className="col-4">
+          <button type="button" id={id} onClick={editTodoNew}>
+            edit
+          </button>
+        </div>
       </div>
-      <div className="col-4">
-        <button type="button" id={id} onClick={editTodoNew}>
-          edit
-        </button>
-      </div>
-    </div>
-  </li>
-);
-
+    </li>
+  );
+};
 export default Todo;

@@ -6,8 +6,16 @@ import {
   getTodoToggle,
   getEditTodo,
 } from '../../store/selectors/todo';
-import { editTodoToggle, editTodo } from '../../store/reducers/todos';
-// import { addCategory } from '../../store/reducers/categories';
+import {
+  editTodoToggle,
+  editTodo,
+  setTextarea,
+  setInput,
+  saveTodoItem,
+  cancelTodoItem,
+  toggleDoneTodo,
+  setDoneTodo,
+} from '../../store/reducers/todos';
 
 const mapStateToProps = (state) => ({
   categories: getCategories(state),
@@ -19,6 +27,12 @@ const mapStateToProps = (state) => ({
 const mapDispatchToProps = {
   editTodoToggle,
   editTodo,
+  setTextarea,
+  setInput,
+  saveTodoItem,
+  cancelTodoItem,
+  toggleDoneTodo,
+  setDoneTodo,
 };
 
 export default connect(mapStateToProps, mapDispatchToProps)(TodoList);
