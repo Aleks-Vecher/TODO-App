@@ -117,17 +117,17 @@ export const todosReducer = (state = initialState, action) => {
       };
     }
     case SET_DONE_TODO: {
-      const nextTodo = state.todo.map((item) => {
-        if (action.payload === item.idTodo) {
-          const nextItem = item;
-          nextItem.completed = !nextItem.completed;
-          return nextItem;
-        }
-        return item;
-      });
       return {
         ...state,
-        todo: [...nextTodo],
+        todo: state.todo.map((item) => {
+          if (action.payload !== item.idTodo) {
+            return item;
+          }
+          return {
+            ...item,
+            completed: !item.completed,
+          };
+        }),
       };
     }
     default:

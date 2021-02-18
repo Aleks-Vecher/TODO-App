@@ -1,6 +1,9 @@
 import { ProgressBar } from 'react-bootstrap';
 import React from 'react';
 
-const ProgBar = () => <ProgressBar now={60} label={`${60}%`} />;
+const ProgBar = ({ todo }) => {
+  console.log(todo);
+  return <ProgressBar now={todo} label={`${todo || '0'}%`} />;
+};
 
 export default ProgBar;

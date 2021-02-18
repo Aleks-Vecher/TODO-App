@@ -55,7 +55,7 @@ const EditTodo = ({
         type="checkbox"
         onClick={toggleDone}
         checked={editTodoItem.completed ? 'checked' : null}
-      />{' '}
+      />
       Done
       <div>
         <input
@@ -65,7 +65,11 @@ const EditTodo = ({
         />
       </div>
       <div>
-        <textarea placeholder="Description" onChange={setTextareaValue}>
+        <textarea
+          placeholder="Description"
+          value={editTodoItem.description}
+          onChange={setTextareaValue}
+        >
           {editTodoItem.description}
         </textarea>
       </div>
