@@ -2,7 +2,8 @@ import { connect } from 'react-redux';
 import TodoList from './TodoList';
 import { getCategories } from '../../store/selectors/categories';
 import {
-  getTodo,
+  getFilteredTodoBySearchValue,
+  // getFilteredTodo,
   getTodoToggle,
   getEditTodo,
 } from '../../store/selectors/todo';
@@ -19,7 +20,7 @@ import {
 
 const mapStateToProps = (state) => ({
   categories: getCategories(state),
-  todo: getTodo(state),
+  todo: getFilteredTodoBySearchValue(state),
   todoToggle: getTodoToggle(state),
   editTodoItem: getEditTodo(state),
 });
