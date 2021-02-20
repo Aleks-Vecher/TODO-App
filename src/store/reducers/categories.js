@@ -5,7 +5,6 @@ import { todoReducer } from './todo';
 const initialState = {
   categories: [],
   subCategories: [],
-  visibleTodo: [],
   todo: [],
 };
 

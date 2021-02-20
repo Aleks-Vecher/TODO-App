@@ -6,3 +6,10 @@
   cursor: pointer;
   background: #e8efed;
 }
+
+.linkCategory:active,
+.linkCategory,
+.linkCategory:hover{
+  color:black;
+  text-decoration: none;
+}

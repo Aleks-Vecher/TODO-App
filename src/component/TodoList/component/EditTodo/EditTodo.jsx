@@ -53,8 +53,8 @@ const EditTodo = ({
       <h4>Name: {editTodoItem.nameTodo}</h4>
       <input
         type="checkbox"
-        onClick={toggleDone}
-        checked={editTodoItem.completed ? 'checked' : null}
+        onChange={toggleDone}
+        checked={editTodoItem.completed}
       />
       Done
       <div>

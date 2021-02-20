@@ -1,5 +1,6 @@
 import React from 'react';
 import './style.css';
+import { Link } from 'react-router-dom';
 
 const SubCategory = ({
   name,
@@ -21,19 +22,21 @@ const SubCategory = ({
   return (
     <li>
       <div className="row">
-        <div className="col-6 Edit">
-          <span
-            role="link"
-            aria-hidden="true"
-            data-name={name}
-            data-idsubcategory={id}
-            className={
-              status ? 'nameSubCategory colorSubCategory' : 'nameSubCategory'
-            }
-            onClick={setStatusSubCategory}
-          >
-            {name}
-          </span>
+        <div className="col-6 edit">
+          <Link className="linkRoute" to={`/category/subcategory/${id}`}>
+            <span
+              role="link"
+              aria-hidden="true"
+              data-name={name}
+              data-idsubcategory={id}
+              className={
+                status ? 'nameSubCategory colorSubCategory' : 'nameSubCategory'
+              }
+              onClick={setStatusSubCategory}
+            >
+              {name}
+            </span>
+          </Link>
           <button type="button" data-id={id}>
             edit
           </button>
