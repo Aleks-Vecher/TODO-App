@@ -39,7 +39,7 @@ const TodoList = ({
           item.id === checkCategoryStatus(categories).id && (
             <Todo
               nameTodo={item.nameTodo}
-              key={item.nameTodo}
+              key={item.idTodo}
               id={item.idTodo}
               editTodoToggle={editTodoToggle}
               editTodoNew={editTodoNew}

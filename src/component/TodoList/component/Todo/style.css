@@ -6,3 +6,10 @@
   cursor: pointer;
   background: #e8efed;
 }
+
+.linkTodo:active,
+.linkTodo,
+.linkTodo:hover{
+  color:black;
+  text-decoration: none;
+}

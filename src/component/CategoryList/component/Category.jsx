@@ -1,8 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import './style.css';
-// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-// import { faEdit } from '@fortawesome/free-solid-svg-icons';
+import { Link } from 'react-router-dom';
 import SubCategory from './component';
 
 const Category = ({
@@ -37,16 +36,20 @@ const Category = ({
       <li>
         <div className="row">
           <div className="col-6 Edit">
-            <span
-              role="link"
-              aria-hidden="true"
-              data-name={name}
-              data-idcategory={id}
-              className={status ? 'nameCategory colorCategory' : 'nameCategory'}
-              onClick={setStatus}
-            >
-              {name}
-            </span>
+            <Link className="linkCategory" to={`/category/${id}`}>
+              <span
+                role="link"
+                aria-hidden="true"
+                data-name={name}
+                data-idcategory={id}
+                className={
+                  status ? 'nameCategory colorCategory' : 'nameCategory'
+                }
+                onClick={setStatus}
+              >
+                {name}
+              </span>
+            </Link>
             <button type="button" data-id={id} onClick={editCategory}>
               edit
             </button>
