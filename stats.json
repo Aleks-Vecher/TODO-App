@@ -1,0 +1,4038 @@
+{
+  "hash": "f44fa0292f6f4519d85d",
+  "version": "5.11.0",
+  "time": 1576,
+  "builtAt": 1608921042975,
+  "publicPath": "/",
+  "outputPath": "D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\dist",
+  "assetsByChunkName": {
+    "main": [
+      "main.css",
+      "main.bundle.js"
+    ]
+  },
+  "assets": [
+    {
+      "type": "asset",
+      "name": "main.bundle.js",
+      "size": 14758,
+      "emitted": true,
+      "comparedForEmit": true,
+      "cached": false,
+      "info": {
+        "javascriptModule": false,
+        "minimized": true,
+        "related": {
+          "license": "main.bundle.js.LICENSE.txt",
+          "sourceMap": "main.bundle.js.map"
+        },
+        "size": 14758
+      },
+      "chunkNames": [
+        "main"
+      ],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "filteredRelated": 0,
+      "related": [
+        {
+          "type": "sourceMap",
+          "name": "main.bundle.js.map",
+          "size": 63684,
+          "emitted": true,
+          "comparedForEmit": true,
+          "cached": false,
+          "info": {
+            "development": true,
+            "size": 63684
+          },
+          "chunkNames": [],
+          "chunkIdHints": [],
+          "auxiliaryChunkNames": [
+            "main"
+          ],
+          "auxiliaryChunkIdHints": [],
+          "related": {},
+          "chunks": [],
+          "auxiliaryChunks": [
+            "main"
+          ],
+          "isOverSizeLimit": false
+        },
+        {
+          "type": "license",
+          "name": "main.bundle.js.LICENSE.txt",
+          "size": 1092,
+          "emitted": false,
+          "comparedForEmit": true,
+          "cached": false,
+          "info": {
+            "size": 1092
+          },
+          "chunkNames": [],
+          "chunkIdHints": [],
+          "auxiliaryChunkNames": [],
+          "auxiliaryChunkIdHints": [],
+          "related": {},
+          "chunks": [],
+          "auxiliaryChunks": [],
+          "isOverSizeLimit": false
+        }
+      ],
+      "chunks": [
+        "main"
+      ],
+      "auxiliaryChunks": [],
+      "isOverSizeLimit": false
+    },
+    {
+      "type": "asset",
+      "name": "index.html",
+      "size": 410,
+      "emitted": false,
+      "comparedForEmit": true,
+      "cached": false,
+      "info": {
+        "size": 410
+      },
+      "chunkNames": [],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "related": {},
+      "chunks": [],
+      "auxiliaryChunks": [],
+      "isOverSizeLimit": false
+    },
+    {
+      "type": "asset",
+      "name": "main.css",
+      "size": 70,
+      "emitted": false,
+      "comparedForEmit": true,
+      "cached": false,
+      "info": {
+        "related": {
+          "sourceMap": "main.css.map"
+        },
+        "size": 70
+      },
+      "chunkNames": [
+        "main"
+      ],
+      "chunkIdHints": [],
+      "auxiliaryChunkNames": [],
+      "auxiliaryChunkIdHints": [],
+      "filteredRelated": 0,
+      "related": [
+        {
+          "type": "sourceMap",
+          "name": "main.css.map",
+          "size": 228,
+          "emitted": false,
+          "comparedForEmit": true,
+          "cached": false,
+          "info": {
+            "development": true,
+            "size": 228
+          },
+          "chunkNames": [],
+          "chunkIdHints": [],
+          "auxiliaryChunkNames": [
+            "main"
+          ],
+          "auxiliaryChunkIdHints": [],
+          "related": {},
+          "chunks": [],
+          "auxiliaryChunks": [
+            "main"
+          ],
+          "isOverSizeLimit": false
+        }
+      ],
+      "chunks": [
+        "main"
+      ],
+      "auxiliaryChunks": [],
+      "isOverSizeLimit": false
+    }
+  ],
+  "chunks": [
+    {
+      "rendered": true,
+      "initial": true,
+      "entry": true,
+      "recorded": false,
+      "size": 34634,
+      "sizes": {
+        "css/mini-extract": 33,
+        "runtime": 28194,
+        "javascript": 6407
+      },
+      "names": [
+        "main"
+      ],
+      "idHints": [],
+      "runtime": [
+        "main"
+      ],
+      "files": [
+        "main.css",
+        "main.bundle.js"
+      ],
+      "auxiliaryFiles": [
+        "main.bundle.js.map",
+        "main.css.map"
+      ],
+      "hash": "fed2f61580e23f5c5018",
+      "childrenByOrder": {},
+      "id": "main",
+      "siblings": [],
+      "parents": [],
+      "children": [],
+      "modules": [
+        {
+          "type": "module",
+          "moduleType": "javascript/auto",
+          "size": 4360,
+          "sizes": {
+            "javascript": 4360
+          },
+          "built": true,
+          "codeGenerated": true,
+          "cached": false,
+          "identifier": "D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\node_modules\\mini-css-extract-plugin\\dist\\hmr\\hotModuleReplacement.js",
+          "name": "./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js",
+          "nameForCondition": "D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\node_modules\\mini-css-extract-plugin\\dist\\hmr\\hotModuleReplacement.js",
+          "index": 4,
+          "preOrderIndex": 4,
+          "index2": 2,
+          "postOrderIndex": 2,
+          "cacheable": true,
+          "optional": false,
+          "orphan": false,
+          "dependent": true,
+          "issuer": "D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\node_modules\\mini-css-extract-plugin\\dist\\loader.js!D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\node_modules\\css-loader\\dist\\cjs.js!D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\src\\component\\table.css",
+          "issuerName": "./src/component/table.css",
+          "issuerPath": [
+            {
+              "identifier": "D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\node_modules\\babel-loader\\lib\\index.js??ruleSet[1].rules[0].use!D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\src\\main.js",
+              "name": "./src/main.js",
+              "profile": {
+                "total": 0,
+                "resolving": 0,
+                "restoring": 0,
+                "building": 0,
+                "integration": 0,
+                "storing": 0,
+                "additionalResolving": 0,
+                "additionalIntegration": 0,
+                "factory": 0,
+                "dependencies": 0
+              },
+              "id": "./src/main.js"
+            },
+            {
+              "identifier": "D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\node_modules\\babel-loader\\lib\\index.js??ruleSet[1].rules[0].use!D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\src\\component\\table.js",
+              "name": "./src/component/table.js",
+              "profile": {
+                "total": 19,
+                "resolving": 3,
+                "restoring": 0,
+                "building": 16,
+                "integration": 0,
+                "storing": 0,
+                "additionalResolving": 0,
+                "additionalIntegration": 0,
+                "factory": 3,
+                "dependencies": 0
+              },
+              "id": "./src/component/table.js"
+            },
+            {
+              "identifier": "D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\node_modules\\mini-css-extract-plugin\\dist\\loader.js!D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\node_modules\\css-loader\\dist\\cjs.js!D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\src\\component\\table.css",
+              "name": "./src/component/table.css",
+              "profile": {
+                "total": 170,
+                "resolving": 11,
+                "restoring": 0,
+                "building": 159,
+                "integration": 0,
+                "storing": 0,
+                "additionalResolving": 0,
+                "additionalIntegration": 0,
+                "factory": 11,
+                "dependencies": 0
+              },
+              "id": "./src/component/table.css"
+            }
+          ],
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "profile": {
+            "total": 0,
+            "resolving": 0,
+            "restoring": 0,
+            "building": 0,
+            "integration": 0,
+            "storing": 0,
+            "additionalResolving": 0,
+            "additionalIntegration": 0,
+            "factory": 0,
+            "dependencies": 0
+          },
+          "id": "./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js",
+          "issuerId": "./src/component/table.css",
+          "chunks": [
+            "main"
+          ],
+          "assets": [],
+          "reasons": [
+            {
+              "moduleIdentifier": "D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\node_modules\\mini-css-extract-plugin\\dist\\hmr\\hotModuleReplacement.js",
+              "module": "./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js",
+              "moduleName": "./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js",
+              "resolvedModuleIdentifier": "D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\node_modules\\mini-css-extract-plugin\\dist\\hmr\\hotModuleReplacement.js",
+              "resolvedModule": "./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js",
+              "type": "cjs self exports reference",
+              "active": true,
+              "explanation": "",
+              "userRequest": null,
+              "loc": "186:0-14",
+              "moduleId": "./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js",
+              "resolvedModuleId": "./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js"
+            },
+            {
+              "moduleIdentifier": "D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\node_modules\\mini-css-extract-plugin\\dist\\loader.js!D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\node_modules\\css-loader\\dist\\cjs.js!D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\src\\component\\table.css",
+              "module": "./src/component/table.css",
+              "moduleName": "./src/component/table.css",
+              "resolvedModuleIdentifier": "D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\node_modules\\mini-css-extract-plugin\\dist\\loader.js!D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\node_modules\\css-loader\\dist\\cjs.js!D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\src\\component\\table.css",
+              "resolvedModule": "./src/component/table.css",
+              "type": "cjs require",
+              "active": true,
+              "explanation": "",
+              "userRequest": "D:/My folder/Test/Test_JSPro_Webpack_20201217/node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js",
+              "loc": "5:22-148",
+              "moduleId": "./src/component/table.css",
+              "resolvedModuleId": "./src/component/table.css"
+            }
+          ],
+          "usedExports": null,
+          "providedExports": null,
+          "optimizationBailout": [
+            "CommonJS bailout: module.exports is used directly at 186:0-14"
+          ],
+          "depth": 3
+        },
+        {
+          "type": "module",
+          "moduleType": "javascript/auto",
+          "size": 811,
+          "sizes": {
+            "javascript": 811
+          },
+          "built": true,
+          "codeGenerated": true,
+          "cached": false,
+          "identifier": "D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\node_modules\\mini-css-extract-plugin\\dist\\hmr\\normalize-url.js",
+          "name": "./node_modules/mini-css-extract-plugin/dist/hmr/normalize-url.js",
+          "nameForCondition": "D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\node_modules\\mini-css-extract-plugin\\dist\\hmr\\normalize-url.js",
+          "index": 5,
+          "preOrderIndex": 5,
+          "index2": 1,
+          "postOrderIndex": 1,
+          "cacheable": true,
+          "optional": false,
+          "orphan": false,
+          "dependent": true,
+          "issuer": "D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\node_modules\\mini-css-extract-plugin\\dist\\hmr\\hotModuleReplacement.js",
+          "issuerName": "./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js",
+          "issuerPath": [
+            {
+              "identifier": "D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\node_modules\\babel-loader\\lib\\index.js??ruleSet[1].rules[0].use!D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\src\\main.js",
+              "name": "./src/main.js",
+              "profile": {
+                "total": 0,
+                "resolving": 0,
+                "restoring": 0,
+                "building": 0,
+                "integration": 0,
+                "storing": 0,
+                "additionalResolving": 0,
+                "additionalIntegration": 0,
+                "factory": 0,
+                "dependencies": 0
+              },
+              "id": "./src/main.js"
+            },
+            {
+              "identifier": "D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\node_modules\\babel-loader\\lib\\index.js??ruleSet[1].rules[0].use!D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\src\\component\\table.js",
+              "name": "./src/component/table.js",
+              "profile": {
+                "total": 19,
+                "resolving": 3,
+                "restoring": 0,
+                "building": 16,
+                "integration": 0,
+                "storing": 0,
+                "additionalResolving": 0,
+                "additionalIntegration": 0,
+                "factory": 3,
+                "dependencies": 0
+              },
+              "id": "./src/component/table.js"
+            },
+            {
+              "identifier": "D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\node_modules\\mini-css-extract-plugin\\dist\\loader.js!D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\node_modules\\css-loader\\dist\\cjs.js!D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\src\\component\\table.css",
+              "name": "./src/component/table.css",
+              "profile": {
+                "total": 170,
+                "resolving": 11,
+                "restoring": 0,
+                "building": 159,
+                "integration": 0,
+                "storing": 0,
+                "additionalResolving": 0,
+                "additionalIntegration": 0,
+                "factory": 11,
+                "dependencies": 0
+              },
+              "id": "./src/component/table.css"
+            },
+            {
+              "identifier": "D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\node_modules\\mini-css-extract-plugin\\dist\\hmr\\hotModuleReplacement.js",
+              "name": "./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js",
+              "profile": {
+                "total": 0,
+                "resolving": 0,
+                "restoring": 0,
+                "building": 0,
+                "integration": 0,
+                "storing": 0,
+                "additionalResolving": 0,
+                "additionalIntegration": 0,
+                "factory": 0,
+                "dependencies": 0
+              },
+              "id": "./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js"
+            }
+          ],
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "profile": {
+            "total": 0,
+            "resolving": 0,
+            "restoring": 0,
+            "building": 0,
+            "integration": 0,
+            "storing": 0,
+            "additionalResolving": 0,
+            "additionalIntegration": 0,
+            "factory": 0,
+            "dependencies": 0
+          },
+          "id": "./node_modules/mini-css-extract-plugin/dist/hmr/normalize-url.js",
+          "issuerId": "./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js",
+          "chunks": [
+            "main"
+          ],
+          "assets": [],
+          "reasons": [
+            {
+              "moduleIdentifier": "D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\node_modules\\mini-css-extract-plugin\\dist\\hmr\\hotModuleReplacement.js",
+              "module": "./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js",
+              "moduleName": "./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js",
+              "resolvedModuleIdentifier": "D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\node_modules\\mini-css-extract-plugin\\dist\\hmr\\hotModuleReplacement.js",
+              "resolvedModule": "./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js",
+              "type": "cjs require",
+              "active": true,
+              "explanation": "",
+              "userRequest": "./normalize-url",
+              "loc": "10:19-45",
+              "moduleId": "./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js",
+              "resolvedModuleId": "./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js"
+            },
+            {
+              "moduleIdentifier": "D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\node_modules\\mini-css-extract-plugin\\dist\\hmr\\normalize-url.js",
+              "module": "./node_modules/mini-css-extract-plugin/dist/hmr/normalize-url.js",
+              "moduleName": "./node_modules/mini-css-extract-plugin/dist/hmr/normalize-url.js",
+              "resolvedModuleIdentifier": "D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\node_modules\\mini-css-extract-plugin\\dist\\hmr\\normalize-url.js",
+              "resolvedModule": "./node_modules/mini-css-extract-plugin/dist/hmr/normalize-url.js",
+              "type": "cjs self exports reference",
+              "active": true,
+              "explanation": "",
+              "userRequest": null,
+              "loc": "22:0-14",
+              "moduleId": "./node_modules/mini-css-extract-plugin/dist/hmr/normalize-url.js",
+              "resolvedModuleId": "./node_modules/mini-css-extract-plugin/dist/hmr/normalize-url.js"
+            }
+          ],
+          "usedExports": null,
+          "providedExports": null,
+          "optimizationBailout": [
+            "CommonJS bailout: module.exports is used directly at 22:0-14"
+          ],
+          "depth": 4
+        },
+        {
+          "type": "module",
+          "moduleType": "javascript/auto",
+          "size": 366,
+          "sizes": {
+            "javascript": 366
+          },
+          "built": true,
+          "codeGenerated": true,
+          "cached": false,
+          "identifier": "D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\node_modules\\mini-css-extract-plugin\\dist\\loader.js!D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\node_modules\\css-loader\\dist\\cjs.js!D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\src\\component\\table.css",
+          "name": "./src/component/table.css",
+          "nameForCondition": "D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\src\\component\\table.css",
+          "index": 3,
+          "preOrderIndex": 3,
+          "index2": 4,
+          "postOrderIndex": 4,
+          "cacheable": true,
+          "optional": false,
+          "orphan": false,
+          "dependent": true,
+          "issuer": "D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\node_modules\\babel-loader\\lib\\index.js??ruleSet[1].rules[0].use!D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\src\\component\\table.js",
+          "issuerName": "./src/component/table.js",
+          "issuerPath": [
+            {
+              "identifier": "D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\node_modules\\babel-loader\\lib\\index.js??ruleSet[1].rules[0].use!D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\src\\main.js",
+              "name": "./src/main.js",
+              "profile": {
+                "total": 0,
+                "resolving": 0,
+                "restoring": 0,
+                "building": 0,
+                "integration": 0,
+                "storing": 0,
+                "additionalResolving": 0,
+                "additionalIntegration": 0,
+                "factory": 0,
+                "dependencies": 0
+              },
+              "id": "./src/main.js"
+            },
+            {
+              "identifier": "D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\node_modules\\babel-loader\\lib\\index.js??ruleSet[1].rules[0].use!D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\src\\component\\table.js",
+              "name": "./src/component/table.js",
+              "profile": {
+                "total": 19,
+                "resolving": 3,
+                "restoring": 0,
+                "building": 16,
+                "integration": 0,
+                "storing": 0,
+                "additionalResolving": 0,
+                "additionalIntegration": 0,
+                "factory": 3,
+                "dependencies": 0
+              },
+              "id": "./src/component/table.js"
+            }
+          ],
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "profile": {
+            "total": 170,
+            "resolving": 11,
+            "restoring": 0,
+            "building": 159,
+            "integration": 0,
+            "storing": 0,
+            "additionalResolving": 0,
+            "additionalIntegration": 0,
+            "factory": 11,
+            "dependencies": 0
+          },
+          "id": "./src/component/table.css",
+          "issuerId": "./src/component/table.js",
+          "chunks": [
+            "main"
+          ],
+          "assets": [],
+          "reasons": [
+            {
+              "moduleIdentifier": "D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\node_modules\\babel-loader\\lib\\index.js??ruleSet[1].rules[0].use!D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\src\\component\\table.js",
+              "module": "./src/component/table.js",
+              "moduleName": "./src/component/table.js",
+              "resolvedModuleIdentifier": "D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\node_modules\\babel-loader\\lib\\index.js??ruleSet[1].rules[0].use!D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\src\\component\\table.js",
+              "resolvedModule": "./src/component/table.js",
+              "type": "harmony side effect evaluation",
+              "active": true,
+              "explanation": "",
+              "userRequest": "./table.css",
+              "loc": "2:0-21",
+              "moduleId": "./src/component/table.js",
+              "resolvedModuleId": "./src/component/table.js"
+            }
+          ],
+          "usedExports": null,
+          "providedExports": [],
+          "optimizationBailout": [],
+          "depth": 2
+        },
+        {
+          "type": "module",
+          "moduleType": "javascript/auto",
+          "size": 409,
+          "sizes": {
+            "javascript": 409
+          },
+          "built": true,
+          "codeGenerated": true,
+          "cached": false,
+          "identifier": "D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\node_modules\\babel-loader\\lib\\index.js??ruleSet[1].rules[0].use!D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\src\\component\\table.js",
+          "name": "./src/component/table.js",
+          "nameForCondition": "D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\src\\component\\table.js",
+          "index": 1,
+          "preOrderIndex": 1,
+          "index2": 5,
+          "postOrderIndex": 5,
+          "cacheable": true,
+          "optional": false,
+          "orphan": false,
+          "dependent": true,
+          "issuer": "D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\node_modules\\babel-loader\\lib\\index.js??ruleSet[1].rules[0].use!D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\src\\main.js",
+          "issuerName": "./src/main.js",
+          "issuerPath": [
+            {
+              "identifier": "D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\node_modules\\babel-loader\\lib\\index.js??ruleSet[1].rules[0].use!D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\src\\main.js",
+              "name": "./src/main.js",
+              "profile": {
+                "total": 0,
+                "resolving": 0,
+                "restoring": 0,
+                "building": 0,
+                "integration": 0,
+                "storing": 0,
+                "additionalResolving": 0,
+                "additionalIntegration": 0,
+                "factory": 0,
+                "dependencies": 0
+              },
+              "id": "./src/main.js"
+            }
+          ],
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "profile": {
+            "total": 19,
+            "resolving": 3,
+            "restoring": 0,
+            "building": 16,
+            "integration": 0,
+            "storing": 0,
+            "additionalResolving": 0,
+            "additionalIntegration": 0,
+            "factory": 3,
+            "dependencies": 0
+          },
+          "id": "./src/component/table.js",
+          "issuerId": "./src/main.js",
+          "chunks": [
+            "main"
+          ],
+          "assets": [],
+          "reasons": [
+            {
+              "moduleIdentifier": "D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\node_modules\\babel-loader\\lib\\index.js??ruleSet[1].rules[0].use!D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\src\\main.js",
+              "module": "./src/main.js",
+              "moduleName": "./src/main.js",
+              "resolvedModuleIdentifier": "D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\node_modules\\babel-loader\\lib\\index.js??ruleSet[1].rules[0].use!D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\src\\main.js",
+              "resolvedModule": "./src/main.js",
+              "type": "harmony side effect evaluation",
+              "active": true,
+              "explanation": "",
+              "userRequest": "./component/table",
+              "loc": "1:0-38",
+              "moduleId": "./src/main.js",
+              "resolvedModuleId": "./src/main.js"
+            },
+            {
+              "moduleIdentifier": "D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\node_modules\\babel-loader\\lib\\index.js??ruleSet[1].rules[0].use!D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\src\\main.js",
+              "module": "./src/main.js",
+              "moduleName": "./src/main.js",
+              "resolvedModuleIdentifier": "D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\node_modules\\babel-loader\\lib\\index.js??ruleSet[1].rules[0].use!D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\src\\main.js",
+              "resolvedModule": "./src/main.js",
+              "type": "harmony import specifier",
+              "active": true,
+              "explanation": "",
+              "userRequest": "./component/table",
+              "loc": "6:19-24",
+              "moduleId": "./src/main.js",
+              "resolvedModuleId": "./src/main.js"
+            }
+          ],
+          "usedExports": null,
+          "providedExports": [
+            "default"
+          ],
+          "optimizationBailout": [],
+          "depth": 1
+        },
+        {
+          "type": "module",
+          "moduleType": "javascript/auto",
+          "size": 245,
+          "sizes": {
+            "javascript": 245
+          },
+          "built": true,
+          "codeGenerated": true,
+          "cached": false,
+          "identifier": "D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\node_modules\\babel-loader\\lib\\index.js??ruleSet[1].rules[0].use!D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\src\\main.js",
+          "name": "./src/main.js",
+          "nameForCondition": "D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\src\\main.js",
+          "index": 0,
+          "preOrderIndex": 0,
+          "index2": 6,
+          "postOrderIndex": 6,
+          "cacheable": true,
+          "optional": false,
+          "orphan": false,
+          "dependent": false,
+          "issuer": null,
+          "issuerName": null,
+          "issuerPath": null,
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "profile": {
+            "total": 0,
+            "resolving": 0,
+            "restoring": 0,
+            "building": 0,
+            "integration": 0,
+            "storing": 0,
+            "additionalResolving": 0,
+            "additionalIntegration": 0,
+            "factory": 0,
+            "dependencies": 0
+          },
+          "id": "./src/main.js",
+          "issuerId": null,
+          "chunks": [
+            "main"
+          ],
+          "assets": [],
+          "reasons": [
+            {
+              "moduleIdentifier": "D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\node_modules\\babel-loader\\lib\\index.js??ruleSet[1].rules[0].use!D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\src\\main.js",
+              "module": "./src/main.js",
+              "moduleName": "./src/main.js",
+              "resolvedModuleIdentifier": "D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\node_modules\\babel-loader\\lib\\index.js??ruleSet[1].rules[0].use!D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\src\\main.js",
+              "resolvedModule": "./src/main.js",
+              "type": "module decorator",
+              "active": true,
+              "explanation": "",
+              "userRequest": null,
+              "loc": "11:4-10",
+              "moduleId": "./src/main.js",
+              "resolvedModuleId": "./src/main.js"
+            },
+            {
+              "moduleIdentifier": null,
+              "module": null,
+              "moduleName": null,
+              "resolvedModuleIdentifier": null,
+              "resolvedModule": null,
+              "type": "entry",
+              "active": true,
+              "explanation": "",
+              "userRequest": "D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\src\\main.js",
+              "loc": "main",
+              "moduleId": null,
+              "resolvedModuleId": null
+            }
+          ],
+          "usedExports": null,
+          "providedExports": [],
+          "optimizationBailout": [],
+          "depth": 0
+        },
+        {
+          "type": "module",
+          "moduleType": "javascript/auto",
+          "size": 216,
+          "sizes": {
+            "javascript": 216
+          },
+          "built": true,
+          "codeGenerated": true,
+          "cached": false,
+          "identifier": "D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\node_modules\\babel-loader\\lib\\index.js??ruleSet[1].rules[0].use!D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\src\\utils\\components.js",
+          "name": "./src/utils/components.js",
+          "nameForCondition": "D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\src\\utils\\components.js",
+          "index": 2,
+          "preOrderIndex": 2,
+          "index2": 0,
+          "postOrderIndex": 0,
+          "cacheable": true,
+          "optional": false,
+          "orphan": false,
+          "dependent": true,
+          "issuer": "D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\node_modules\\babel-loader\\lib\\index.js??ruleSet[1].rules[0].use!D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\src\\component\\table.js",
+          "issuerName": "./src/component/table.js",
+          "issuerPath": [
+            {
+              "identifier": "D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\node_modules\\babel-loader\\lib\\index.js??ruleSet[1].rules[0].use!D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\src\\main.js",
+              "name": "./src/main.js",
+              "profile": {
+                "total": 0,
+                "resolving": 0,
+                "restoring": 0,
+                "building": 0,
+                "integration": 0,
+                "storing": 0,
+                "additionalResolving": 0,
+                "additionalIntegration": 0,
+                "factory": 0,
+                "dependencies": 0
+              },
+              "id": "./src/main.js"
+            },
+            {
+              "identifier": "D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\node_modules\\babel-loader\\lib\\index.js??ruleSet[1].rules[0].use!D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\src\\component\\table.js",
+              "name": "./src/component/table.js",
+              "profile": {
+                "total": 19,
+                "resolving": 3,
+                "restoring": 0,
+                "building": 16,
+                "integration": 0,
+                "storing": 0,
+                "additionalResolving": 0,
+                "additionalIntegration": 0,
+                "factory": 3,
+                "dependencies": 0
+              },
+              "id": "./src/component/table.js"
+            }
+          ],
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "profile": {
+            "total": 66,
+            "resolving": 10,
+            "restoring": 0,
+            "building": 56,
+            "integration": 0,
+            "storing": 0,
+            "additionalResolving": 0,
+            "additionalIntegration": 0,
+            "factory": 10,
+            "dependencies": 0
+          },
+          "id": "./src/utils/components.js",
+          "issuerId": "./src/component/table.js",
+          "chunks": [
+            "main"
+          ],
+          "assets": [],
+          "reasons": [
+            {
+              "moduleIdentifier": "D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\node_modules\\babel-loader\\lib\\index.js??ruleSet[1].rules[0].use!D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\src\\component\\table.js",
+              "module": "./src/component/table.js",
+              "moduleName": "./src/component/table.js",
+              "resolvedModuleIdentifier": "D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\node_modules\\babel-loader\\lib\\index.js??ruleSet[1].rules[0].use!D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\src\\component\\table.js",
+              "resolvedModule": "./src/component/table.js",
+              "type": "harmony side effect evaluation",
+              "active": true,
+              "explanation": "",
+              "userRequest": "utils/components",
+              "loc": "1:0-51",
+              "moduleId": "./src/component/table.js",
+              "resolvedModuleId": "./src/component/table.js"
+            },
+            {
+              "moduleIdentifier": "D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\node_modules\\babel-loader\\lib\\index.js??ruleSet[1].rules[0].use!D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\src\\component\\table.js",
+              "module": "./src/component/table.js",
+              "moduleName": "./src/component/table.js",
+              "resolvedModuleIdentifier": "D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\node_modules\\babel-loader\\lib\\index.js??ruleSet[1].rules[0].use!D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\src\\component\\table.js",
+              "resolvedModule": "./src/component/table.js",
+              "type": "harmony import specifier",
+              "active": true,
+              "explanation": "",
+              "userRequest": "utils/components",
+              "loc": "5:9-24",
+              "moduleId": "./src/component/table.js",
+              "resolvedModuleId": "./src/component/table.js"
+            }
+          ],
+          "usedExports": null,
+          "providedExports": [
+            "createComponent"
+          ],
+          "optimizationBailout": [],
+          "depth": 2
+        },
+        {
+          "type": "module",
+          "moduleType": "css/mini-extract",
+          "size": 33,
+          "sizes": {
+            "css/mini-extract": 33
+          },
+          "built": false,
+          "codeGenerated": true,
+          "cached": false,
+          "identifier": "css D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\node_modules\\css-loader\\dist\\cjs.js!D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\src\\component\\table.css 0",
+          "name": "css ./node_modules/css-loader/dist/cjs.js!./src/component/table.css",
+          "nameForCondition": "D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\src\\component\\table.css",
+          "index": 6,
+          "preOrderIndex": 6,
+          "index2": 3,
+          "postOrderIndex": 3,
+          "optional": false,
+          "orphan": false,
+          "dependent": true,
+          "issuer": "D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\node_modules\\mini-css-extract-plugin\\dist\\loader.js!D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\node_modules\\css-loader\\dist\\cjs.js!D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\src\\component\\table.css",
+          "issuerName": "./src/component/table.css",
+          "issuerPath": [
+            {
+              "identifier": "D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\node_modules\\babel-loader\\lib\\index.js??ruleSet[1].rules[0].use!D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\src\\main.js",
+              "name": "./src/main.js",
+              "profile": {
+                "total": 0,
+                "resolving": 0,
+                "restoring": 0,
+                "building": 0,
+                "integration": 0,
+                "storing": 0,
+                "additionalResolving": 0,
+                "additionalIntegration": 0,
+                "factory": 0,
+                "dependencies": 0
+              },
+              "id": "./src/main.js"
+            },
+            {
+              "identifier": "D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\node_modules\\babel-loader\\lib\\index.js??ruleSet[1].rules[0].use!D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\src\\component\\table.js",
+              "name": "./src/component/table.js",
+              "profile": {
+                "total": 19,
+                "resolving": 3,
+                "restoring": 0,
+                "building": 16,
+                "integration": 0,
+                "storing": 0,
+                "additionalResolving": 0,
+                "additionalIntegration": 0,
+                "factory": 3,
+                "dependencies": 0
+              },
+              "id": "./src/component/table.js"
+            },
+            {
+              "identifier": "D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\node_modules\\mini-css-extract-plugin\\dist\\loader.js!D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\node_modules\\css-loader\\dist\\cjs.js!D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\src\\component\\table.css",
+              "name": "./src/component/table.css",
+              "profile": {
+                "total": 170,
+                "resolving": 11,
+                "restoring": 0,
+                "building": 159,
+                "integration": 0,
+                "storing": 0,
+                "additionalResolving": 0,
+                "additionalIntegration": 0,
+                "factory": 11,
+                "dependencies": 0
+              },
+              "id": "./src/component/table.css"
+            }
+          ],
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "profile": {
+            "total": 1,
+            "resolving": 1,
+            "restoring": 0,
+            "building": 0,
+            "integration": 0,
+            "storing": 0,
+            "additionalResolving": 0,
+            "additionalIntegration": 0,
+            "factory": 1,
+            "dependencies": 0
+          },
+          "id": null,
+          "issuerId": "./src/component/table.css",
+          "chunks": [
+            "main"
+          ],
+          "assets": [],
+          "reasons": [
+            {
+              "moduleIdentifier": "D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\node_modules\\mini-css-extract-plugin\\dist\\loader.js!D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\node_modules\\css-loader\\dist\\cjs.js!D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\src\\component\\table.css",
+              "module": "./src/component/table.css",
+              "moduleName": "./src/component/table.css",
+              "resolvedModuleIdentifier": "D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\node_modules\\mini-css-extract-plugin\\dist\\loader.js!D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\node_modules\\css-loader\\dist\\cjs.js!D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\src\\component\\table.css",
+              "resolvedModule": "./src/component/table.css",
+              "type": "unknown",
+              "active": true,
+              "explanation": "",
+              "userRequest": null,
+              "moduleId": "./src/component/table.css",
+              "resolvedModuleId": "./src/component/table.css"
+            }
+          ],
+          "usedExports": null,
+          "providedExports": null,
+          "optimizationBailout": [],
+          "depth": 3
+        },
+        {
+          "type": "module",
+          "moduleType": "runtime",
+          "size": 2796,
+          "sizes": {
+            "runtime": 2796
+          },
+          "built": false,
+          "codeGenerated": true,
+          "cached": false,
+          "identifier": "webpack/runtime/css loading",
+          "name": "webpack/runtime/css loading",
+          "nameForCondition": null,
+          "index": null,
+          "preOrderIndex": null,
+          "index2": null,
+          "postOrderIndex": null,
+          "optional": false,
+          "orphan": false,
+          "dependent": false,
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": "",
+          "chunks": [
+            "main"
+          ],
+          "assets": [],
+          "reasons": [],
+          "usedExports": null,
+          "providedExports": [],
+          "optimizationBailout": [],
+          "depth": null
+        },
+        {
+          "type": "module",
+          "moduleType": "runtime",
+          "size": 308,
+          "sizes": {
+            "runtime": 308
+          },
+          "built": false,
+          "codeGenerated": true,
+          "cached": false,
+          "identifier": "webpack/runtime/define property getters",
+          "name": "webpack/runtime/define property getters",
+          "nameForCondition": null,
+          "index": null,
+          "preOrderIndex": null,
+          "index2": null,
+          "postOrderIndex": null,
+          "optional": false,
+          "orphan": false,
+          "dependent": false,
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": "",
+          "chunks": [
+            "main"
+          ],
+          "assets": [],
+          "reasons": [],
+          "usedExports": null,
+          "providedExports": [],
+          "optimizationBailout": [],
+          "depth": null
+        },
+        {
+          "type": "module",
+          "moduleType": "runtime",
+          "size": 209,
+          "sizes": {
+            "runtime": 209
+          },
+          "built": false,
+          "codeGenerated": true,
+          "cached": false,
+          "identifier": "webpack/runtime/get javascript update chunk filename",
+          "name": "webpack/runtime/get javascript update chunk filename",
+          "nameForCondition": null,
+          "index": null,
+          "preOrderIndex": null,
+          "index2": null,
+          "postOrderIndex": null,
+          "optional": false,
+          "orphan": false,
+          "dependent": false,
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": "",
+          "chunks": [
+            "main"
+          ],
+          "assets": [],
+          "reasons": [],
+          "usedExports": null,
+          "providedExports": [],
+          "optimizationBailout": [],
+          "depth": null
+        },
+        {
+          "type": "module",
+          "moduleType": "runtime",
+          "size": 173,
+          "sizes": {
+            "runtime": 173
+          },
+          "built": false,
+          "codeGenerated": true,
+          "cached": false,
+          "identifier": "webpack/runtime/get mini-css chunk filename",
+          "name": "webpack/runtime/get mini-css chunk filename",
+          "nameForCondition": null,
+          "index": null,
+          "preOrderIndex": null,
+          "index2": null,
+          "postOrderIndex": null,
+          "optional": false,
+          "orphan": false,
+          "dependent": false,
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": "",
+          "chunks": [
+            "main"
+          ],
+          "assets": [],
+          "reasons": [],
+          "usedExports": null,
+          "providedExports": [],
+          "optimizationBailout": [],
+          "depth": null
+        },
+        {
+          "type": "module",
+          "moduleType": "runtime",
+          "size": 88,
+          "sizes": {
+            "runtime": 88
+          },
+          "built": false,
+          "codeGenerated": true,
+          "cached": false,
+          "identifier": "webpack/runtime/get update manifest filename",
+          "name": "webpack/runtime/get update manifest filename",
+          "nameForCondition": null,
+          "index": null,
+          "preOrderIndex": null,
+          "index2": null,
+          "postOrderIndex": null,
+          "optional": false,
+          "orphan": false,
+          "dependent": false,
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": "",
+          "chunks": [
+            "main"
+          ],
+          "assets": [],
+          "reasons": [],
+          "usedExports": null,
+          "providedExports": [],
+          "optimizationBailout": [],
+          "depth": null
+        },
+        {
+          "type": "module",
+          "moduleType": "runtime",
+          "size": 52,
+          "sizes": {
+            "runtime": 52
+          },
+          "built": false,
+          "codeGenerated": true,
+          "cached": false,
+          "identifier": "webpack/runtime/getFullHash",
+          "name": "webpack/runtime/getFullHash",
+          "nameForCondition": null,
+          "index": null,
+          "preOrderIndex": null,
+          "index2": null,
+          "postOrderIndex": null,
+          "optional": false,
+          "orphan": false,
+          "dependent": false,
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": "",
+          "chunks": [
+            "main"
+          ],
+          "assets": [],
+          "reasons": [],
+          "usedExports": null,
+          "providedExports": [],
+          "optimizationBailout": [],
+          "depth": null
+        },
+        {
+          "type": "module",
+          "moduleType": "runtime",
+          "size": 347,
+          "sizes": {
+            "runtime": 347
+          },
+          "built": false,
+          "codeGenerated": true,
+          "cached": false,
+          "identifier": "webpack/runtime/harmony module decorator",
+          "name": "webpack/runtime/harmony module decorator",
+          "nameForCondition": null,
+          "index": null,
+          "preOrderIndex": null,
+          "index2": null,
+          "postOrderIndex": null,
+          "optional": false,
+          "orphan": false,
+          "dependent": false,
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": "",
+          "chunks": [
+            "main"
+          ],
+          "assets": [],
+          "reasons": [],
+          "usedExports": null,
+          "providedExports": [],
+          "optimizationBailout": [],
+          "depth": null
+        },
+        {
+          "type": "module",
+          "moduleType": "runtime",
+          "size": 86,
+          "sizes": {
+            "runtime": 86
+          },
+          "built": false,
+          "codeGenerated": true,
+          "cached": false,
+          "identifier": "webpack/runtime/hasOwnProperty shorthand",
+          "name": "webpack/runtime/hasOwnProperty shorthand",
+          "nameForCondition": null,
+          "index": null,
+          "preOrderIndex": null,
+          "index2": null,
+          "postOrderIndex": null,
+          "optional": false,
+          "orphan": false,
+          "dependent": false,
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": "",
+          "chunks": [
+            "main"
+          ],
+          "assets": [],
+          "reasons": [],
+          "usedExports": null,
+          "providedExports": [],
+          "optimizationBailout": [],
+          "depth": null
+        },
+        {
+          "type": "module",
+          "moduleType": "runtime",
+          "size": 8555,
+          "sizes": {
+            "runtime": 8555
+          },
+          "built": false,
+          "codeGenerated": true,
+          "cached": false,
+          "identifier": "webpack/runtime/hot module replacement",
+          "name": "webpack/runtime/hot module replacement",
+          "nameForCondition": null,
+          "index": null,
+          "preOrderIndex": null,
+          "index2": null,
+          "postOrderIndex": null,
+          "optional": false,
+          "orphan": false,
+          "dependent": false,
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": "",
+          "chunks": [
+            "main"
+          ],
+          "assets": [],
+          "reasons": [],
+          "usedExports": null,
+          "providedExports": [],
+          "optimizationBailout": [],
+          "depth": null
+        },
+        {
+          "type": "module",
+          "moduleType": "runtime",
+          "size": 13765,
+          "sizes": {
+            "runtime": 13765
+          },
+          "built": false,
+          "codeGenerated": true,
+          "cached": false,
+          "identifier": "webpack/runtime/jsonp chunk loading",
+          "name": "webpack/runtime/jsonp chunk loading",
+          "nameForCondition": null,
+          "index": null,
+          "preOrderIndex": null,
+          "index2": null,
+          "postOrderIndex": null,
+          "optional": false,
+          "orphan": false,
+          "dependent": false,
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": "",
+          "chunks": [
+            "main"
+          ],
+          "assets": [],
+          "reasons": [],
+          "usedExports": null,
+          "providedExports": [],
+          "optimizationBailout": [],
+          "depth": null
+        },
+        {
+          "type": "module",
+          "moduleType": "runtime",
+          "size": 1513,
+          "sizes": {
+            "runtime": 1513
+          },
+          "built": false,
+          "codeGenerated": true,
+          "cached": false,
+          "identifier": "webpack/runtime/load script",
+          "name": "webpack/runtime/load script",
+          "nameForCondition": null,
+          "index": null,
+          "preOrderIndex": null,
+          "index2": null,
+          "postOrderIndex": null,
+          "optional": false,
+          "orphan": false,
+          "dependent": false,
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": "",
+          "chunks": [
+            "main"
+          ],
+          "assets": [],
+          "reasons": [],
+          "usedExports": null,
+          "providedExports": [],
+          "optimizationBailout": [],
+          "depth": null
+        },
+        {
+          "type": "module",
+          "moduleType": "runtime",
+          "size": 274,
+          "sizes": {
+            "runtime": 274
+          },
+          "built": false,
+          "codeGenerated": true,
+          "cached": false,
+          "identifier": "webpack/runtime/make namespace object",
+          "name": "webpack/runtime/make namespace object",
+          "nameForCondition": null,
+          "index": null,
+          "preOrderIndex": null,
+          "index2": null,
+          "postOrderIndex": null,
+          "optional": false,
+          "orphan": false,
+          "dependent": false,
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": "",
+          "chunks": [
+            "main"
+          ],
+          "assets": [],
+          "reasons": [],
+          "usedExports": null,
+          "providedExports": [],
+          "optimizationBailout": [],
+          "depth": null
+        },
+        {
+          "type": "module",
+          "moduleType": "runtime",
+          "size": 28,
+          "sizes": {
+            "runtime": 28
+          },
+          "built": false,
+          "codeGenerated": true,
+          "cached": false,
+          "identifier": "webpack/runtime/publicPath",
+          "name": "webpack/runtime/publicPath",
+          "nameForCondition": null,
+          "index": null,
+          "preOrderIndex": null,
+          "index2": null,
+          "postOrderIndex": null,
+          "optional": false,
+          "orphan": false,
+          "dependent": false,
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": "",
+          "chunks": [
+            "main"
+          ],
+          "assets": [],
+          "reasons": [],
+          "usedExports": null,
+          "providedExports": [],
+          "optimizationBailout": [],
+          "depth": null
+        }
+      ],
+      "origins": [
+        {
+          "module": "",
+          "moduleIdentifier": "",
+          "moduleName": "",
+          "loc": "main",
+          "request": "D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\src\\main.js"
+        }
+      ]
+    }
+  ],
+  "modules": [
+    {
+      "type": "module",
+      "moduleType": "javascript/auto",
+      "size": 245,
+      "sizes": {
+        "javascript": 245
+      },
+      "built": true,
+      "codeGenerated": true,
+      "cached": false,
+      "identifier": "D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\node_modules\\babel-loader\\lib\\index.js??ruleSet[1].rules[0].use!D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\src\\main.js",
+      "name": "./src/main.js",
+      "nameForCondition": "D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\src\\main.js",
+      "index": 0,
+      "preOrderIndex": 0,
+      "index2": 6,
+      "postOrderIndex": 6,
+      "cacheable": true,
+      "optional": false,
+      "orphan": false,
+      "issuer": null,
+      "issuerName": null,
+      "issuerPath": null,
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "profile": {
+        "total": 0,
+        "resolving": 0,
+        "restoring": 0,
+        "building": 0,
+        "integration": 0,
+        "storing": 0,
+        "additionalResolving": 0,
+        "additionalIntegration": 0,
+        "factory": 0,
+        "dependencies": 0
+      },
+      "id": "./src/main.js",
+      "issuerId": null,
+      "chunks": [
+        "main"
+      ],
+      "assets": [],
+      "reasons": [
+        {
+          "moduleIdentifier": "D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\node_modules\\babel-loader\\lib\\index.js??ruleSet[1].rules[0].use!D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\src\\main.js",
+          "module": "./src/main.js",
+          "moduleName": "./src/main.js",
+          "resolvedModuleIdentifier": "D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\node_modules\\babel-loader\\lib\\index.js??ruleSet[1].rules[0].use!D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\src\\main.js",
+          "resolvedModule": "./src/main.js",
+          "type": "module decorator",
+          "active": true,
+          "explanation": "",
+          "userRequest": null,
+          "loc": "11:4-10",
+          "moduleId": "./src/main.js",
+          "resolvedModuleId": "./src/main.js"
+        },
+        {
+          "moduleIdentifier": null,
+          "module": null,
+          "moduleName": null,
+          "resolvedModuleIdentifier": null,
+          "resolvedModule": null,
+          "type": "entry",
+          "active": true,
+          "explanation": "",
+          "userRequest": "D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\src\\main.js",
+          "loc": "main",
+          "moduleId": null,
+          "resolvedModuleId": null
+        }
+      ],
+      "usedExports": null,
+      "providedExports": [],
+      "optimizationBailout": [],
+      "depth": 0
+    },
+    {
+      "type": "module",
+      "moduleType": "javascript/auto",
+      "size": 409,
+      "sizes": {
+        "javascript": 409
+      },
+      "built": true,
+      "codeGenerated": true,
+      "cached": false,
+      "identifier": "D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\node_modules\\babel-loader\\lib\\index.js??ruleSet[1].rules[0].use!D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\src\\component\\table.js",
+      "name": "./src/component/table.js",
+      "nameForCondition": "D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\src\\component\\table.js",
+      "index": 1,
+      "preOrderIndex": 1,
+      "index2": 5,
+      "postOrderIndex": 5,
+      "cacheable": true,
+      "optional": false,
+      "orphan": false,
+      "issuer": "D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\node_modules\\babel-loader\\lib\\index.js??ruleSet[1].rules[0].use!D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\src\\main.js",
+      "issuerName": "./src/main.js",
+      "issuerPath": [
+        {
+          "identifier": "D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\node_modules\\babel-loader\\lib\\index.js??ruleSet[1].rules[0].use!D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\src\\main.js",
+          "name": "./src/main.js",
+          "profile": {
+            "total": 0,
+            "resolving": 0,
+            "restoring": 0,
+            "building": 0,
+            "integration": 0,
+            "storing": 0,
+            "additionalResolving": 0,
+            "additionalIntegration": 0,
+            "factory": 0,
+            "dependencies": 0
+          },
+          "id": "./src/main.js"
+        }
+      ],
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "profile": {
+        "total": 19,
+        "resolving": 3,
+        "restoring": 0,
+        "building": 16,
+        "integration": 0,
+        "storing": 0,
+        "additionalResolving": 0,
+        "additionalIntegration": 0,
+        "factory": 3,
+        "dependencies": 0
+      },
+      "id": "./src/component/table.js",
+      "issuerId": "./src/main.js",
+      "chunks": [
+        "main"
+      ],
+      "assets": [],
+      "reasons": [
+        {
+          "moduleIdentifier": "D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\node_modules\\babel-loader\\lib\\index.js??ruleSet[1].rules[0].use!D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\src\\main.js",
+          "module": "./src/main.js",
+          "moduleName": "./src/main.js",
+          "resolvedModuleIdentifier": "D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\node_modules\\babel-loader\\lib\\index.js??ruleSet[1].rules[0].use!D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\src\\main.js",
+          "resolvedModule": "./src/main.js",
+          "type": "harmony side effect evaluation",
+          "active": true,
+          "explanation": "",
+          "userRequest": "./component/table",
+          "loc": "1:0-38",
+          "moduleId": "./src/main.js",
+          "resolvedModuleId": "./src/main.js"
+        },
+        {
+          "moduleIdentifier": "D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\node_modules\\babel-loader\\lib\\index.js??ruleSet[1].rules[0].use!D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\src\\main.js",
+          "module": "./src/main.js",
+          "moduleName": "./src/main.js",
+          "resolvedModuleIdentifier": "D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\node_modules\\babel-loader\\lib\\index.js??ruleSet[1].rules[0].use!D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\src\\main.js",
+          "resolvedModule": "./src/main.js",
+          "type": "harmony import specifier",
+          "active": true,
+          "explanation": "",
+          "userRequest": "./component/table",
+          "loc": "6:19-24",
+          "moduleId": "./src/main.js",
+          "resolvedModuleId": "./src/main.js"
+        }
+      ],
+      "usedExports": null,
+      "providedExports": [
+        "default"
+      ],
+      "optimizationBailout": [],
+      "depth": 1
+    },
+    {
+      "type": "module",
+      "moduleType": "javascript/auto",
+      "size": 216,
+      "sizes": {
+        "javascript": 216
+      },
+      "built": true,
+      "codeGenerated": true,
+      "cached": false,
+      "identifier": "D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\node_modules\\babel-loader\\lib\\index.js??ruleSet[1].rules[0].use!D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\src\\utils\\components.js",
+      "name": "./src/utils/components.js",
+      "nameForCondition": "D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\src\\utils\\components.js",
+      "index": 2,
+      "preOrderIndex": 2,
+      "index2": 0,
+      "postOrderIndex": 0,
+      "cacheable": true,
+      "optional": false,
+      "orphan": false,
+      "issuer": "D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\node_modules\\babel-loader\\lib\\index.js??ruleSet[1].rules[0].use!D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\src\\component\\table.js",
+      "issuerName": "./src/component/table.js",
+      "issuerPath": [
+        {
+          "identifier": "D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\node_modules\\babel-loader\\lib\\index.js??ruleSet[1].rules[0].use!D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\src\\main.js",
+          "name": "./src/main.js",
+          "profile": {
+            "total": 0,
+            "resolving": 0,
+            "restoring": 0,
+            "building": 0,
+            "integration": 0,
+            "storing": 0,
+            "additionalResolving": 0,
+            "additionalIntegration": 0,
+            "factory": 0,
+            "dependencies": 0
+          },
+          "id": "./src/main.js"
+        },
+        {
+          "identifier": "D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\node_modules\\babel-loader\\lib\\index.js??ruleSet[1].rules[0].use!D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\src\\component\\table.js",
+          "name": "./src/component/table.js",
+          "profile": {
+            "total": 19,
+            "resolving": 3,
+            "restoring": 0,
+            "building": 16,
+            "integration": 0,
+            "storing": 0,
+            "additionalResolving": 0,
+            "additionalIntegration": 0,
+            "factory": 3,
+            "dependencies": 0
+          },
+          "id": "./src/component/table.js"
+        }
+      ],
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "profile": {
+        "total": 66,
+        "resolving": 10,
+        "restoring": 0,
+        "building": 56,
+        "integration": 0,
+        "storing": 0,
+        "additionalResolving": 0,
+        "additionalIntegration": 0,
+        "factory": 10,
+        "dependencies": 0
+      },
+      "id": "./src/utils/components.js",
+      "issuerId": "./src/component/table.js",
+      "chunks": [
+        "main"
+      ],
+      "assets": [],
+      "reasons": [
+        {
+          "moduleIdentifier": "D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\node_modules\\babel-loader\\lib\\index.js??ruleSet[1].rules[0].use!D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\src\\component\\table.js",
+          "module": "./src/component/table.js",
+          "moduleName": "./src/component/table.js",
+          "resolvedModuleIdentifier": "D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\node_modules\\babel-loader\\lib\\index.js??ruleSet[1].rules[0].use!D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\src\\component\\table.js",
+          "resolvedModule": "./src/component/table.js",
+          "type": "harmony side effect evaluation",
+          "active": true,
+          "explanation": "",
+          "userRequest": "utils/components",
+          "loc": "1:0-51",
+          "moduleId": "./src/component/table.js",
+          "resolvedModuleId": "./src/component/table.js"
+        },
+        {
+          "moduleIdentifier": "D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\node_modules\\babel-loader\\lib\\index.js??ruleSet[1].rules[0].use!D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\src\\component\\table.js",
+          "module": "./src/component/table.js",
+          "moduleName": "./src/component/table.js",
+          "resolvedModuleIdentifier": "D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\node_modules\\babel-loader\\lib\\index.js??ruleSet[1].rules[0].use!D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\src\\component\\table.js",
+          "resolvedModule": "./src/component/table.js",
+          "type": "harmony import specifier",
+          "active": true,
+          "explanation": "",
+          "userRequest": "utils/components",
+          "loc": "5:9-24",
+          "moduleId": "./src/component/table.js",
+          "resolvedModuleId": "./src/component/table.js"
+        }
+      ],
+      "usedExports": null,
+      "providedExports": [
+        "createComponent"
+      ],
+      "optimizationBailout": [],
+      "depth": 2
+    },
+    {
+      "type": "module",
+      "moduleType": "javascript/auto",
+      "size": 366,
+      "sizes": {
+        "javascript": 366
+      },
+      "built": true,
+      "codeGenerated": true,
+      "cached": false,
+      "identifier": "D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\node_modules\\mini-css-extract-plugin\\dist\\loader.js!D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\node_modules\\css-loader\\dist\\cjs.js!D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\src\\component\\table.css",
+      "name": "./src/component/table.css",
+      "nameForCondition": "D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\src\\component\\table.css",
+      "index": 3,
+      "preOrderIndex": 3,
+      "index2": 4,
+      "postOrderIndex": 4,
+      "cacheable": true,
+      "optional": false,
+      "orphan": false,
+      "issuer": "D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\node_modules\\babel-loader\\lib\\index.js??ruleSet[1].rules[0].use!D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\src\\component\\table.js",
+      "issuerName": "./src/component/table.js",
+      "issuerPath": [
+        {
+          "identifier": "D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\node_modules\\babel-loader\\lib\\index.js??ruleSet[1].rules[0].use!D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\src\\main.js",
+          "name": "./src/main.js",
+          "profile": {
+            "total": 0,
+            "resolving": 0,
+            "restoring": 0,
+            "building": 0,
+            "integration": 0,
+            "storing": 0,
+            "additionalResolving": 0,
+            "additionalIntegration": 0,
+            "factory": 0,
+            "dependencies": 0
+          },
+          "id": "./src/main.js"
+        },
+        {
+          "identifier": "D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\node_modules\\babel-loader\\lib\\index.js??ruleSet[1].rules[0].use!D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\src\\component\\table.js",
+          "name": "./src/component/table.js",
+          "profile": {
+            "total": 19,
+            "resolving": 3,
+            "restoring": 0,
+            "building": 16,
+            "integration": 0,
+            "storing": 0,
+            "additionalResolving": 0,
+            "additionalIntegration": 0,
+            "factory": 3,
+            "dependencies": 0
+          },
+          "id": "./src/component/table.js"
+        }
+      ],
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "profile": {
+        "total": 170,
+        "resolving": 11,
+        "restoring": 0,
+        "building": 159,
+        "integration": 0,
+        "storing": 0,
+        "additionalResolving": 0,
+        "additionalIntegration": 0,
+        "factory": 11,
+        "dependencies": 0
+      },
+      "id": "./src/component/table.css",
+      "issuerId": "./src/component/table.js",
+      "chunks": [
+        "main"
+      ],
+      "assets": [],
+      "reasons": [
+        {
+          "moduleIdentifier": "D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\node_modules\\babel-loader\\lib\\index.js??ruleSet[1].rules[0].use!D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\src\\component\\table.js",
+          "module": "./src/component/table.js",
+          "moduleName": "./src/component/table.js",
+          "resolvedModuleIdentifier": "D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\node_modules\\babel-loader\\lib\\index.js??ruleSet[1].rules[0].use!D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\src\\component\\table.js",
+          "resolvedModule": "./src/component/table.js",
+          "type": "harmony side effect evaluation",
+          "active": true,
+          "explanation": "",
+          "userRequest": "./table.css",
+          "loc": "2:0-21",
+          "moduleId": "./src/component/table.js",
+          "resolvedModuleId": "./src/component/table.js"
+        }
+      ],
+      "usedExports": null,
+      "providedExports": [],
+      "optimizationBailout": [],
+      "depth": 2
+    },
+    {
+      "type": "module",
+      "moduleType": "javascript/auto",
+      "size": 4360,
+      "sizes": {
+        "javascript": 4360
+      },
+      "built": true,
+      "codeGenerated": true,
+      "cached": false,
+      "identifier": "D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\node_modules\\mini-css-extract-plugin\\dist\\hmr\\hotModuleReplacement.js",
+      "name": "./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js",
+      "nameForCondition": "D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\node_modules\\mini-css-extract-plugin\\dist\\hmr\\hotModuleReplacement.js",
+      "index": 4,
+      "preOrderIndex": 4,
+      "index2": 2,
+      "postOrderIndex": 2,
+      "cacheable": true,
+      "optional": false,
+      "orphan": false,
+      "issuer": "D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\node_modules\\mini-css-extract-plugin\\dist\\loader.js!D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\node_modules\\css-loader\\dist\\cjs.js!D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\src\\component\\table.css",
+      "issuerName": "./src/component/table.css",
+      "issuerPath": [
+        {
+          "identifier": "D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\node_modules\\babel-loader\\lib\\index.js??ruleSet[1].rules[0].use!D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\src\\main.js",
+          "name": "./src/main.js",
+          "profile": {
+            "total": 0,
+            "resolving": 0,
+            "restoring": 0,
+            "building": 0,
+            "integration": 0,
+            "storing": 0,
+            "additionalResolving": 0,
+            "additionalIntegration": 0,
+            "factory": 0,
+            "dependencies": 0
+          },
+          "id": "./src/main.js"
+        },
+        {
+          "identifier": "D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\node_modules\\babel-loader\\lib\\index.js??ruleSet[1].rules[0].use!D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\src\\component\\table.js",
+          "name": "./src/component/table.js",
+          "profile": {
+            "total": 19,
+            "resolving": 3,
+            "restoring": 0,
+            "building": 16,
+            "integration": 0,
+            "storing": 0,
+            "additionalResolving": 0,
+            "additionalIntegration": 0,
+            "factory": 3,
+            "dependencies": 0
+          },
+          "id": "./src/component/table.js"
+        },
+        {
+          "identifier": "D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\node_modules\\mini-css-extract-plugin\\dist\\loader.js!D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\node_modules\\css-loader\\dist\\cjs.js!D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\src\\component\\table.css",
+          "name": "./src/component/table.css",
+          "profile": {
+            "total": 170,
+            "resolving": 11,
+            "restoring": 0,
+            "building": 159,
+            "integration": 0,
+            "storing": 0,
+            "additionalResolving": 0,
+            "additionalIntegration": 0,
+            "factory": 11,
+            "dependencies": 0
+          },
+          "id": "./src/component/table.css"
+        }
+      ],
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "profile": {
+        "total": 0,
+        "resolving": 0,
+        "restoring": 0,
+        "building": 0,
+        "integration": 0,
+        "storing": 0,
+        "additionalResolving": 0,
+        "additionalIntegration": 0,
+        "factory": 0,
+        "dependencies": 0
+      },
+      "id": "./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js",
+      "issuerId": "./src/component/table.css",
+      "chunks": [
+        "main"
+      ],
+      "assets": [],
+      "reasons": [
+        {
+          "moduleIdentifier": "D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\node_modules\\mini-css-extract-plugin\\dist\\hmr\\hotModuleReplacement.js",
+          "module": "./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js",
+          "moduleName": "./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js",
+          "resolvedModuleIdentifier": "D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\node_modules\\mini-css-extract-plugin\\dist\\hmr\\hotModuleReplacement.js",
+          "resolvedModule": "./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js",
+          "type": "cjs self exports reference",
+          "active": true,
+          "explanation": "",
+          "userRequest": null,
+          "loc": "186:0-14",
+          "moduleId": "./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js",
+          "resolvedModuleId": "./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js"
+        },
+        {
+          "moduleIdentifier": "D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\node_modules\\mini-css-extract-plugin\\dist\\loader.js!D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\node_modules\\css-loader\\dist\\cjs.js!D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\src\\component\\table.css",
+          "module": "./src/component/table.css",
+          "moduleName": "./src/component/table.css",
+          "resolvedModuleIdentifier": "D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\node_modules\\mini-css-extract-plugin\\dist\\loader.js!D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\node_modules\\css-loader\\dist\\cjs.js!D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\src\\component\\table.css",
+          "resolvedModule": "./src/component/table.css",
+          "type": "cjs require",
+          "active": true,
+          "explanation": "",
+          "userRequest": "D:/My folder/Test/Test_JSPro_Webpack_20201217/node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js",
+          "loc": "5:22-148",
+          "moduleId": "./src/component/table.css",
+          "resolvedModuleId": "./src/component/table.css"
+        }
+      ],
+      "usedExports": null,
+      "providedExports": null,
+      "optimizationBailout": [
+        "CommonJS bailout: module.exports is used directly at 186:0-14"
+      ],
+      "depth": 3
+    },
+    {
+      "type": "module",
+      "moduleType": "css/mini-extract",
+      "size": 33,
+      "sizes": {
+        "css/mini-extract": 33
+      },
+      "built": false,
+      "codeGenerated": true,
+      "cached": false,
+      "identifier": "css D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\node_modules\\css-loader\\dist\\cjs.js!D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\src\\component\\table.css 0",
+      "name": "css ./node_modules/css-loader/dist/cjs.js!./src/component/table.css",
+      "nameForCondition": "D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\src\\component\\table.css",
+      "index": 6,
+      "preOrderIndex": 6,
+      "index2": 3,
+      "postOrderIndex": 3,
+      "optional": false,
+      "orphan": false,
+      "issuer": "D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\node_modules\\mini-css-extract-plugin\\dist\\loader.js!D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\node_modules\\css-loader\\dist\\cjs.js!D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\src\\component\\table.css",
+      "issuerName": "./src/component/table.css",
+      "issuerPath": [
+        {
+          "identifier": "D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\node_modules\\babel-loader\\lib\\index.js??ruleSet[1].rules[0].use!D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\src\\main.js",
+          "name": "./src/main.js",
+          "profile": {
+            "total": 0,
+            "resolving": 0,
+            "restoring": 0,
+            "building": 0,
+            "integration": 0,
+            "storing": 0,
+            "additionalResolving": 0,
+            "additionalIntegration": 0,
+            "factory": 0,
+            "dependencies": 0
+          },
+          "id": "./src/main.js"
+        },
+        {
+          "identifier": "D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\node_modules\\babel-loader\\lib\\index.js??ruleSet[1].rules[0].use!D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\src\\component\\table.js",
+          "name": "./src/component/table.js",
+          "profile": {
+            "total": 19,
+            "resolving": 3,
+            "restoring": 0,
+            "building": 16,
+            "integration": 0,
+            "storing": 0,
+            "additionalResolving": 0,
+            "additionalIntegration": 0,
+            "factory": 3,
+            "dependencies": 0
+          },
+          "id": "./src/component/table.js"
+        },
+        {
+          "identifier": "D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\node_modules\\mini-css-extract-plugin\\dist\\loader.js!D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\node_modules\\css-loader\\dist\\cjs.js!D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\src\\component\\table.css",
+          "name": "./src/component/table.css",
+          "profile": {
+            "total": 170,
+            "resolving": 11,
+            "restoring": 0,
+            "building": 159,
+            "integration": 0,
+            "storing": 0,
+            "additionalResolving": 0,
+            "additionalIntegration": 0,
+            "factory": 11,
+            "dependencies": 0
+          },
+          "id": "./src/component/table.css"
+        }
+      ],
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "profile": {
+        "total": 1,
+        "resolving": 1,
+        "restoring": 0,
+        "building": 0,
+        "integration": 0,
+        "storing": 0,
+        "additionalResolving": 0,
+        "additionalIntegration": 0,
+        "factory": 1,
+        "dependencies": 0
+      },
+      "id": null,
+      "issuerId": "./src/component/table.css",
+      "chunks": [
+        "main"
+      ],
+      "assets": [],
+      "reasons": [
+        {
+          "moduleIdentifier": "D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\node_modules\\mini-css-extract-plugin\\dist\\loader.js!D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\node_modules\\css-loader\\dist\\cjs.js!D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\src\\component\\table.css",
+          "module": "./src/component/table.css",
+          "moduleName": "./src/component/table.css",
+          "resolvedModuleIdentifier": "D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\node_modules\\mini-css-extract-plugin\\dist\\loader.js!D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\node_modules\\css-loader\\dist\\cjs.js!D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\src\\component\\table.css",
+          "resolvedModule": "./src/component/table.css",
+          "type": "unknown",
+          "active": true,
+          "explanation": "",
+          "userRequest": null,
+          "moduleId": "./src/component/table.css",
+          "resolvedModuleId": "./src/component/table.css"
+        }
+      ],
+      "usedExports": null,
+      "providedExports": null,
+      "optimizationBailout": [],
+      "depth": 3
+    },
+    {
+      "type": "module",
+      "moduleType": "javascript/auto",
+      "size": 811,
+      "sizes": {
+        "javascript": 811
+      },
+      "built": true,
+      "codeGenerated": true,
+      "cached": false,
+      "identifier": "D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\node_modules\\mini-css-extract-plugin\\dist\\hmr\\normalize-url.js",
+      "name": "./node_modules/mini-css-extract-plugin/dist/hmr/normalize-url.js",
+      "nameForCondition": "D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\node_modules\\mini-css-extract-plugin\\dist\\hmr\\normalize-url.js",
+      "index": 5,
+      "preOrderIndex": 5,
+      "index2": 1,
+      "postOrderIndex": 1,
+      "cacheable": true,
+      "optional": false,
+      "orphan": false,
+      "issuer": "D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\node_modules\\mini-css-extract-plugin\\dist\\hmr\\hotModuleReplacement.js",
+      "issuerName": "./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js",
+      "issuerPath": [
+        {
+          "identifier": "D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\node_modules\\babel-loader\\lib\\index.js??ruleSet[1].rules[0].use!D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\src\\main.js",
+          "name": "./src/main.js",
+          "profile": {
+            "total": 0,
+            "resolving": 0,
+            "restoring": 0,
+            "building": 0,
+            "integration": 0,
+            "storing": 0,
+            "additionalResolving": 0,
+            "additionalIntegration": 0,
+            "factory": 0,
+            "dependencies": 0
+          },
+          "id": "./src/main.js"
+        },
+        {
+          "identifier": "D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\node_modules\\babel-loader\\lib\\index.js??ruleSet[1].rules[0].use!D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\src\\component\\table.js",
+          "name": "./src/component/table.js",
+          "profile": {
+            "total": 19,
+            "resolving": 3,
+            "restoring": 0,
+            "building": 16,
+            "integration": 0,
+            "storing": 0,
+            "additionalResolving": 0,
+            "additionalIntegration": 0,
+            "factory": 3,
+            "dependencies": 0
+          },
+          "id": "./src/component/table.js"
+        },
+        {
+          "identifier": "D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\node_modules\\mini-css-extract-plugin\\dist\\loader.js!D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\node_modules\\css-loader\\dist\\cjs.js!D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\src\\component\\table.css",
+          "name": "./src/component/table.css",
+          "profile": {
+            "total": 170,
+            "resolving": 11,
+            "restoring": 0,
+            "building": 159,
+            "integration": 0,
+            "storing": 0,
+            "additionalResolving": 0,
+            "additionalIntegration": 0,
+            "factory": 11,
+            "dependencies": 0
+          },
+          "id": "./src/component/table.css"
+        },
+        {
+          "identifier": "D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\node_modules\\mini-css-extract-plugin\\dist\\hmr\\hotModuleReplacement.js",
+          "name": "./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js",
+          "profile": {
+            "total": 0,
+            "resolving": 0,
+            "restoring": 0,
+            "building": 0,
+            "integration": 0,
+            "storing": 0,
+            "additionalResolving": 0,
+            "additionalIntegration": 0,
+            "factory": 0,
+            "dependencies": 0
+          },
+          "id": "./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js"
+        }
+      ],
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "profile": {
+        "total": 0,
+        "resolving": 0,
+        "restoring": 0,
+        "building": 0,
+        "integration": 0,
+        "storing": 0,
+        "additionalResolving": 0,
+        "additionalIntegration": 0,
+        "factory": 0,
+        "dependencies": 0
+      },
+      "id": "./node_modules/mini-css-extract-plugin/dist/hmr/normalize-url.js",
+      "issuerId": "./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js",
+      "chunks": [
+        "main"
+      ],
+      "assets": [],
+      "reasons": [
+        {
+          "moduleIdentifier": "D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\node_modules\\mini-css-extract-plugin\\dist\\hmr\\hotModuleReplacement.js",
+          "module": "./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js",
+          "moduleName": "./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js",
+          "resolvedModuleIdentifier": "D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\node_modules\\mini-css-extract-plugin\\dist\\hmr\\hotModuleReplacement.js",
+          "resolvedModule": "./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js",
+          "type": "cjs require",
+          "active": true,
+          "explanation": "",
+          "userRequest": "./normalize-url",
+          "loc": "10:19-45",
+          "moduleId": "./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js",
+          "resolvedModuleId": "./node_modules/mini-css-extract-plugin/dist/hmr/hotModuleReplacement.js"
+        },
+        {
+          "moduleIdentifier": "D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\node_modules\\mini-css-extract-plugin\\dist\\hmr\\normalize-url.js",
+          "module": "./node_modules/mini-css-extract-plugin/dist/hmr/normalize-url.js",
+          "moduleName": "./node_modules/mini-css-extract-plugin/dist/hmr/normalize-url.js",
+          "resolvedModuleIdentifier": "D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\node_modules\\mini-css-extract-plugin\\dist\\hmr\\normalize-url.js",
+          "resolvedModule": "./node_modules/mini-css-extract-plugin/dist/hmr/normalize-url.js",
+          "type": "cjs self exports reference",
+          "active": true,
+          "explanation": "",
+          "userRequest": null,
+          "loc": "22:0-14",
+          "moduleId": "./node_modules/mini-css-extract-plugin/dist/hmr/normalize-url.js",
+          "resolvedModuleId": "./node_modules/mini-css-extract-plugin/dist/hmr/normalize-url.js"
+        }
+      ],
+      "usedExports": null,
+      "providedExports": null,
+      "optimizationBailout": [
+        "CommonJS bailout: module.exports is used directly at 22:0-14"
+      ],
+      "depth": 4
+    },
+    {
+      "type": "module",
+      "moduleType": "runtime",
+      "size": 2796,
+      "sizes": {
+        "runtime": 2796
+      },
+      "built": false,
+      "codeGenerated": true,
+      "cached": false,
+      "identifier": "webpack/runtime/css loading",
+      "name": "webpack/runtime/css loading",
+      "nameForCondition": null,
+      "index": null,
+      "preOrderIndex": null,
+      "index2": null,
+      "postOrderIndex": null,
+      "optional": false,
+      "orphan": false,
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "id": "",
+      "chunks": [
+        "main"
+      ],
+      "assets": [],
+      "reasons": [],
+      "usedExports": null,
+      "providedExports": [],
+      "optimizationBailout": [],
+      "depth": null
+    },
+    {
+      "type": "module",
+      "moduleType": "runtime",
+      "size": 308,
+      "sizes": {
+        "runtime": 308
+      },
+      "built": false,
+      "codeGenerated": true,
+      "cached": false,
+      "identifier": "webpack/runtime/define property getters",
+      "name": "webpack/runtime/define property getters",
+      "nameForCondition": null,
+      "index": null,
+      "preOrderIndex": null,
+      "index2": null,
+      "postOrderIndex": null,
+      "optional": false,
+      "orphan": false,
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "id": "",
+      "chunks": [
+        "main"
+      ],
+      "assets": [],
+      "reasons": [],
+      "usedExports": null,
+      "providedExports": [],
+      "optimizationBailout": [],
+      "depth": null
+    },
+    {
+      "type": "module",
+      "moduleType": "runtime",
+      "size": 209,
+      "sizes": {
+        "runtime": 209
+      },
+      "built": false,
+      "codeGenerated": true,
+      "cached": false,
+      "identifier": "webpack/runtime/get javascript update chunk filename",
+      "name": "webpack/runtime/get javascript update chunk filename",
+      "nameForCondition": null,
+      "index": null,
+      "preOrderIndex": null,
+      "index2": null,
+      "postOrderIndex": null,
+      "optional": false,
+      "orphan": false,
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "id": "",
+      "chunks": [
+        "main"
+      ],
+      "assets": [],
+      "reasons": [],
+      "usedExports": null,
+      "providedExports": [],
+      "optimizationBailout": [],
+      "depth": null
+    },
+    {
+      "type": "module",
+      "moduleType": "runtime",
+      "size": 173,
+      "sizes": {
+        "runtime": 173
+      },
+      "built": false,
+      "codeGenerated": true,
+      "cached": false,
+      "identifier": "webpack/runtime/get mini-css chunk filename",
+      "name": "webpack/runtime/get mini-css chunk filename",
+      "nameForCondition": null,
+      "index": null,
+      "preOrderIndex": null,
+      "index2": null,
+      "postOrderIndex": null,
+      "optional": false,
+      "orphan": false,
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "id": "",
+      "chunks": [
+        "main"
+      ],
+      "assets": [],
+      "reasons": [],
+      "usedExports": null,
+      "providedExports": [],
+      "optimizationBailout": [],
+      "depth": null
+    },
+    {
+      "type": "module",
+      "moduleType": "runtime",
+      "size": 88,
+      "sizes": {
+        "runtime": 88
+      },
+      "built": false,
+      "codeGenerated": true,
+      "cached": false,
+      "identifier": "webpack/runtime/get update manifest filename",
+      "name": "webpack/runtime/get update manifest filename",
+      "nameForCondition": null,
+      "index": null,
+      "preOrderIndex": null,
+      "index2": null,
+      "postOrderIndex": null,
+      "optional": false,
+      "orphan": false,
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "id": "",
+      "chunks": [
+        "main"
+      ],
+      "assets": [],
+      "reasons": [],
+      "usedExports": null,
+      "providedExports": [],
+      "optimizationBailout": [],
+      "depth": null
+    },
+    {
+      "type": "module",
+      "moduleType": "runtime",
+      "size": 52,
+      "sizes": {
+        "runtime": 52
+      },
+      "built": false,
+      "codeGenerated": true,
+      "cached": false,
+      "identifier": "webpack/runtime/getFullHash",
+      "name": "webpack/runtime/getFullHash",
+      "nameForCondition": null,
+      "index": null,
+      "preOrderIndex": null,
+      "index2": null,
+      "postOrderIndex": null,
+      "optional": false,
+      "orphan": false,
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "id": "",
+      "chunks": [
+        "main"
+      ],
+      "assets": [],
+      "reasons": [],
+      "usedExports": null,
+      "providedExports": [],
+      "optimizationBailout": [],
+      "depth": null
+    },
+    {
+      "type": "module",
+      "moduleType": "runtime",
+      "size": 347,
+      "sizes": {
+        "runtime": 347
+      },
+      "built": false,
+      "codeGenerated": true,
+      "cached": false,
+      "identifier": "webpack/runtime/harmony module decorator",
+      "name": "webpack/runtime/harmony module decorator",
+      "nameForCondition": null,
+      "index": null,
+      "preOrderIndex": null,
+      "index2": null,
+      "postOrderIndex": null,
+      "optional": false,
+      "orphan": false,
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "id": "",
+      "chunks": [
+        "main"
+      ],
+      "assets": [],
+      "reasons": [],
+      "usedExports": null,
+      "providedExports": [],
+      "optimizationBailout": [],
+      "depth": null
+    },
+    {
+      "type": "module",
+      "moduleType": "runtime",
+      "size": 86,
+      "sizes": {
+        "runtime": 86
+      },
+      "built": false,
+      "codeGenerated": true,
+      "cached": false,
+      "identifier": "webpack/runtime/hasOwnProperty shorthand",
+      "name": "webpack/runtime/hasOwnProperty shorthand",
+      "nameForCondition": null,
+      "index": null,
+      "preOrderIndex": null,
+      "index2": null,
+      "postOrderIndex": null,
+      "optional": false,
+      "orphan": false,
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "id": "",
+      "chunks": [
+        "main"
+      ],
+      "assets": [],
+      "reasons": [],
+      "usedExports": null,
+      "providedExports": [],
+      "optimizationBailout": [],
+      "depth": null
+    },
+    {
+      "type": "module",
+      "moduleType": "runtime",
+      "size": 8555,
+      "sizes": {
+        "runtime": 8555
+      },
+      "built": false,
+      "codeGenerated": true,
+      "cached": false,
+      "identifier": "webpack/runtime/hot module replacement",
+      "name": "webpack/runtime/hot module replacement",
+      "nameForCondition": null,
+      "index": null,
+      "preOrderIndex": null,
+      "index2": null,
+      "postOrderIndex": null,
+      "optional": false,
+      "orphan": false,
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "id": "",
+      "chunks": [
+        "main"
+      ],
+      "assets": [],
+      "reasons": [],
+      "usedExports": null,
+      "providedExports": [],
+      "optimizationBailout": [],
+      "depth": null
+    },
+    {
+      "type": "module",
+      "moduleType": "runtime",
+      "size": 13765,
+      "sizes": {
+        "runtime": 13765
+      },
+      "built": false,
+      "codeGenerated": true,
+      "cached": false,
+      "identifier": "webpack/runtime/jsonp chunk loading",
+      "name": "webpack/runtime/jsonp chunk loading",
+      "nameForCondition": null,
+      "index": null,
+      "preOrderIndex": null,
+      "index2": null,
+      "postOrderIndex": null,
+      "optional": false,
+      "orphan": false,
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "id": "",
+      "chunks": [
+        "main"
+      ],
+      "assets": [],
+      "reasons": [],
+      "usedExports": null,
+      "providedExports": [],
+      "optimizationBailout": [],
+      "depth": null
+    },
+    {
+      "type": "module",
+      "moduleType": "runtime",
+      "size": 1513,
+      "sizes": {
+        "runtime": 1513
+      },
+      "built": false,
+      "codeGenerated": true,
+      "cached": false,
+      "identifier": "webpack/runtime/load script",
+      "name": "webpack/runtime/load script",
+      "nameForCondition": null,
+      "index": null,
+      "preOrderIndex": null,
+      "index2": null,
+      "postOrderIndex": null,
+      "optional": false,
+      "orphan": false,
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "id": "",
+      "chunks": [
+        "main"
+      ],
+      "assets": [],
+      "reasons": [],
+      "usedExports": null,
+      "providedExports": [],
+      "optimizationBailout": [],
+      "depth": null
+    },
+    {
+      "type": "module",
+      "moduleType": "runtime",
+      "size": 274,
+      "sizes": {
+        "runtime": 274
+      },
+      "built": false,
+      "codeGenerated": true,
+      "cached": false,
+      "identifier": "webpack/runtime/make namespace object",
+      "name": "webpack/runtime/make namespace object",
+      "nameForCondition": null,
+      "index": null,
+      "preOrderIndex": null,
+      "index2": null,
+      "postOrderIndex": null,
+      "optional": false,
+      "orphan": false,
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "id": "",
+      "chunks": [
+        "main"
+      ],
+      "assets": [],
+      "reasons": [],
+      "usedExports": null,
+      "providedExports": [],
+      "optimizationBailout": [],
+      "depth": null
+    },
+    {
+      "type": "module",
+      "moduleType": "runtime",
+      "size": 28,
+      "sizes": {
+        "runtime": 28
+      },
+      "built": false,
+      "codeGenerated": true,
+      "cached": false,
+      "identifier": "webpack/runtime/publicPath",
+      "name": "webpack/runtime/publicPath",
+      "nameForCondition": null,
+      "index": null,
+      "preOrderIndex": null,
+      "index2": null,
+      "postOrderIndex": null,
+      "optional": false,
+      "orphan": false,
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "id": "",
+      "chunks": [
+        "main"
+      ],
+      "assets": [],
+      "reasons": [],
+      "usedExports": null,
+      "providedExports": [],
+      "optimizationBailout": [],
+      "depth": null
+    }
+  ],
+  "entrypoints": {
+    "main": {
+      "name": "main",
+      "chunks": [
+        "main"
+      ],
+      "assets": [
+        {
+          "name": "main.css",
+          "size": 70
+        },
+        {
+          "name": "main.bundle.js",
+          "size": 14758
+        }
+      ],
+      "filteredAssets": 0,
+      "assetsSize": 14828,
+      "auxiliaryAssets": [
+        {
+          "name": "main.bundle.js.map",
+          "size": 63684
+        },
+        {
+          "name": "main.css.map",
+          "size": 228
+        }
+      ],
+      "filteredAuxiliaryAssets": 0,
+      "auxiliaryAssetsSize": 63912,
+      "children": {},
+      "childAssets": {},
+      "isOverSizeLimit": false
+    }
+  },
+  "namedChunkGroups": {
+    "main": {
+      "name": "main",
+      "chunks": [
+        "main"
+      ],
+      "assets": [
+        {
+          "name": "main.css",
+          "size": 70
+        },
+        {
+          "name": "main.bundle.js",
+          "size": 14758
+        }
+      ],
+      "filteredAssets": 0,
+      "assetsSize": 14828,
+      "auxiliaryAssets": [
+        {
+          "name": "main.bundle.js.map",
+          "size": 63684
+        },
+        {
+          "name": "main.css.map",
+          "size": 228
+        }
+      ],
+      "filteredAuxiliaryAssets": 0,
+      "auxiliaryAssetsSize": 63912,
+      "children": {},
+      "childAssets": {},
+      "isOverSizeLimit": false
+    }
+  },
+  "errors": [],
+  "errorsCount": 0,
+  "warnings": [],
+  "warningsCount": 0,
+  "children": [
+    {
+      "name": "HtmlWebpackCompiler",
+      "hash": "91a30392b42d13c4df55",
+      "version": "5.11.0",
+      "time": 81,
+      "builtAt": 1608921041501,
+      "publicPath": "/",
+      "outputPath": "D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\dist",
+      "assetsByChunkName": {
+        "HtmlWebpackPlugin_0": [
+          "__child-HtmlWebpackPlugin_0"
+        ]
+      },
+      "assets": [
+        {
+          "type": "asset",
+          "name": "__child-HtmlWebpackPlugin_0",
+          "size": 2387,
+          "emitted": false,
+          "comparedForEmit": false,
+          "cached": true,
+          "info": {
+            "javascriptModule": false
+          },
+          "chunkNames": [
+            "HtmlWebpackPlugin_0"
+          ],
+          "chunkIdHints": [],
+          "auxiliaryChunkNames": [],
+          "auxiliaryChunkIdHints": [],
+          "related": {},
+          "chunks": [
+            "HtmlWebpackPlugin_0"
+          ],
+          "auxiliaryChunks": [],
+          "isOverSizeLimit": false
+        }
+      ],
+      "chunks": [
+        {
+          "rendered": true,
+          "initial": true,
+          "entry": true,
+          "recorded": false,
+          "size": 612,
+          "sizes": {
+            "javascript": 612
+          },
+          "names": [
+            "HtmlWebpackPlugin_0"
+          ],
+          "idHints": [],
+          "runtime": [
+            "HtmlWebpackPlugin_0"
+          ],
+          "files": [
+            "__child-HtmlWebpackPlugin_0"
+          ],
+          "auxiliaryFiles": [],
+          "hash": "6f1b925741bf0baba3a3",
+          "childrenByOrder": {},
+          "id": "HtmlWebpackPlugin_0",
+          "siblings": [],
+          "parents": [],
+          "children": [],
+          "modules": [
+            {
+              "type": "module",
+              "moduleType": "javascript/auto",
+              "size": 612,
+              "sizes": {
+                "javascript": 612
+              },
+              "built": true,
+              "codeGenerated": true,
+              "cached": false,
+              "identifier": "D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\node_modules\\html-webpack-plugin\\lib\\loader.js!D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\public\\template.html",
+              "name": "./node_modules/html-webpack-plugin/lib/loader.js!./public/template.html",
+              "nameForCondition": "D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\public\\template.html",
+              "index": 0,
+              "preOrderIndex": 0,
+              "index2": 0,
+              "postOrderIndex": 0,
+              "cacheable": true,
+              "optional": false,
+              "orphan": false,
+              "dependent": false,
+              "issuer": null,
+              "issuerName": null,
+              "issuerPath": null,
+              "failed": false,
+              "errors": 0,
+              "warnings": 0,
+              "profile": {
+                "total": 0,
+                "resolving": 0,
+                "restoring": 0,
+                "building": 0,
+                "integration": 0,
+                "storing": 0,
+                "additionalResolving": 0,
+                "additionalIntegration": 0,
+                "factory": 0,
+                "dependencies": 0
+              },
+              "id": "./node_modules/html-webpack-plugin/lib/loader.js!./public/template.html",
+              "issuerId": null,
+              "chunks": [
+                "HtmlWebpackPlugin_0"
+              ],
+              "assets": [],
+              "reasons": [
+                {
+                  "moduleIdentifier": "D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\node_modules\\html-webpack-plugin\\lib\\loader.js!D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\public\\template.html",
+                  "module": "./node_modules/html-webpack-plugin/lib/loader.js!./public/template.html",
+                  "moduleName": "./node_modules/html-webpack-plugin/lib/loader.js!./public/template.html",
+                  "resolvedModuleIdentifier": "D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\node_modules\\html-webpack-plugin\\lib\\loader.js!D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\public\\template.html",
+                  "resolvedModule": "./node_modules/html-webpack-plugin/lib/loader.js!./public/template.html",
+                  "type": "cjs self exports reference",
+                  "active": true,
+                  "explanation": "",
+                  "userRequest": null,
+                  "loc": "1:117-131",
+                  "moduleId": "./node_modules/html-webpack-plugin/lib/loader.js!./public/template.html",
+                  "resolvedModuleId": "./node_modules/html-webpack-plugin/lib/loader.js!./public/template.html"
+                },
+                {
+                  "moduleIdentifier": null,
+                  "module": null,
+                  "moduleName": null,
+                  "resolvedModuleIdentifier": null,
+                  "resolvedModule": null,
+                  "type": "entry",
+                  "active": true,
+                  "explanation": "",
+                  "userRequest": "D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\node_modules\\html-webpack-plugin\\lib\\loader.js!D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\public\\template.html",
+                  "loc": "HtmlWebpackPlugin_0",
+                  "moduleId": null,
+                  "resolvedModuleId": null
+                },
+                {
+                  "moduleIdentifier": null,
+                  "module": null,
+                  "moduleName": null,
+                  "resolvedModuleIdentifier": null,
+                  "resolvedModule": null,
+                  "type": null,
+                  "active": true,
+                  "explanation": "used as library export",
+                  "userRequest": null,
+                  "moduleId": null,
+                  "resolvedModuleId": null
+                }
+              ],
+              "usedExports": null,
+              "providedExports": null,
+              "optimizationBailout": [
+                "CommonJS bailout: module.exports is used directly at 1:117-131"
+              ],
+              "depth": 0
+            }
+          ],
+          "origins": [
+            {
+              "module": "",
+              "moduleIdentifier": "",
+              "moduleName": "",
+              "loc": "HtmlWebpackPlugin_0",
+              "request": "D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\node_modules\\html-webpack-plugin\\lib\\loader.js!D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\public\\template.html"
+            }
+          ]
+        }
+      ],
+      "modules": [
+        {
+          "type": "module",
+          "moduleType": "javascript/auto",
+          "size": 612,
+          "sizes": {
+            "javascript": 612
+          },
+          "built": true,
+          "codeGenerated": true,
+          "cached": false,
+          "identifier": "D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\node_modules\\html-webpack-plugin\\lib\\loader.js!D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\public\\template.html",
+          "name": "./node_modules/html-webpack-plugin/lib/loader.js!./public/template.html",
+          "nameForCondition": "D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\public\\template.html",
+          "index": 0,
+          "preOrderIndex": 0,
+          "index2": 0,
+          "postOrderIndex": 0,
+          "cacheable": true,
+          "optional": false,
+          "orphan": false,
+          "issuer": null,
+          "issuerName": null,
+          "issuerPath": null,
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "profile": {
+            "total": 0,
+            "resolving": 0,
+            "restoring": 0,
+            "building": 0,
+            "integration": 0,
+            "storing": 0,
+            "additionalResolving": 0,
+            "additionalIntegration": 0,
+            "factory": 0,
+            "dependencies": 0
+          },
+          "id": "./node_modules/html-webpack-plugin/lib/loader.js!./public/template.html",
+          "issuerId": null,
+          "chunks": [
+            "HtmlWebpackPlugin_0"
+          ],
+          "assets": [],
+          "reasons": [
+            {
+              "moduleIdentifier": "D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\node_modules\\html-webpack-plugin\\lib\\loader.js!D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\public\\template.html",
+              "module": "./node_modules/html-webpack-plugin/lib/loader.js!./public/template.html",
+              "moduleName": "./node_modules/html-webpack-plugin/lib/loader.js!./public/template.html",
+              "resolvedModuleIdentifier": "D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\node_modules\\html-webpack-plugin\\lib\\loader.js!D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\public\\template.html",
+              "resolvedModule": "./node_modules/html-webpack-plugin/lib/loader.js!./public/template.html",
+              "type": "cjs self exports reference",
+              "active": true,
+              "explanation": "",
+              "userRequest": null,
+              "loc": "1:117-131",
+              "moduleId": "./node_modules/html-webpack-plugin/lib/loader.js!./public/template.html",
+              "resolvedModuleId": "./node_modules/html-webpack-plugin/lib/loader.js!./public/template.html"
+            },
+            {
+              "moduleIdentifier": null,
+              "module": null,
+              "moduleName": null,
+              "resolvedModuleIdentifier": null,
+              "resolvedModule": null,
+              "type": "entry",
+              "active": true,
+              "explanation": "",
+              "userRequest": "D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\node_modules\\html-webpack-plugin\\lib\\loader.js!D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\public\\template.html",
+              "loc": "HtmlWebpackPlugin_0",
+              "moduleId": null,
+              "resolvedModuleId": null
+            },
+            {
+              "moduleIdentifier": null,
+              "module": null,
+              "moduleName": null,
+              "resolvedModuleIdentifier": null,
+              "resolvedModule": null,
+              "type": null,
+              "active": true,
+              "explanation": "used as library export",
+              "userRequest": null,
+              "moduleId": null,
+              "resolvedModuleId": null
+            }
+          ],
+          "usedExports": null,
+          "providedExports": null,
+          "optimizationBailout": [
+            "CommonJS bailout: module.exports is used directly at 1:117-131"
+          ],
+          "depth": 0
+        }
+      ],
+      "entrypoints": {
+        "HtmlWebpackPlugin_0": {
+          "name": "HtmlWebpackPlugin_0",
+          "chunks": [
+            "HtmlWebpackPlugin_0"
+          ],
+          "assets": [
+            {
+              "name": "__child-HtmlWebpackPlugin_0"
+            }
+          ],
+          "filteredAssets": 0,
+          "assetsSize": null,
+          "auxiliaryAssets": [],
+          "filteredAuxiliaryAssets": 0,
+          "auxiliaryAssetsSize": 0,
+          "children": {},
+          "childAssets": {},
+          "isOverSizeLimit": false
+        }
+      },
+      "namedChunkGroups": {
+        "HtmlWebpackPlugin_0": {
+          "name": "HtmlWebpackPlugin_0",
+          "chunks": [
+            "HtmlWebpackPlugin_0"
+          ],
+          "assets": [
+            {
+              "name": "__child-HtmlWebpackPlugin_0"
+            }
+          ],
+          "filteredAssets": 0,
+          "assetsSize": null,
+          "auxiliaryAssets": [],
+          "filteredAuxiliaryAssets": 0,
+          "auxiliaryAssetsSize": 0,
+          "children": {},
+          "childAssets": {},
+          "isOverSizeLimit": false
+        }
+      },
+      "errors": [],
+      "errorsCount": 0,
+      "warnings": [],
+      "warningsCount": 0,
+      "children": []
+    },
+    {
+      "name": "mini-css-extract-plugin D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\node_modules\\css-loader\\dist\\cjs.js!D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\src\\component\\table.css",
+      "hash": "05304470e37e642952a6",
+      "version": "5.11.0",
+      "time": 126,
+      "builtAt": 1608921042236,
+      "publicPath": "/",
+      "outputPath": "D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\dist",
+      "assetsByChunkName": {},
+      "assets": [],
+      "chunks": [
+        {
+          "rendered": true,
+          "initial": true,
+          "entry": true,
+          "recorded": false,
+          "size": 5462,
+          "sizes": {
+            "javascript": 4531,
+            "runtime": 931
+          },
+          "names": [
+            "mini-css-extract-plugin"
+          ],
+          "idHints": [],
+          "runtime": [
+            "mini-css-extract-plugin"
+          ],
+          "files": [],
+          "auxiliaryFiles": [],
+          "hash": "4e9725ea2f49f31eadc0",
+          "childrenByOrder": {},
+          "id": "mini-css-extract-plugin",
+          "siblings": [],
+          "parents": [],
+          "children": [],
+          "modules": [
+            {
+              "type": "module",
+              "moduleType": "javascript/auto",
+              "size": 660,
+              "sizes": {
+                "javascript": 660
+              },
+              "built": true,
+              "codeGenerated": true,
+              "cached": false,
+              "identifier": "D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\node_modules\\css-loader\\dist\\cjs.js!D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\src\\component\\table.css",
+              "name": "./node_modules/css-loader/dist/cjs.js!./src/component/table.css",
+              "nameForCondition": "D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\src\\component\\table.css",
+              "index": 0,
+              "preOrderIndex": 0,
+              "index2": 2,
+              "postOrderIndex": 2,
+              "cacheable": true,
+              "optional": false,
+              "orphan": false,
+              "dependent": false,
+              "issuer": null,
+              "issuerName": null,
+              "issuerPath": null,
+              "failed": false,
+              "errors": 0,
+              "warnings": 0,
+              "profile": {
+                "total": 81,
+                "resolving": 4,
+                "restoring": 0,
+                "building": 77,
+                "integration": 0,
+                "storing": 0,
+                "additionalResolving": 0,
+                "additionalIntegration": 0,
+                "factory": 4,
+                "dependencies": 0
+              },
+              "id": "./node_modules/css-loader/dist/cjs.js!./src/component/table.css",
+              "issuerId": null,
+              "chunks": [
+                "mini-css-extract-plugin"
+              ],
+              "assets": [],
+              "reasons": [
+                {
+                  "moduleIdentifier": null,
+                  "module": null,
+                  "moduleName": null,
+                  "resolvedModuleIdentifier": null,
+                  "resolvedModule": null,
+                  "type": "entry",
+                  "active": true,
+                  "explanation": "",
+                  "userRequest": "!!D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\node_modules\\css-loader\\dist\\cjs.js!D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\src\\component\\table.css",
+                  "loc": "mini-css-extract-plugin",
+                  "moduleId": null,
+                  "resolvedModuleId": null
+                },
+                {
+                  "moduleIdentifier": null,
+                  "module": null,
+                  "moduleName": null,
+                  "resolvedModuleIdentifier": null,
+                  "resolvedModule": null,
+                  "type": null,
+                  "active": true,
+                  "explanation": "used as library export",
+                  "userRequest": null,
+                  "moduleId": null,
+                  "resolvedModuleId": null
+                }
+              ],
+              "usedExports": null,
+              "providedExports": [
+                "default"
+              ],
+              "optimizationBailout": [],
+              "depth": 0
+            },
+            {
+              "type": "module",
+              "moduleType": "javascript/auto",
+              "size": 1605,
+              "sizes": {
+                "javascript": 1605
+              },
+              "built": true,
+              "codeGenerated": true,
+              "cached": false,
+              "identifier": "D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\node_modules\\css-loader\\dist\\runtime\\api.js",
+              "name": "./node_modules/css-loader/dist/runtime/api.js",
+              "nameForCondition": "D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\node_modules\\css-loader\\dist\\runtime\\api.js",
+              "index": 2,
+              "preOrderIndex": 2,
+              "index2": 1,
+              "postOrderIndex": 1,
+              "cacheable": true,
+              "optional": false,
+              "orphan": false,
+              "dependent": true,
+              "issuer": "D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\node_modules\\css-loader\\dist\\cjs.js!D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\src\\component\\table.css",
+              "issuerName": "./node_modules/css-loader/dist/cjs.js!./src/component/table.css",
+              "issuerPath": [
+                {
+                  "identifier": "D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\node_modules\\css-loader\\dist\\cjs.js!D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\src\\component\\table.css",
+                  "name": "./node_modules/css-loader/dist/cjs.js!./src/component/table.css",
+                  "profile": {
+                    "total": 81,
+                    "resolving": 4,
+                    "restoring": 0,
+                    "building": 77,
+                    "integration": 0,
+                    "storing": 0,
+                    "additionalResolving": 0,
+                    "additionalIntegration": 0,
+                    "factory": 4,
+                    "dependencies": 0
+                  },
+                  "id": "./node_modules/css-loader/dist/cjs.js!./src/component/table.css"
+                }
+              ],
+              "failed": false,
+              "errors": 0,
+              "warnings": 0,
+              "profile": {
+                "total": 0,
+                "resolving": 0,
+                "restoring": 0,
+                "building": 0,
+                "integration": 0,
+                "storing": 0,
+                "additionalResolving": 0,
+                "additionalIntegration": 0,
+                "factory": 0,
+                "dependencies": 0
+              },
+              "id": "./node_modules/css-loader/dist/runtime/api.js",
+              "issuerId": "./node_modules/css-loader/dist/cjs.js!./src/component/table.css",
+              "chunks": [
+                "mini-css-extract-plugin"
+              ],
+              "assets": [],
+              "reasons": [
+                {
+                  "moduleIdentifier": "D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\node_modules\\css-loader\\dist\\cjs.js!D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\src\\component\\table.css",
+                  "module": "./node_modules/css-loader/dist/cjs.js!./src/component/table.css",
+                  "moduleName": "./node_modules/css-loader/dist/cjs.js!./src/component/table.css",
+                  "resolvedModuleIdentifier": "D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\node_modules\\css-loader\\dist\\cjs.js!D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\src\\component\\table.css",
+                  "resolvedModule": "./node_modules/css-loader/dist/cjs.js!./src/component/table.css",
+                  "type": "harmony side effect evaluation",
+                  "active": true,
+                  "explanation": "",
+                  "userRequest": "../../node_modules/css-loader/dist/runtime/api.js",
+                  "loc": "3:0-92",
+                  "moduleId": "./node_modules/css-loader/dist/cjs.js!./src/component/table.css",
+                  "resolvedModuleId": "./node_modules/css-loader/dist/cjs.js!./src/component/table.css"
+                },
+                {
+                  "moduleIdentifier": "D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\node_modules\\css-loader\\dist\\cjs.js!D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\src\\component\\table.css",
+                  "module": "./node_modules/css-loader/dist/cjs.js!./src/component/table.css",
+                  "moduleName": "./node_modules/css-loader/dist/cjs.js!./src/component/table.css",
+                  "resolvedModuleIdentifier": "D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\node_modules\\css-loader\\dist\\cjs.js!D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\src\\component\\table.css",
+                  "resolvedModule": "./node_modules/css-loader/dist/cjs.js!./src/component/table.css",
+                  "type": "harmony import specifier",
+                  "active": true,
+                  "explanation": "",
+                  "userRequest": "../../node_modules/css-loader/dist/runtime/api.js",
+                  "loc": "4:30-57",
+                  "moduleId": "./node_modules/css-loader/dist/cjs.js!./src/component/table.css",
+                  "resolvedModuleId": "./node_modules/css-loader/dist/cjs.js!./src/component/table.css"
+                },
+                {
+                  "moduleIdentifier": "D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\node_modules\\css-loader\\dist\\runtime\\api.js",
+                  "module": "./node_modules/css-loader/dist/runtime/api.js",
+                  "moduleName": "./node_modules/css-loader/dist/runtime/api.js",
+                  "resolvedModuleIdentifier": "D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\node_modules\\css-loader\\dist\\runtime\\api.js",
+                  "resolvedModule": "./node_modules/css-loader/dist/runtime/api.js",
+                  "type": "cjs self exports reference",
+                  "active": true,
+                  "explanation": "",
+                  "userRequest": null,
+                  "loc": "9:0-14",
+                  "moduleId": "./node_modules/css-loader/dist/runtime/api.js",
+                  "resolvedModuleId": "./node_modules/css-loader/dist/runtime/api.js"
+                }
+              ],
+              "usedExports": null,
+              "providedExports": null,
+              "optimizationBailout": [
+                "CommonJS bailout: module.exports is used directly at 9:0-14"
+              ],
+              "depth": 1
+            },
+            {
+              "type": "module",
+              "moduleType": "javascript/auto",
+              "size": 2266,
+              "sizes": {
+                "javascript": 2266
+              },
+              "built": true,
+              "codeGenerated": true,
+              "cached": false,
+              "identifier": "D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\node_modules\\css-loader\\dist\\runtime\\cssWithMappingToString.js",
+              "name": "./node_modules/css-loader/dist/runtime/cssWithMappingToString.js",
+              "nameForCondition": "D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\node_modules\\css-loader\\dist\\runtime\\cssWithMappingToString.js",
+              "index": 1,
+              "preOrderIndex": 1,
+              "index2": 0,
+              "postOrderIndex": 0,
+              "cacheable": true,
+              "optional": false,
+              "orphan": false,
+              "dependent": true,
+              "issuer": "D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\node_modules\\css-loader\\dist\\cjs.js!D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\src\\component\\table.css",
+              "issuerName": "./node_modules/css-loader/dist/cjs.js!./src/component/table.css",
+              "issuerPath": [
+                {
+                  "identifier": "D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\node_modules\\css-loader\\dist\\cjs.js!D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\src\\component\\table.css",
+                  "name": "./node_modules/css-loader/dist/cjs.js!./src/component/table.css",
+                  "profile": {
+                    "total": 81,
+                    "resolving": 4,
+                    "restoring": 0,
+                    "building": 77,
+                    "integration": 0,
+                    "storing": 0,
+                    "additionalResolving": 0,
+                    "additionalIntegration": 0,
+                    "factory": 4,
+                    "dependencies": 0
+                  },
+                  "id": "./node_modules/css-loader/dist/cjs.js!./src/component/table.css"
+                }
+              ],
+              "failed": false,
+              "errors": 0,
+              "warnings": 0,
+              "profile": {
+                "total": 0,
+                "resolving": 0,
+                "restoring": 0,
+                "building": 0,
+                "integration": 0,
+                "storing": 0,
+                "additionalResolving": 0,
+                "additionalIntegration": 0,
+                "factory": 0,
+                "dependencies": 0
+              },
+              "id": "./node_modules/css-loader/dist/runtime/cssWithMappingToString.js",
+              "issuerId": "./node_modules/css-loader/dist/cjs.js!./src/component/table.css",
+              "chunks": [
+                "mini-css-extract-plugin"
+              ],
+              "assets": [],
+              "reasons": [
+                {
+                  "moduleIdentifier": "D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\node_modules\\css-loader\\dist\\cjs.js!D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\src\\component\\table.css",
+                  "module": "./node_modules/css-loader/dist/cjs.js!./src/component/table.css",
+                  "moduleName": "./node_modules/css-loader/dist/cjs.js!./src/component/table.css",
+                  "resolvedModuleIdentifier": "D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\node_modules\\css-loader\\dist\\cjs.js!D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\src\\component\\table.css",
+                  "resolvedModule": "./node_modules/css-loader/dist/cjs.js!./src/component/table.css",
+                  "type": "harmony side effect evaluation",
+                  "active": true,
+                  "explanation": "",
+                  "userRequest": "../../node_modules/css-loader/dist/runtime/cssWithMappingToString.js",
+                  "loc": "2:0-121",
+                  "moduleId": "./node_modules/css-loader/dist/cjs.js!./src/component/table.css",
+                  "resolvedModuleId": "./node_modules/css-loader/dist/cjs.js!./src/component/table.css"
+                },
+                {
+                  "moduleIdentifier": "D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\node_modules\\css-loader\\dist\\cjs.js!D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\src\\component\\table.css",
+                  "module": "./node_modules/css-loader/dist/cjs.js!./src/component/table.css",
+                  "moduleName": "./node_modules/css-loader/dist/cjs.js!./src/component/table.css",
+                  "resolvedModuleIdentifier": "D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\node_modules\\css-loader\\dist\\cjs.js!D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\src\\component\\table.css",
+                  "resolvedModule": "./node_modules/css-loader/dist/cjs.js!./src/component/table.css",
+                  "type": "harmony import specifier",
+                  "active": true,
+                  "explanation": "",
+                  "userRequest": "../../node_modules/css-loader/dist/runtime/cssWithMappingToString.js",
+                  "loc": "4:58-95",
+                  "moduleId": "./node_modules/css-loader/dist/cjs.js!./src/component/table.css",
+                  "resolvedModuleId": "./node_modules/css-loader/dist/cjs.js!./src/component/table.css"
+                },
+                {
+                  "moduleIdentifier": "D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\node_modules\\css-loader\\dist\\runtime\\cssWithMappingToString.js",
+                  "module": "./node_modules/css-loader/dist/runtime/cssWithMappingToString.js",
+                  "moduleName": "./node_modules/css-loader/dist/runtime/cssWithMappingToString.js",
+                  "resolvedModuleIdentifier": "D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\node_modules\\css-loader\\dist\\runtime\\cssWithMappingToString.js",
+                  "resolvedModule": "./node_modules/css-loader/dist/runtime/cssWithMappingToString.js",
+                  "type": "cjs self exports reference",
+                  "active": true,
+                  "explanation": "",
+                  "userRequest": null,
+                  "loc": "15:0-14",
+                  "moduleId": "./node_modules/css-loader/dist/runtime/cssWithMappingToString.js",
+                  "resolvedModuleId": "./node_modules/css-loader/dist/runtime/cssWithMappingToString.js"
+                }
+              ],
+              "usedExports": null,
+              "providedExports": null,
+              "optimizationBailout": [
+                "CommonJS bailout: module.exports is used directly at 15:0-14"
+              ],
+              "depth": 1
+            },
+            {
+              "type": "module",
+              "moduleType": "runtime",
+              "size": 263,
+              "sizes": {
+                "runtime": 263
+              },
+              "built": false,
+              "codeGenerated": true,
+              "cached": false,
+              "identifier": "webpack/runtime/compat get default export",
+              "name": "webpack/runtime/compat get default export",
+              "nameForCondition": null,
+              "index": null,
+              "preOrderIndex": null,
+              "index2": null,
+              "postOrderIndex": null,
+              "optional": false,
+              "orphan": false,
+              "dependent": false,
+              "failed": false,
+              "errors": 0,
+              "warnings": 0,
+              "id": "",
+              "chunks": [
+                "mini-css-extract-plugin"
+              ],
+              "assets": [],
+              "reasons": [],
+              "usedExports": null,
+              "providedExports": [],
+              "optimizationBailout": [],
+              "depth": null
+            },
+            {
+              "type": "module",
+              "moduleType": "runtime",
+              "size": 308,
+              "sizes": {
+                "runtime": 308
+              },
+              "built": false,
+              "codeGenerated": true,
+              "cached": false,
+              "identifier": "webpack/runtime/define property getters",
+              "name": "webpack/runtime/define property getters",
+              "nameForCondition": null,
+              "index": null,
+              "preOrderIndex": null,
+              "index2": null,
+              "postOrderIndex": null,
+              "optional": false,
+              "orphan": false,
+              "dependent": false,
+              "failed": false,
+              "errors": 0,
+              "warnings": 0,
+              "id": "",
+              "chunks": [
+                "mini-css-extract-plugin"
+              ],
+              "assets": [],
+              "reasons": [],
+              "usedExports": null,
+              "providedExports": [],
+              "optimizationBailout": [],
+              "depth": null
+            },
+            {
+              "type": "module",
+              "moduleType": "runtime",
+              "size": 86,
+              "sizes": {
+                "runtime": 86
+              },
+              "built": false,
+              "codeGenerated": true,
+              "cached": false,
+              "identifier": "webpack/runtime/hasOwnProperty shorthand",
+              "name": "webpack/runtime/hasOwnProperty shorthand",
+              "nameForCondition": null,
+              "index": null,
+              "preOrderIndex": null,
+              "index2": null,
+              "postOrderIndex": null,
+              "optional": false,
+              "orphan": false,
+              "dependent": false,
+              "failed": false,
+              "errors": 0,
+              "warnings": 0,
+              "id": "",
+              "chunks": [
+                "mini-css-extract-plugin"
+              ],
+              "assets": [],
+              "reasons": [],
+              "usedExports": null,
+              "providedExports": [],
+              "optimizationBailout": [],
+              "depth": null
+            },
+            {
+              "type": "module",
+              "moduleType": "runtime",
+              "size": 274,
+              "sizes": {
+                "runtime": 274
+              },
+              "built": false,
+              "codeGenerated": true,
+              "cached": false,
+              "identifier": "webpack/runtime/make namespace object",
+              "name": "webpack/runtime/make namespace object",
+              "nameForCondition": null,
+              "index": null,
+              "preOrderIndex": null,
+              "index2": null,
+              "postOrderIndex": null,
+              "optional": false,
+              "orphan": false,
+              "dependent": false,
+              "failed": false,
+              "errors": 0,
+              "warnings": 0,
+              "id": "",
+              "chunks": [
+                "mini-css-extract-plugin"
+              ],
+              "assets": [],
+              "reasons": [],
+              "usedExports": null,
+              "providedExports": [],
+              "optimizationBailout": [],
+              "depth": null
+            }
+          ],
+          "origins": [
+            {
+              "module": "",
+              "moduleIdentifier": "",
+              "moduleName": "",
+              "loc": "mini-css-extract-plugin",
+              "request": "!!D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\node_modules\\css-loader\\dist\\cjs.js!D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\src\\component\\table.css"
+            }
+          ]
+        }
+      ],
+      "modules": [
+        {
+          "type": "module",
+          "moduleType": "javascript/auto",
+          "size": 660,
+          "sizes": {
+            "javascript": 660
+          },
+          "built": true,
+          "codeGenerated": true,
+          "cached": false,
+          "identifier": "D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\node_modules\\css-loader\\dist\\cjs.js!D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\src\\component\\table.css",
+          "name": "./node_modules/css-loader/dist/cjs.js!./src/component/table.css",
+          "nameForCondition": "D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\src\\component\\table.css",
+          "index": 0,
+          "preOrderIndex": 0,
+          "index2": 2,
+          "postOrderIndex": 2,
+          "cacheable": true,
+          "optional": false,
+          "orphan": false,
+          "issuer": null,
+          "issuerName": null,
+          "issuerPath": null,
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "profile": {
+            "total": 81,
+            "resolving": 4,
+            "restoring": 0,
+            "building": 77,
+            "integration": 0,
+            "storing": 0,
+            "additionalResolving": 0,
+            "additionalIntegration": 0,
+            "factory": 4,
+            "dependencies": 0
+          },
+          "id": "./node_modules/css-loader/dist/cjs.js!./src/component/table.css",
+          "issuerId": null,
+          "chunks": [
+            "mini-css-extract-plugin"
+          ],
+          "assets": [],
+          "reasons": [
+            {
+              "moduleIdentifier": null,
+              "module": null,
+              "moduleName": null,
+              "resolvedModuleIdentifier": null,
+              "resolvedModule": null,
+              "type": "entry",
+              "active": true,
+              "explanation": "",
+              "userRequest": "!!D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\node_modules\\css-loader\\dist\\cjs.js!D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\src\\component\\table.css",
+              "loc": "mini-css-extract-plugin",
+              "moduleId": null,
+              "resolvedModuleId": null
+            },
+            {
+              "moduleIdentifier": null,
+              "module": null,
+              "moduleName": null,
+              "resolvedModuleIdentifier": null,
+              "resolvedModule": null,
+              "type": null,
+              "active": true,
+              "explanation": "used as library export",
+              "userRequest": null,
+              "moduleId": null,
+              "resolvedModuleId": null
+            }
+          ],
+          "usedExports": null,
+          "providedExports": [
+            "default"
+          ],
+          "optimizationBailout": [],
+          "depth": 0
+        },
+        {
+          "type": "module",
+          "moduleType": "javascript/auto",
+          "size": 2266,
+          "sizes": {
+            "javascript": 2266
+          },
+          "built": true,
+          "codeGenerated": true,
+          "cached": false,
+          "identifier": "D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\node_modules\\css-loader\\dist\\runtime\\cssWithMappingToString.js",
+          "name": "./node_modules/css-loader/dist/runtime/cssWithMappingToString.js",
+          "nameForCondition": "D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\node_modules\\css-loader\\dist\\runtime\\cssWithMappingToString.js",
+          "index": 1,
+          "preOrderIndex": 1,
+          "index2": 0,
+          "postOrderIndex": 0,
+          "cacheable": true,
+          "optional": false,
+          "orphan": false,
+          "issuer": "D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\node_modules\\css-loader\\dist\\cjs.js!D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\src\\component\\table.css",
+          "issuerName": "./node_modules/css-loader/dist/cjs.js!./src/component/table.css",
+          "issuerPath": [
+            {
+              "identifier": "D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\node_modules\\css-loader\\dist\\cjs.js!D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\src\\component\\table.css",
+              "name": "./node_modules/css-loader/dist/cjs.js!./src/component/table.css",
+              "profile": {
+                "total": 81,
+                "resolving": 4,
+                "restoring": 0,
+                "building": 77,
+                "integration": 0,
+                "storing": 0,
+                "additionalResolving": 0,
+                "additionalIntegration": 0,
+                "factory": 4,
+                "dependencies": 0
+              },
+              "id": "./node_modules/css-loader/dist/cjs.js!./src/component/table.css"
+            }
+          ],
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "profile": {
+            "total": 0,
+            "resolving": 0,
+            "restoring": 0,
+            "building": 0,
+            "integration": 0,
+            "storing": 0,
+            "additionalResolving": 0,
+            "additionalIntegration": 0,
+            "factory": 0,
+            "dependencies": 0
+          },
+          "id": "./node_modules/css-loader/dist/runtime/cssWithMappingToString.js",
+          "issuerId": "./node_modules/css-loader/dist/cjs.js!./src/component/table.css",
+          "chunks": [
+            "mini-css-extract-plugin"
+          ],
+          "assets": [],
+          "reasons": [
+            {
+              "moduleIdentifier": "D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\node_modules\\css-loader\\dist\\cjs.js!D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\src\\component\\table.css",
+              "module": "./node_modules/css-loader/dist/cjs.js!./src/component/table.css",
+              "moduleName": "./node_modules/css-loader/dist/cjs.js!./src/component/table.css",
+              "resolvedModuleIdentifier": "D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\node_modules\\css-loader\\dist\\cjs.js!D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\src\\component\\table.css",
+              "resolvedModule": "./node_modules/css-loader/dist/cjs.js!./src/component/table.css",
+              "type": "harmony side effect evaluation",
+              "active": true,
+              "explanation": "",
+              "userRequest": "../../node_modules/css-loader/dist/runtime/cssWithMappingToString.js",
+              "loc": "2:0-121",
+              "moduleId": "./node_modules/css-loader/dist/cjs.js!./src/component/table.css",
+              "resolvedModuleId": "./node_modules/css-loader/dist/cjs.js!./src/component/table.css"
+            },
+            {
+              "moduleIdentifier": "D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\node_modules\\css-loader\\dist\\cjs.js!D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\src\\component\\table.css",
+              "module": "./node_modules/css-loader/dist/cjs.js!./src/component/table.css",
+              "moduleName": "./node_modules/css-loader/dist/cjs.js!./src/component/table.css",
+              "resolvedModuleIdentifier": "D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\node_modules\\css-loader\\dist\\cjs.js!D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\src\\component\\table.css",
+              "resolvedModule": "./node_modules/css-loader/dist/cjs.js!./src/component/table.css",
+              "type": "harmony import specifier",
+              "active": true,
+              "explanation": "",
+              "userRequest": "../../node_modules/css-loader/dist/runtime/cssWithMappingToString.js",
+              "loc": "4:58-95",
+              "moduleId": "./node_modules/css-loader/dist/cjs.js!./src/component/table.css",
+              "resolvedModuleId": "./node_modules/css-loader/dist/cjs.js!./src/component/table.css"
+            },
+            {
+              "moduleIdentifier": "D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\node_modules\\css-loader\\dist\\runtime\\cssWithMappingToString.js",
+              "module": "./node_modules/css-loader/dist/runtime/cssWithMappingToString.js",
+              "moduleName": "./node_modules/css-loader/dist/runtime/cssWithMappingToString.js",
+              "resolvedModuleIdentifier": "D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\node_modules\\css-loader\\dist\\runtime\\cssWithMappingToString.js",
+              "resolvedModule": "./node_modules/css-loader/dist/runtime/cssWithMappingToString.js",
+              "type": "cjs self exports reference",
+              "active": true,
+              "explanation": "",
+              "userRequest": null,
+              "loc": "15:0-14",
+              "moduleId": "./node_modules/css-loader/dist/runtime/cssWithMappingToString.js",
+              "resolvedModuleId": "./node_modules/css-loader/dist/runtime/cssWithMappingToString.js"
+            }
+          ],
+          "usedExports": null,
+          "providedExports": null,
+          "optimizationBailout": [
+            "CommonJS bailout: module.exports is used directly at 15:0-14"
+          ],
+          "depth": 1
+        },
+        {
+          "type": "module",
+          "moduleType": "javascript/auto",
+          "size": 1605,
+          "sizes": {
+            "javascript": 1605
+          },
+          "built": true,
+          "codeGenerated": true,
+          "cached": false,
+          "identifier": "D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\node_modules\\css-loader\\dist\\runtime\\api.js",
+          "name": "./node_modules/css-loader/dist/runtime/api.js",
+          "nameForCondition": "D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\node_modules\\css-loader\\dist\\runtime\\api.js",
+          "index": 2,
+          "preOrderIndex": 2,
+          "index2": 1,
+          "postOrderIndex": 1,
+          "cacheable": true,
+          "optional": false,
+          "orphan": false,
+          "issuer": "D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\node_modules\\css-loader\\dist\\cjs.js!D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\src\\component\\table.css",
+          "issuerName": "./node_modules/css-loader/dist/cjs.js!./src/component/table.css",
+          "issuerPath": [
+            {
+              "identifier": "D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\node_modules\\css-loader\\dist\\cjs.js!D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\src\\component\\table.css",
+              "name": "./node_modules/css-loader/dist/cjs.js!./src/component/table.css",
+              "profile": {
+                "total": 81,
+                "resolving": 4,
+                "restoring": 0,
+                "building": 77,
+                "integration": 0,
+                "storing": 0,
+                "additionalResolving": 0,
+                "additionalIntegration": 0,
+                "factory": 4,
+                "dependencies": 0
+              },
+              "id": "./node_modules/css-loader/dist/cjs.js!./src/component/table.css"
+            }
+          ],
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "profile": {
+            "total": 0,
+            "resolving": 0,
+            "restoring": 0,
+            "building": 0,
+            "integration": 0,
+            "storing": 0,
+            "additionalResolving": 0,
+            "additionalIntegration": 0,
+            "factory": 0,
+            "dependencies": 0
+          },
+          "id": "./node_modules/css-loader/dist/runtime/api.js",
+          "issuerId": "./node_modules/css-loader/dist/cjs.js!./src/component/table.css",
+          "chunks": [
+            "mini-css-extract-plugin"
+          ],
+          "assets": [],
+          "reasons": [
+            {
+              "moduleIdentifier": "D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\node_modules\\css-loader\\dist\\cjs.js!D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\src\\component\\table.css",
+              "module": "./node_modules/css-loader/dist/cjs.js!./src/component/table.css",
+              "moduleName": "./node_modules/css-loader/dist/cjs.js!./src/component/table.css",
+              "resolvedModuleIdentifier": "D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\node_modules\\css-loader\\dist\\cjs.js!D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\src\\component\\table.css",
+              "resolvedModule": "./node_modules/css-loader/dist/cjs.js!./src/component/table.css",
+              "type": "harmony side effect evaluation",
+              "active": true,
+              "explanation": "",
+              "userRequest": "../../node_modules/css-loader/dist/runtime/api.js",
+              "loc": "3:0-92",
+              "moduleId": "./node_modules/css-loader/dist/cjs.js!./src/component/table.css",
+              "resolvedModuleId": "./node_modules/css-loader/dist/cjs.js!./src/component/table.css"
+            },
+            {
+              "moduleIdentifier": "D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\node_modules\\css-loader\\dist\\cjs.js!D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\src\\component\\table.css",
+              "module": "./node_modules/css-loader/dist/cjs.js!./src/component/table.css",
+              "moduleName": "./node_modules/css-loader/dist/cjs.js!./src/component/table.css",
+              "resolvedModuleIdentifier": "D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\node_modules\\css-loader\\dist\\cjs.js!D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\src\\component\\table.css",
+              "resolvedModule": "./node_modules/css-loader/dist/cjs.js!./src/component/table.css",
+              "type": "harmony import specifier",
+              "active": true,
+              "explanation": "",
+              "userRequest": "../../node_modules/css-loader/dist/runtime/api.js",
+              "loc": "4:30-57",
+              "moduleId": "./node_modules/css-loader/dist/cjs.js!./src/component/table.css",
+              "resolvedModuleId": "./node_modules/css-loader/dist/cjs.js!./src/component/table.css"
+            },
+            {
+              "moduleIdentifier": "D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\node_modules\\css-loader\\dist\\runtime\\api.js",
+              "module": "./node_modules/css-loader/dist/runtime/api.js",
+              "moduleName": "./node_modules/css-loader/dist/runtime/api.js",
+              "resolvedModuleIdentifier": "D:\\My folder\\Test\\Test_JSPro_Webpack_20201217\\node_modules\\css-loader\\dist\\runtime\\api.js",
+              "resolvedModule": "./node_modules/css-loader/dist/runtime/api.js",
+              "type": "cjs self exports reference",
+              "active": true,
+              "explanation": "",
+              "userRequest": null,
+              "loc": "9:0-14",
+              "moduleId": "./node_modules/css-loader/dist/runtime/api.js",
+              "resolvedModuleId": "./node_modules/css-loader/dist/runtime/api.js"
+            }
+          ],
+          "usedExports": null,
+          "providedExports": null,
+          "optimizationBailout": [
+            "CommonJS bailout: module.exports is used directly at 9:0-14"
+          ],
+          "depth": 1
+        },
+        {
+          "type": "module",
+          "moduleType": "runtime",
+          "size": 263,
+          "sizes": {
+            "runtime": 263
+          },
+          "built": false,
+          "codeGenerated": true,
+          "cached": false,
+          "identifier": "webpack/runtime/compat get default export",
+          "name": "webpack/runtime/compat get default export",
+          "nameForCondition": null,
+          "index": null,
+          "preOrderIndex": null,
+          "index2": null,
+          "postOrderIndex": null,
+          "optional": false,
+          "orphan": false,
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": "",
+          "chunks": [
+            "mini-css-extract-plugin"
+          ],
+          "assets": [],
+          "reasons": [],
+          "usedExports": null,
+          "providedExports": [],
+          "optimizationBailout": [],
+          "depth": null
+        },
+        {
+          "type": "module",
+          "moduleType": "runtime",
+          "size": 308,
+          "sizes": {
+            "runtime": 308
+          },
+          "built": false,
+          "codeGenerated": true,
+          "cached": false,
+          "identifier": "webpack/runtime/define property getters",
+          "name": "webpack/runtime/define property getters",
+          "nameForCondition": null,
+          "index": null,
+          "preOrderIndex": null,
+          "index2": null,
+          "postOrderIndex": null,
+          "optional": false,
+          "orphan": false,
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": "",
+          "chunks": [
+            "mini-css-extract-plugin"
+          ],
+          "assets": [],
+          "reasons": [],
+          "usedExports": null,
+          "providedExports": [],
+          "optimizationBailout": [],
+          "depth": null
+        },
+        {
+          "type": "module",
+          "moduleType": "runtime",
+          "size": 86,
+          "sizes": {
+            "runtime": 86
+          },
+          "built": false,
+          "codeGenerated": true,
+          "cached": false,
+          "identifier": "webpack/runtime/hasOwnProperty shorthand",
+          "name": "webpack/runtime/hasOwnProperty shorthand",
+          "nameForCondition": null,
+          "index": null,
+          "preOrderIndex": null,
+          "index2": null,
+          "postOrderIndex": null,
+          "optional": false,
+          "orphan": false,
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": "",
+          "chunks": [
+            "mini-css-extract-plugin"
+          ],
+          "assets": [],
+          "reasons": [],
+          "usedExports": null,
+          "providedExports": [],
+          "optimizationBailout": [],
+          "depth": null
+        },
+        {
+          "type": "module",
+          "moduleType": "runtime",
+          "size": 274,
+          "sizes": {
+            "runtime": 274
+          },
+          "built": false,
+          "codeGenerated": true,
+          "cached": false,
+          "identifier": "webpack/runtime/make namespace object",
+          "name": "webpack/runtime/make namespace object",
+          "nameForCondition": null,
+          "index": null,
+          "preOrderIndex": null,
+          "index2": null,
+          "postOrderIndex": null,
+          "optional": false,
+          "orphan": false,
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "id": "",
+          "chunks": [
+            "mini-css-extract-plugin"
+          ],
+          "assets": [],
+          "reasons": [],
+          "usedExports": null,
+          "providedExports": [],
+          "optimizationBailout": [],
+          "depth": null
+        }
+      ],
+      "entrypoints": {
+        "mini-css-extract-plugin": {
+          "name": "mini-css-extract-plugin",
+          "chunks": [
+            "mini-css-extract-plugin"
+          ],
+          "assets": [],
+          "filteredAssets": 0,
+          "assetsSize": 0,
+          "auxiliaryAssets": [],
+          "filteredAuxiliaryAssets": 0,
+          "auxiliaryAssetsSize": 0,
+          "children": {},
+          "childAssets": {},
+          "isOverSizeLimit": false
+        }
+      },
+      "namedChunkGroups": {
+        "mini-css-extract-plugin": {
+          "name": "mini-css-extract-plugin",
+          "chunks": [
+            "mini-css-extract-plugin"
+          ],
+          "assets": [],
+          "filteredAssets": 0,
+          "assetsSize": 0,
+          "auxiliaryAssets": [],
+          "filteredAuxiliaryAssets": 0,
+          "auxiliaryAssetsSize": 0,
+          "children": {},
+          "childAssets": {},
+          "isOverSizeLimit": false
+        }
+      },
+      "errors": [],
+      "errorsCount": 0,
+      "warnings": [],
+      "warningsCount": 0,
+      "children": []
+    }
+  ]
+}
