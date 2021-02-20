@@ -2,21 +2,17 @@ import { createStore } from 'redux';
 import { composeWithDevTools } from 'redux-devtools-extension';
 import rootReducer from './reducers';
 
-// const ReactReduxDevTools =
-//   window.__REDUX_DEVTOOLS_EXTENSION__ && window.__REDUX_DEVTOOLS_EXTENSION__();
+let preloadedState;
+const persistedTodosString = localStorage.getItem('state');
 
-// let preloadedState;
-// const persistedTodosString = localStorage.getItem('state');
-//
-// if (persistedTodosString) {
-//   preloadedState = JSON.parse(persistedTodosString);
-// }
-// console.log(persistedTodosString);
+if (persistedTodosString) {
+  preloadedState = JSON.parse(persistedTodosString);
+}
 
-const store = createStore(rootReducer, undefined, composeWithDevTools());
+const store = createStore(rootReducer, preloadedState, composeWithDevTools());
 
-// store.subscribe(() => {
-//   localStorage.setItem('state', JSON.stringify(store.getState()));
-// });
+store.subscribe(() => {
+  localStorage.setItem('state', JSON.stringify(store.getState()));
+});
 
 export default store;

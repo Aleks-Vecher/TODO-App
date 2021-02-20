@@ -63,7 +63,7 @@
       <recent name="D:\My folder\Test\JSPro_DIPLOMA\TODO-App\src\component\TodoList\component\Todo" />
     </key>
   </component>
-  <component name="RunManager" selected="npm.prettier:">
+  <component name="RunManager" selected="npm.start">
     <configuration name="lint" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
       <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
@@ -172,6 +172,7 @@
       <workItem from="1613678548813" duration="13146000" />
       <workItem from="1613756289374" duration="2363000" />
       <workItem from="1613800930875" duration="13083000" />
+      <workItem from="1613832543908" duration="429000" />
     </task>
     <task id="LOCAL-00001" summary="webpack esLint prettier settings were performed">
       <created>1609943562006</created>
@@ -264,7 +265,14 @@
       <option name="project" value="LOCAL" />
       <updated>1613830630590</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="solving issue with the untracked files">
+      <created>1613832728596</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1613832728596</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -297,7 +305,8 @@
     <MESSAGE value="ProgressBar component has been created" />
     <MESSAGE value="Filter component creation" />
     <MESSAGE value="Router has been created" />
-    <option name="LAST_COMMIT_MESSAGE" value="Router has been created" />
+    <MESSAGE value="solving issue with the untracked files" />
+    <option name="LAST_COMMIT_MESSAGE" value="solving issue with the untracked files" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
