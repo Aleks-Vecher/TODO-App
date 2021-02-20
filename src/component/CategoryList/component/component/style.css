@@ -1,0 +1,15 @@
+.colorSubCategory {
+  color: #ea0b0b;
+}
+
+.nameSubCategory:hover {
+  cursor: pointer;
+  background: #e8efed;
+}
+
+.linkRoute:active,
+.linkRoute,
+.linkRoute:hover{
+  color:black;
+  text-decoration: none;
+}
