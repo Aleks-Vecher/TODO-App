@@ -6,6 +6,4 @@ const mapStateToProps = (state) => ({
   todo: getCompletedTodo(state),
 });
 
-// const mapDispatchToProps = {};
-
 export default connect(mapStateToProps, null)(ProgBar);

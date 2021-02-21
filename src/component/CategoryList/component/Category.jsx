@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useCallback } from 'react';
 import PropTypes from 'prop-types';
 import './style.css';
 import { Link } from 'react-router-dom';
@@ -13,24 +13,46 @@ const Category = ({
   id,
   deleteCategory,
   deleteSubCategory,
+  deleteCategoryWithTodo,
+  editNameCategory,
+  editNameSubCategory,
 }) => {
-  const setStatus = (e) => {
-    showTodo(e.target.dataset.name, Number(e.target.dataset.idcategory));
-  };
+  const setStatus = useCallback(
+    (e) => {
+      showTodo(e.target.dataset.name, Number(e.target.dataset.idcategory));
+    },
+    [showTodo],
+  );
 
-  const addNewSubCategory = (e) => {
-    addSubCategory(
-      e.target.dataset.id,
-      `${e.target.dataset.id} ${Date.now()}`,
-      Date.now(),
-    );
-  };
+  const addNewSubCategory = useCallback(
+    (e) => {
+      addSubCategory(
+        e.target.dataset.id,
+        `sub  ${e.target.dataset.id}`,
+        Date.now(),
+      );
+    },
+    [addSubCategory],
+  );
 
-  const editCategory = () => {};
+  const editCategory = useCallback(
+    (e) => {
+      editNameCategory(
+        prompt('change name Category', e.target.dataset.name) ||
+          e.target.dataset.name,
+        Number(e.target.dataset.id),
+      );
+    },
+    [editNameCategory],
+  );
 
   const delCategory = (e) => {
-    deleteCategory(Number(e.target.dataset.id));
+    // eslint-disable-next-line no-restricted-globals,no-unused-expressions
+    confirm('Are you sure to do this?') &&
+      deleteCategory(Number(e.target.dataset.id)) &&
+      deleteCategoryWithTodo(Number(e.target.dataset.id));
   };
+
   return (
     <>
       <li>
@@ -50,7 +72,12 @@ const Category = ({
                 {name}
               </span>
             </Link>
-            <button type="button" data-id={id} onClick={editCategory}>
+            <button
+              type="button"
+              data-id={id}
+              data-name={name}
+              onClick={editCategory}
+            >
               edit
             </button>
           </div>
@@ -64,7 +91,7 @@ const Category = ({
           </div>
         </div>
       </li>
-      <ul>
+      <ol>
         {subCategory.map((item) => (
           <SubCategory
             name={item.nameSubCategory}
@@ -73,10 +100,12 @@ const Category = ({
             id={item.id}
             showTodo={showTodo}
             deleteSubCategory={deleteSubCategory}
+            deleteCategoryWithTodo={deleteCategoryWithTodo}
+            editNameSubCategory={editNameSubCategory}
             key={item.id}
           />
         ))}
-      </ul>
+      </ol>
     </>
   );
 };

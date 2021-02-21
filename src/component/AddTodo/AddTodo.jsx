@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { checkCategoryStatus } from '../../store/selectors/categories';
+// import { checkCategoryStatus } from '../../store/selectors/categories';
 // import withInput from '../../common/helpers/inputHOC';
 
 const AddTodo = ({ categories, addTodo }) => {
@@ -9,15 +9,12 @@ const AddTodo = ({ categories, addTodo }) => {
   const onSubmit = (e) => {
     e.preventDefault();
     if (textInput.current.value.length) {
-      if (
-        checkCategoryStatus(categories) &&
-        !checkCategoryStatus(categories).subCategories
-      ) {
+      if (categories && !categories.subCategories) {
         addTodo(
           textInput.current.value,
-          checkCategoryStatus(categories).nameCategory,
-          checkCategoryStatus(categories).id,
-          checkCategoryStatus(categories).nameSubCategory,
+          categories.nameCategory,
+          categories.id,
+          categories.nameSubCategory,
           Date.now(),
         );
       } else {

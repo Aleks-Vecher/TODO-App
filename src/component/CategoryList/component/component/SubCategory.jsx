@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useCallback } from 'react';
 import './style.css';
 import { Link } from 'react-router-dom';
 
@@ -8,16 +8,32 @@ const SubCategory = ({
   id,
   status,
   deleteSubCategory,
+  deleteCategoryWithTodo,
+  editNameSubCategory,
   nameCategory,
 }) => {
   const setStatusSubCategory = (e) => {
     showTodo(e.target.dataset.name, Number(e.target.dataset.idsubcategory));
   };
+  const editSubCategory = useCallback(
+    (e) => {
+      editNameSubCategory(
+        prompt('change name subCategory', e.target.dataset.subname) ||
+          e.target.dataset.subname,
+        Number(e.target.dataset.id),
+      );
+    },
+    [editNameSubCategory],
+  );
+
   const delSubCategory = (e) => {
-    deleteSubCategory(
-      Number(e.target.dataset.id),
-      e.target.dataset.namecategory,
-    );
+    // eslint-disable-next-line no-restricted-globals,no-unused-expressions
+    confirm('Are you sure to do this?') &&
+      deleteSubCategory(
+        Number(e.target.dataset.id),
+        e.target.dataset.namecategory,
+      ) &&
+      deleteCategoryWithTodo(Number(e.target.dataset.id));
   };
   return (
     <li>
@@ -37,7 +53,12 @@ const SubCategory = ({
               {name}
             </span>
           </Link>
-          <button type="button" data-id={id}>
+          <button
+            type="button"
+            data-subname={name}
+            data-id={id}
+            onClick={editSubCategory}
+          >
             edit
           </button>
         </div>

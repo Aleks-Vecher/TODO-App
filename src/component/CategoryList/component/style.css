@@ -9,7 +9,7 @@
 
 .linkCategory:active,
 .linkCategory,
-.linkCategory:hover{
-  color:black;
+.linkCategory:hover {
+  color: black;
   text-decoration: none;
 }

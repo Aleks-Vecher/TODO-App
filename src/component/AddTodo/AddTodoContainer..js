@@ -1,10 +1,10 @@
 import { connect } from 'react-redux';
 import AddTodo from './AddTodo';
 import { addTodo } from '../../store/reducers/todo';
+import { getCategoryWithActiveStatus } from '../../store/selectors/categories';
 
 const mapStateToProps = (state) => ({
-  todo: state.data.todo,
-  categories: state.data.categories,
+  categories: getCategoryWithActiveStatus(state),
 });
 
 const mapDispatchToProps = {

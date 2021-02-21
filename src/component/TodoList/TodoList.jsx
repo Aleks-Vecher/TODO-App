@@ -1,5 +1,5 @@
 import React from 'react';
-import { checkCategoryStatus } from '../../store/selectors/categories';
+// import { checkCategoryStatus } from '../../store/selectors/categories';
 import Todo from './component/Todo';
 import EditTodo from './component/EditTodo';
 
@@ -35,8 +35,8 @@ const TodoList = ({
     <ul>
       {todo.map(
         (item) =>
-          checkCategoryStatus(categories) &&
-          item.id === checkCategoryStatus(categories).id && (
+          categories &&
+          item.id === categories.id && (
             <Todo
               nameTodo={item.nameTodo}
               key={item.idTodo}
