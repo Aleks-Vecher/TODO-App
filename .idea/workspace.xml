@@ -1,7 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8ad70d1c-145f-41bb-b449-b2e3387f5f10" name="Default Changelist" comment="Merge branch 'develop' of https://github.com/Aleks-Vecher/TODO-App into develop" />
+    <list default="true" id="8ad70d1c-145f-41bb-b449-b2e3387f5f10" name="Default Changelist" comment="Merge branch 'develop' of https://github.com/Aleks-Vecher/TODO-App into develop">
+      <change beforePath="$PROJECT_DIR$/.eslintrc.json" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintrc.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/AddCategory/AddCategory.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/AddCategory/AddCategory.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/AddCategory/AddCategoryContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/AddCategory/AddCategoryContainer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/AddCategory/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/AddCategory/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/AddTodo/AddTodo.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/AddTodo/AddTodo.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/AddTodo/AddTodoContainer..js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/AddTodo/AddTodoContainer..js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/AddTodo/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/AddTodo/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/CategoryList/CategoryList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/CategoryList/CategoryList.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/CategoryList/CategoryListContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/CategoryList/CategoryListContainer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/CategoryList/component/Category.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/CategoryList/component/Category.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/CategoryList/component/component/SubCategory.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/CategoryList/component/component/SubCategory.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/CategoryList/component/component/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/CategoryList/component/component/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/CategoryList/component/component/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/CategoryList/component/component/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/CategoryList/component/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/CategoryList/component/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/CategoryList/component/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/CategoryList/component/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/CategoryList/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/CategoryList/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/Filter/Filter.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Filter/Filter.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/Filter/FilterContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Filter/FilterContainer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/Filter/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/Filter/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/ProgressBar/ProgressBar.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/ProgressBar/ProgressBar.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/ProgressBar/ProgressBarContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/ProgressBar/ProgressBarContainer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/ProgressBar/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/ProgressBar/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/TodoList/TodoList.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/TodoList/TodoList.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/TodoList/TodoListContainer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/TodoList/TodoListContainer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/TodoList/component/EditTodo/EditTodo.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/TodoList/component/EditTodo/EditTodo.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/TodoList/component/EditTodo/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/TodoList/component/EditTodo/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/TodoList/component/Todo/Todo.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/TodoList/component/Todo/Todo.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/TodoList/component/Todo/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/TodoList/component/Todo/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/TodoList/component/Todo/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/TodoList/component/Todo/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/component/TodoList/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/component/TodoList/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/reducers/categories.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/reducers/categories.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/reducers/category.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/reducers/category.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/reducers/filter.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/reducers/filter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/reducers/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/reducers/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/reducers/subCategory.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/reducers/subCategory.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/reducers/todo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/reducers/todo.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/reducers/todos.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/reducers/todos.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/selectors/categories.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/selectors/categories.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/store/selectors/todo.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/store/selectors/todo.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -117,9 +163,9 @@
     <recent_temporary>
       <list>
         <item itemvalue="npm.start" />
-        <item itemvalue="npm.server" />
-        <item itemvalue="npm.prettier:" />
         <item itemvalue="npm.lint:write" />
+        <item itemvalue="npm.prettier:" />
+        <item itemvalue="npm.server" />
         <item itemvalue="npm.lint" />
       </list>
     </recent_temporary>
@@ -173,6 +219,7 @@
       <workItem from="1613756289374" duration="2363000" />
       <workItem from="1613800930875" duration="13083000" />
       <workItem from="1613832543908" duration="429000" />
+      <workItem from="1613929338639" duration="2213000" />
     </task>
     <task id="LOCAL-00001" summary="webpack esLint prettier settings were performed">
       <created>1609943562006</created>
@@ -306,7 +353,8 @@
     <MESSAGE value="Filter component creation" />
     <MESSAGE value="Router has been created" />
     <MESSAGE value="solving issue with the untracked files" />
-    <option name="LAST_COMMIT_MESSAGE" value="solving issue with the untracked files" />
+    <MESSAGE value="Creation the options of edit Category and SubCategory" />
+    <option name="LAST_COMMIT_MESSAGE" value="Creation the options of edit Category and SubCategory" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -9,7 +9,7 @@
 
 .linkRoute:active,
 .linkRoute,
-.linkRoute:hover{
-  color:black;
+.linkRoute:hover {
+  color: black;
   text-decoration: none;
 }

@@ -14,6 +14,8 @@ const SAVE_TODO_ITEM = 'SAVE_TODO_ITEM';
 const CANCEL_SAVE_TODO_ITEM = 'CANCEL_SAVE_TODO_ITEM';
 const TOGGLE_DONE_TODO = 'TOGGLE_DONE_TODO';
 const SET_DONE_TODO = 'SET_DONE_TODO';
+const DELETE_CATEGORY_WITH_TODO = 'DELETE_CATEGORY_WITH_TODO';
+const DELETE_DELETED_TODO = 'DELETE_DELETED_TODO';
 
 export const editTodo = (id) => ({
   type: EDIT_TODO,
@@ -50,6 +52,16 @@ export const toggleDoneTodo = (checked) => ({
 export const setDoneTodo = (id) => ({
   type: SET_DONE_TODO,
   payload: id,
+});
+
+export const deleteCategoryWithTodo = (id) => ({
+  type: DELETE_CATEGORY_WITH_TODO,
+  payload: id,
+});
+
+export const deleteTodo = (arrayId) => ({
+  type: DELETE_DELETED_TODO,
+  payload: arrayId,
 });
 
 export const todosReducer = (state = initialState, action) => {
@@ -128,6 +140,20 @@ export const todosReducer = (state = initialState, action) => {
             completed: !item.completed,
           };
         }),
+      };
+    }
+    case DELETE_CATEGORY_WITH_TODO: {
+      return {
+        ...state,
+        todo: state.todo.filter((item) => item.id !== action.payload),
+      };
+    }
+    case DELETE_DELETED_TODO: {
+      return {
+        ...state,
+        todo: state.todo.filter(
+          (item) => action.payload.indexOf(item.id) === -1,
+        ),
       };
     }
     default:

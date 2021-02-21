@@ -11,9 +11,9 @@ const subCategoryReducer = (state = initialState, action) => {
     case ADD_SUBCATEGORY:
       return {
         ...state,
-        category: action.payload,
-        nameSubCategory: action.nameSubCategory,
-        id: action.id,
+        category: action.payload.nameCategory,
+        nameSubCategory: action.payload.nameSubCategory,
+        id: action.payload.id,
       };
     default:
   }

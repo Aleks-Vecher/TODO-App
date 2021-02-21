@@ -17,11 +17,13 @@ export const addTodo = (
   idTodo,
 ) => ({
   type: ADD_TODO,
-  payload: nameTodo,
-  nameCategory,
-  id,
-  nameSubCategory,
-  idTodo,
+  payload: {
+    nameTodo,
+    nameCategory,
+    id,
+    nameSubCategory,
+    idTodo,
+  },
 });
 
 export const todoReducer = (state = initialState, action) => {
@@ -29,11 +31,11 @@ export const todoReducer = (state = initialState, action) => {
     case ADD_TODO:
       return {
         ...state,
-        nameTodo: action.payload,
-        nameCategory: action.nameCategory,
-        id: action.id,
-        nameSubCategory: action.nameSubCategory,
-        idTodo: action.idTodo,
+        nameTodo: action.payload.nameTodo,
+        nameCategory: action.payload.nameCategory,
+        id: action.payload.id,
+        nameSubCategory: action.payload.nameSubCategory,
+        idTodo: action.payload.idTodo,
       };
     default:
   }

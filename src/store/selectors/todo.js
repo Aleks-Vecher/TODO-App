@@ -1,4 +1,6 @@
 import { createSelector } from 'reselect';
+import { deleteTodo } from '../reducers/todos';
+import store from '..';
 
 export const getTodo = (state) => state.todo.todo;
 export const getTodoToggle = (state) => state.todo.editToggleTodo;
@@ -9,6 +11,7 @@ export const getSearchValue = (state) => state.filter.searchValue;
 export const getCompletedTodo = createSelector(
   (state) => getTodo(state),
   (todo) =>
+    todo.length &&
     Math.round(
       (todo.filter((item) => item.completed).length / todo.length) * 100,
     ),
@@ -42,4 +45,9 @@ export const getFilteredTodoBySearchValue = createSelector(
           .toLowerCase()
           .indexOf(searchValue.trim().toLowerCase()) > -1,
     ),
+);
+
+export const getTodoStateWithDelAction = createSelector(
+  (state) => state.data.deleted,
+  (deleted) => store.dispatch(deleteTodo(deleted)),
 );

@@ -8,6 +8,9 @@ const CategoryList = ({
   deleteCategory,
   addSubCategory,
   deleteSubCategory,
+  deleteCategoryWithTodo,
+  editNameCategory,
+  editNameSubCategory,
 }) => (
   <ul>
     {categories.map((item) => (
@@ -18,9 +21,12 @@ const CategoryList = ({
         id={item.id}
         showTodo={showTodo}
         deleteSubCategory={deleteSubCategory}
+        deleteCategoryWithTodo={deleteCategoryWithTodo}
         deleteCategory={deleteCategory}
         addSubCategory={addSubCategory}
         subCategory={item.subCategory}
+        editNameCategory={editNameCategory}
+        editNameSubCategory={editNameSubCategory}
       />
     ))}
   </ul>
