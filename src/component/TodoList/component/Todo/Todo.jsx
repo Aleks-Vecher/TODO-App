@@ -1,6 +1,6 @@
 import React, { useCallback } from 'react';
-import './style.css';
 import { Link } from 'react-router-dom';
+import style from './Todo.css';
 
 const Todo = ({ nameTodo, editTodoNew, id, completed, setDoneTodo }) => {
   const setDone = useCallback(
@@ -10,14 +10,18 @@ const Todo = ({ nameTodo, editTodoNew, id, completed, setDoneTodo }) => {
     [setDoneTodo],
   );
   return (
-    <li key={nameTodo}>
-      <div className="row">
-        <div className="col-8">
-          <Link className="linkTodo" to={`/todo/${id}`}>
+    <li key={nameTodo} className={style.item}>
+      <div className={style.container}>
+        <div>
+          <Link className={style.linkTodo} to={`/todo/${id}`}>
             <span
+              className={
+                completed
+                  ? `${style.todoItem} ${style.colorTodoItem}`
+                  : `${style.todoItem}`
+              }
               role="link"
               aria-hidden="true"
-              className={completed ? 'todoItem colorTodoItem' : 'todoItem'}
               onClick={setDone}
               id={id}
             >
@@ -26,7 +30,12 @@ const Todo = ({ nameTodo, editTodoNew, id, completed, setDoneTodo }) => {
           </Link>
         </div>
         <div className="col-4">
-          <button type="button" id={id} onClick={editTodoNew}>
+          <button
+            className={style.edit}
+            type="button"
+            id={id}
+            onClick={editTodoNew}
+          >
             edit
           </button>
         </div>

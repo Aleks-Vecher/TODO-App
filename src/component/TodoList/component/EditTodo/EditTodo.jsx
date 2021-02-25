@@ -1,4 +1,5 @@
 import React, { useCallback } from 'react';
+import style from './EditTodo.css';
 
 const EditTodo = ({
   editTodoItem,
@@ -43,10 +44,10 @@ const EditTodo = ({
   return (
     <form>
       <div>
-        <button type="button" onClick={saveTodo}>
+        <button className={style.save} type="button" onClick={saveTodo}>
           Save Changes
         </button>
-        <button type="button" onClick={cancelTodo}>
+        <button className={style.cancel} type="button" onClick={cancelTodo}>
           Cancel
         </button>
       </div>
@@ -59,6 +60,7 @@ const EditTodo = ({
       Done
       <div>
         <input
+          className={style.input}
           value={editTodoItem.nameTodo}
           type="text"
           onChange={setInputValue}
@@ -66,6 +68,7 @@ const EditTodo = ({
       </div>
       <div>
         <textarea
+          className={style.textarea}
           placeholder="Description"
           value={editTodoItem.description}
           onChange={setTextareaValue}

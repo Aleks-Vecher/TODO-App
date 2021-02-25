@@ -5,32 +5,38 @@ import TodoList from './component/TodoList';
 import AddTodo from './component/AddTodo';
 import ProgressBar from './component/ProgressBar';
 import Filter from './component/Filter';
+import style from './App.css';
+import pic from './common/pictures/wallpaperflare-cropped33.jpg';
 
 const App = () => (
-  <div className="start-screen-container m-4">
-    <div className="row header">
-      <div className="col-6">
-        <h1>To-Do List</h1>
+  <div className={style.section}>
+    <div className={style.container}>
+      <div className={style.header}>
+        <h1 className={style.name}>To-Do List</h1>
+        <div>
+          <img alt="" src={pic} />
+        </div>
+        <div className={style.filter}>
+          <Filter />
+        </div>
       </div>
-      <div className="col-6">
-        <Filter />
-      </div>
-    </div>
-    <div className="row ">
-      <div className="col-12 progressBar">
-        <p>progressBar</p>
+      <div className={style.progressbar}>
         <ProgressBar />
       </div>
-    </div>
-    <div className="row">
-      <div className="col-6 categories">
-        <AddCategory />
-        <CategoryList />
+      <div className={style.main}>
+        <div className={style.category}>
+          <AddCategory />
+          <CategoryList />
+        </div>
+        <div className={style.todo}>
+          <AddTodo />
+          <TodoList />
+        </div>
       </div>
-      <div className="col-6 task">
-        <AddTodo />
-        <TodoList />
-      </div>
+      <p>
+        Please, do not hesitate to contact me, if you are interested in hiring
+        me :) Skype: aleksandr.vecher
+      </p>
     </div>
   </div>
 );

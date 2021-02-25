@@ -1,8 +1,11 @@
-import { ProgressBar } from 'react-bootstrap';
+// import { ProgressBar } from 'react-bootstrap';
 import React from 'react';
+import ProgBar from './ProgBar';
 
-const ProgBar = ({ todo }) => (
-  <ProgressBar now={todo} label={`${todo || '0'}%`} />
+const ProgressBar = ({ todo }) => (
+  <div className="App">
+    <ProgBar completed={todo} />
+  </div>
 );
 
-export default ProgBar;
+export default ProgressBar;

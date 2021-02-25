@@ -1,5 +1,4 @@
 import React from 'react';
-// import { checkCategoryStatus } from '../../store/selectors/categories';
 import Todo from './component/Todo';
 import EditTodo from './component/EditTodo';
 

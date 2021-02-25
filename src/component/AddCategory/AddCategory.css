@@ -1,0 +1,31 @@
+.form {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3px;
+}
+
+.input {
+  width: 100%;
+  border: 3px solid #b27cf5;
+  border-radius: 3px;
+}
+
+.button {
+  display: inline-block;
+  margin: 0 auto;
+
+  text-decoration: none;
+  text-transform: uppercase;
+
+  color: #ffffff;
+  background-color: #fc5f45;
+  border-radius: 3px;
+
+  transition: all 0.5s linear;
+}
+
+.button:hover {
+  background-color: #ab3f2d;
+  color: #110b0a;
+}

@@ -1,7 +1,7 @@
 import React, { useCallback } from 'react';
 import PropTypes from 'prop-types';
-import './style.css';
 import { Link } from 'react-router-dom';
+import style from './Category.css';
 import SubCategory from './component';
 
 const Category = ({
@@ -56,23 +56,28 @@ const Category = ({
   return (
     <>
       <li>
-        <div className="row">
-          <div className="col-6 Edit">
-            <Link className="linkCategory" to={`/category/${id}`}>
+        <div className={style.container}>
+          <div className="Edit">
+            <Link className={style.linkCategory} to={`/category/${id}`}>
               <span
                 role="link"
                 aria-hidden="true"
                 data-name={name}
                 data-idcategory={id}
                 className={
-                  status ? 'nameCategory colorCategory' : 'nameCategory'
+                  status
+                    ? `${style.nameCategory} ${style.colorCategory}`
+                    : `${style.nameCategory}`
                 }
                 onClick={setStatus}
               >
                 {name}
               </span>
             </Link>
+          </div>
+          <div className="trash">
             <button
+              className={style.edit}
               type="button"
               data-id={id}
               data-name={name}
@@ -80,18 +85,26 @@ const Category = ({
             >
               edit
             </button>
-          </div>
-          <div className="col-6 trash">
-            <button type="button" data-id={id} onClick={delCategory}>
+            <button
+              className={style.del}
+              type="button"
+              data-id={id}
+              onClick={delCategory}
+            >
               del
             </button>
-            <button type="button" data-id={name} onClick={addNewSubCategory}>
+            <button
+              className={style.add}
+              type="button"
+              data-id={name}
+              onClick={addNewSubCategory}
+            >
               add
             </button>
           </div>
         </div>
       </li>
-      <ol>
+      <ol className={style.list}>
         {subCategory.map((item) => (
           <SubCategory
             name={item.nameSubCategory}
