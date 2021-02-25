@@ -1,0 +1,45 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+.colorCategory {
+  color: #ea0b0b;
+}
+
+.nameCategory:hover {
+  cursor: pointer;
+  background: #e8efed;
+}
+
+.linkCategory:active,
+.linkCategory,
+.linkCategory:hover {
+  color: black;
+  text-decoration: none;
+}
+
+.list {
+  padding: 3px 0 3px 15px;
+}
+
+.edit {
+  margin: 0 2px;
+  text-decoration: none;
+  background-color: #b27cf5;
+  border-radius: 3px;
+  transition: all 0.2s linear;
+  color: #ffffff;
+}
+.del:hover,
+.add:hover,
+.edit:hover {
+  color: #110b0a;
+}
+
+.del {
+  composes: edit;
+}
+
+.add {
+  composes: edit;
+}

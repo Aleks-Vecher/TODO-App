@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import PropTypes from 'prop-types';
+import style from './AddCategory.css';
 
 const AddCategory = ({ addCategory }) => {
   const textInput = React.createRef();
@@ -16,9 +17,16 @@ const AddCategory = ({ addCategory }) => {
     textInput.current.focus();
   };
   return (
-    <form onSubmit={onSubmit}>
-      <input ref={textInput} type="text" placeholder="Enter Category title" />
-      <button type="submit">ADD</button>
+    <form className={style.form} onSubmit={onSubmit}>
+      <input
+        className={style.input}
+        ref={textInput}
+        type="text"
+        placeholder="Enter Category title"
+      />
+      <button className={style.button} type="submit">
+        ADD
+      </button>
     </form>
   );
 };

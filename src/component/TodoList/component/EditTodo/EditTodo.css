@@ -1,0 +1,15 @@
+.save {
+  composes: edit from '../../../CategoryList/component/Category.css';
+}
+
+.cancel {
+  composes: edit from '../../../CategoryList/component/Category.css';
+}
+
+.input {
+  width: 100%;
+}
+
+.textarea {
+  width: 100%;
+}

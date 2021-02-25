@@ -1,3 +1,3 @@
-import ProgBar from './ProgressBarContainer';
+import ProgressBar from './ProgressBarContainer';
 
-export default ProgBar;
+export default ProgressBar;

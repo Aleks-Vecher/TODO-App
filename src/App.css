@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  box-sizing: border-box;
+  outline: none;
+}
+
+.section {
+  padding: 15px 0;
+}
+
+.container {
+  max-width: 1140px;
+  box-sizing: border-box;
+  padding: 20px 15px;
+  margin: auto;
+  background-color: #f7f7f7;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 15px;
+  background-color: #59f107;
+}
+
+.name {
+  margin: 15px 0;
+}
+
+.filter {
+  display: flex;
+  align-items: flex-end;
+}
+
+.progressbar {
+  margin: 25px 0;
+}
+.category {
+  width: 50%;
+  padding: 0 15px;
+}
+.todo {
+  width: 50%;
+  padding: 0 15px;
+}
+.main {
+  display: flex;
+  justify-content: space-around;
+  margin: 50px 0;
+}

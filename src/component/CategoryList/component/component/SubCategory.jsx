@@ -1,6 +1,6 @@
 import React, { useCallback } from 'react';
-import './style.css';
 import { Link } from 'react-router-dom';
+import style from './SubCategory.css';
 
 const SubCategory = ({
   name,
@@ -37,23 +37,28 @@ const SubCategory = ({
   };
   return (
     <li>
-      <div className="row">
-        <div className="col-6 edit">
-          <Link className="linkRoute" to={`/category/subcategory/${id}`}>
+      <div className={style.container}>
+        <div className="edit">
+          <Link className={style.linkRoute} to={`/category/subcategory/${id}`}>
             <span
               role="link"
               aria-hidden="true"
               data-name={name}
               data-idsubcategory={id}
               className={
-                status ? 'nameSubCategory colorSubCategory' : 'nameSubCategory'
+                status
+                  ? `${style.nameSubCategory} ${style.colorSubCategory}`
+                  : `${style.nameSubCategory}`
               }
               onClick={setStatusSubCategory}
             >
               {name}
             </span>
           </Link>
+        </div>
+        <div className="trash">
           <button
+            className={style.edit}
             type="button"
             data-subname={name}
             data-id={id}
@@ -61,9 +66,8 @@ const SubCategory = ({
           >
             edit
           </button>
-        </div>
-        <div className="col-6 trash">
           <button
+            className={style.del}
             type="button"
             data-id={id}
             data-namecategory={nameCategory}
