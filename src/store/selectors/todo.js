@@ -3,7 +3,6 @@ import { deleteTodo } from '../reducers/todos';
 import store from '..';
 
 export const getTodo = (state) => state.todo.todo;
-export const getTodoToggle = (state) => state.todo.editToggleTodo;
 export const getEditTodo = (state) => state.todo.editTodo;
 export const getFilter = (state) => state.filter.filter;
 export const getSearchValue = (state) => state.filter.searchValue;

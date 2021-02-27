@@ -3,7 +3,6 @@ import subCategoryReducer from './subCategory';
 
 const initialState = {
   categories: [],
-  subCategories: [],
   deleted: [],
 };
 
@@ -23,9 +22,15 @@ export const addCategory = (nameCategory, id) => ({
   },
 });
 
-export const addSubCategory = (nameCategory, nameSubCategory, id) => ({
+export const addSubCategory = (
+  idCategory,
+  nameCategory,
+  nameSubCategory,
+  id,
+) => ({
   type: ADD_SUBCATEGORY,
   payload: {
+    idCategory,
     nameCategory,
     nameSubCategory,
     id,
@@ -84,7 +89,7 @@ export const categoriesReducer = (state = initialState, action) => {
       const nextCategory = Array.from(categories);
       nextCategory.forEach((item) => {
         const nextItem = item;
-        if (action.payload.nameCategory === item.nameCategory) {
+        if (action.payload.idCategory === item.id) {
           nextItem.subCategory = nextItem.subCategory.concat(
             subCategoryReducer(undefined, action),
           );
@@ -95,10 +100,6 @@ export const categoriesReducer = (state = initialState, action) => {
       return {
         ...state,
         categories: [...nextCategory],
-        subCategories: [
-          ...state.subCategories,
-          subCategoryReducer(undefined, action),
-        ],
       };
     }
     case SHOW_TODO: {

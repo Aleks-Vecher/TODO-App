@@ -20,7 +20,7 @@ const AddTodo = ({ categories, addTodo }) => {
         alert('Please Enter and Choose Category or SubCategory');
       }
     } else {
-      alert('Please Enter Todo');
+      alert('Please Enter TodoItems');
     }
     textInput.current.value = '';
     textInput.current.focus();
@@ -31,7 +31,7 @@ const AddTodo = ({ categories, addTodo }) => {
         className={style.input}
         ref={textInput}
         type="text"
-        placeholder="Enter Todo Title"
+        placeholder="Enter Todo Name"
       />
       <button className={style.button} type="submit">
         ADD

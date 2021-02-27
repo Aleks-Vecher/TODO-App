@@ -22,7 +22,7 @@ const AddCategory = ({ addCategory }) => {
         className={style.input}
         ref={textInput}
         type="text"
-        placeholder="Enter Category title"
+        placeholder="Enter Category Title"
       />
       <button className={style.button} type="submit">
         ADD
