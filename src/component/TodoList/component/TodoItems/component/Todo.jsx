@@ -1,19 +1,30 @@
 import React, { useCallback } from 'react';
-import { Link } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 import style from './Todo.css';
 
-const Todo = ({ nameTodo, editTodoNew, id, completed, setDoneTodo }) => {
+const Todo = ({ nameTodo, id, completed, setDoneTodo, editTodo }) => {
+  const history = useHistory();
+
   const setDone = useCallback(
     (e) => {
       setDoneTodo(Number(e.target.id));
     },
     [setDoneTodo],
   );
+
+  const editTodoNew = useCallback(
+    (e) => {
+      editTodo(Number(e.target.id));
+      history.push(`/todo/${id}`);
+    },
+    [editTodo, history, id],
+  );
+
   return (
     <li key={nameTodo} className={style.item}>
       <div className={style.container}>
         <div>
-          <Link className={style.linkTodo} to={`/todo/${id}`}>
+          <div className={style.linkTodo}>
             <span
               className={
                 completed
@@ -27,7 +38,7 @@ const Todo = ({ nameTodo, editTodoNew, id, completed, setDoneTodo }) => {
             >
               {nameTodo}
             </span>
-          </Link>
+          </div>
         </div>
         <div className="col-4">
           <button

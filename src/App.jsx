@@ -1,12 +1,14 @@
 import React from 'react';
-import AddCategory from './component/AddCategory';
-import CategoryList from './component/CategoryList';
-import TodoList from './component/TodoList';
-import AddTodo from './component/AddTodo';
-import ProgressBar from './component/ProgressBar';
-import Filter from './component/Filter';
+import loadable from '@loadable/component';
 import style from './App.css';
 import pic from './common/pictures/wallpaperflare-cropped33.jpg';
+
+const AddCategory = loadable(() => import('./component/AddCategory'));
+const CategoryList = loadable(() => import('./component/CategoryList'));
+const TodoList = loadable(() => import('./component/TodoList'));
+const AddTodo = loadable(() => import('./component/AddTodo'));
+const ProgressBar = loadable(() => import('./component/ProgressBar'));
+const Filter = loadable(() => import('./component/Filter'));
 
 const App = () => (
   <div className={style.section}>

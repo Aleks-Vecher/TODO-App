@@ -1,4 +1,3 @@
-// import { ProgressBar } from 'react-bootstrap';
 import React from 'react';
 import ProgBar from './ProgBar';
 

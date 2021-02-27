@@ -13,12 +13,16 @@ const Filter = ({ sortCompleted, setSearchValue }) => {
   );
   return (
     <form className={style.form}>
-      <input type="checkbox" onClick={setFilterDone} />
+      <input
+        className={style.checkbox}
+        type="checkbox"
+        onClick={setFilterDone}
+      />
       <p className={style.text}>Done</p>
       <input
         className={style.filter}
         type="text"
-        placeholder="Search by name"
+        placeholder="Search Todo by name"
         onChange={searchNameTodo}
       />
     </form>

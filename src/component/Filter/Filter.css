@@ -4,11 +4,15 @@
   margin: 10px;
 }
 
+.checkbox {
+  margin: 10px auto 10px;
+}
+
 .form {
   width: 300px;
   display: flex;
   justify-content: space-between;
-  padding: 9px 0;
+  align-items: center;
 }
 
 .text {

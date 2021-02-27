@@ -1,3 +1,3 @@
-import EditTodo from './EditTodo';
+import EditTodo from './EditTodoContainer';
 
 export default EditTodo;

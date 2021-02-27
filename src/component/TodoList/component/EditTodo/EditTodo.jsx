@@ -1,15 +1,17 @@
 import React, { useCallback } from 'react';
+import { useHistory } from 'react-router-dom';
 import style from './EditTodo.css';
 
 const EditTodo = ({
   editTodoItem,
   setTextarea,
   setInput,
-  editTodoToggle,
   saveTodoItem,
   cancelTodoItem,
   toggleDoneTodo,
 }) => {
+  const history = useHistory();
+
   const setTextareaValue = useCallback(
     (e) => {
       setTextarea(e.target.value);
@@ -24,15 +26,15 @@ const EditTodo = ({
     [setInput],
   );
 
-  const saveTodo = useCallback(() => {
-    editTodoToggle();
+  const saveTodo = () => {
     saveTodoItem();
-  }, [editTodoToggle, saveTodoItem]);
+    history.push(`/category/${editTodoItem.id}`);
+  };
 
-  const cancelTodo = useCallback(() => {
-    editTodoToggle();
+  const cancelTodo = () => {
     cancelTodoItem();
-  }, [editTodoToggle, cancelTodoItem]);
+    history.push(`/category/${editTodoItem.id}`);
+  };
 
   const toggleDone = useCallback(
     (e) => {

@@ -27,7 +27,7 @@
 }
 
 .edit {
-  composes: edit from '../../../CategoryList/component/Category.css';
+  composes: edit from '../../../../CategoryList/component/Category.css';
 }
 
 .edit:hover {

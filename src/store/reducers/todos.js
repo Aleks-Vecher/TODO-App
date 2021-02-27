@@ -2,11 +2,10 @@ import { todoReducer } from './todo';
 
 const initialState = {
   todo: [],
-  editToggleTodo: false,
   editTodo: {},
 };
 const ADD_TODO = 'ADD_TODO';
-const EDIT_TODO_TOGGLE = 'EDIT_TODO_TOGGLE';
+// const EDIT_TODO_TOGGLE = 'EDIT_TODO_TOGGLE';
 const EDIT_TODO = 'EDIT_TODO';
 const SET_TEXTAREA_VALUE = 'SET_TEXTAREA_VALUE';
 const SET_INPUT_VALUE = 'SET_INPUT_VALUE';
@@ -20,10 +19,6 @@ const DELETE_DELETED_TODO = 'DELETE_DELETED_TODO';
 export const editTodo = (id) => ({
   type: EDIT_TODO,
   payload: id,
-});
-
-export const editTodoToggle = () => ({
-  type: EDIT_TODO_TOGGLE,
 });
 
 export const setTextarea = (description) => ({
@@ -70,14 +65,6 @@ export const todosReducer = (state = initialState, action) => {
       return {
         ...state,
         todo: [...state.todo, todoReducer(undefined, action)],
-      };
-    }
-    case EDIT_TODO_TOGGLE: {
-      let nextEditTodo = state.editToggleTodo;
-      nextEditTodo = !nextEditTodo;
-      return {
-        ...state,
-        editToggleTodo: nextEditTodo,
       };
     }
     case EDIT_TODO: {

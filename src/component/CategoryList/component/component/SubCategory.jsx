@@ -1,5 +1,5 @@
 import React, { useCallback } from 'react';
-import { Link } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 import style from './SubCategory.css';
 
 const SubCategory = ({
@@ -12,8 +12,11 @@ const SubCategory = ({
   editNameSubCategory,
   nameCategory,
 }) => {
+  const history = useHistory();
+
   const setStatusSubCategory = (e) => {
     showTodo(e.target.dataset.name, Number(e.target.dataset.idsubcategory));
+    history.push(`/category/${id}`);
   };
   const editSubCategory = useCallback(
     (e) => {
@@ -39,7 +42,7 @@ const SubCategory = ({
     <li>
       <div className={style.container}>
         <div className="edit">
-          <Link className={style.linkRoute} to={`/category/subcategory/${id}`}>
+          <div className={style.linkRoute}>
             <span
               role="link"
               aria-hidden="true"
@@ -54,7 +57,7 @@ const SubCategory = ({
             >
               {name}
             </span>
-          </Link>
+          </div>
         </div>
         <div className="trash">
           <button

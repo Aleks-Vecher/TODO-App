@@ -1,6 +1,6 @@
 import React, { useCallback } from 'react';
 import PropTypes from 'prop-types';
-import { Link } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 import style from './Category.css';
 import SubCategory from './component';
 
@@ -17,18 +17,22 @@ const Category = ({
   editNameCategory,
   editNameSubCategory,
 }) => {
+  const history = useHistory();
+
   const setStatus = useCallback(
     (e) => {
       showTodo(e.target.dataset.name, Number(e.target.dataset.idcategory));
+      history.push(`/category/${id}`);
     },
-    [showTodo],
+    [showTodo, history, id],
   );
 
   const addNewSubCategory = useCallback(
     (e) => {
       addSubCategory(
-        e.target.dataset.id,
-        `sub  ${e.target.dataset.id}`,
+        Number(e.target.dataset.id),
+        e.target.dataset.name,
+        `sub  ${e.target.dataset.name}`,
         Date.now(),
       );
     },
@@ -58,7 +62,7 @@ const Category = ({
       <li>
         <div className={style.container}>
           <div className="Edit">
-            <Link className={style.linkCategory} to={`/category/${id}`}>
+            <div className={style.linkCategory}>
               <span
                 role="link"
                 aria-hidden="true"
@@ -73,7 +77,7 @@ const Category = ({
               >
                 {name}
               </span>
-            </Link>
+            </div>
           </div>
           <div className="trash">
             <button
@@ -96,7 +100,8 @@ const Category = ({
             <button
               className={style.add}
               type="button"
-              data-id={name}
+              data-name={name}
+              data-id={id}
               onClick={addNewSubCategory}
             >
               add

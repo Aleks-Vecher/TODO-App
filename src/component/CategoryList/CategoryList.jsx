@@ -15,7 +15,7 @@ const CategoryList = ({
   <ul>
     {categories.map((item) => (
       <Category
-        key={item.nameCategory}
+        key={item.id}
         name={item.nameCategory}
         status={item.active}
         id={item.id}

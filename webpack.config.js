@@ -4,10 +4,6 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const {BundleAnalyzerPlugin} = require('webpack-bundle-analyzer')
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
-// const TerserPlugin = require("terser-webpack-plugin");
-// const middleware = require('webpack-dev-middleware')
-// const webpackConfig = require('./webpack.config');
-// const CssMinimizerPlugin = require('css-minimizer-webpack-plugin')
 
 module.exports = {
   mode: "development",
@@ -48,12 +44,11 @@ module.exports = {
         use: ['style-loader', {
           loader: 'css-loader',
           options: {
-            // importLoaders: 1,
             modules: true,
-            // localIdentName: "[name]__[local]___[hash:base64:5]"
+            importLoaders: 1,
           },
         },
-          // 'postcss-loader'
+          'postcss-loader'
           ],
       },
       {
