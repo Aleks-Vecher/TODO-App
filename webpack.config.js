@@ -4,10 +4,6 @@ const HtmlWebpackPlugin = require('html-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const {BundleAnalyzerPlugin} = require('webpack-bundle-analyzer')
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
-// const TerserPlugin = require("terser-webpack-plugin");
-// const middleware = require('webpack-dev-middleware')
-// const webpackConfig = require('./webpack.config');
-// const CssMinimizerPlugin = require('css-minimizer-webpack-plugin')
 
 module.exports = {
   mode: "development",
@@ -45,7 +41,15 @@ module.exports = {
       },
       {
         test: /\.css$/i,
-        use: ['style-loader', 'css-loader'],
+        use: ['style-loader', {
+          loader: 'css-loader',
+          options: {
+            modules: true,
+            importLoaders: 1,
+          },
+        },
+          'postcss-loader'
+          ],
       },
       {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,

@@ -1,0 +1,19 @@
+.form {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 3px;
+}
+
+.input {
+  composes: input from '../AddCategory/AddCategory.css';
+}
+
+.button {
+  composes: button from '../AddCategory/AddCategory.css';
+}
+
+.button:hover {
+  background-color: #ab3f2d;
+  color: #110b0a;
+}

@@ -1,7 +1,7 @@
-import React from 'react';
+import React, { useCallback } from 'react';
 import PropTypes from 'prop-types';
-import './style.css';
-import { Link } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
+import style from './Category.css';
 import SubCategory from './component';
 
 const Category = ({
@@ -13,58 +13,103 @@ const Category = ({
   id,
   deleteCategory,
   deleteSubCategory,
+  deleteCategoryWithTodo,
+  editNameCategory,
+  editNameSubCategory,
 }) => {
-  const setStatus = (e) => {
-    showTodo(e.target.dataset.name, Number(e.target.dataset.idcategory));
-  };
+  const history = useHistory();
 
-  const addNewSubCategory = (e) => {
-    addSubCategory(
-      e.target.dataset.id,
-      `${e.target.dataset.id} ${Date.now()}`,
-      Date.now(),
-    );
-  };
+  const setStatus = useCallback(
+    (e) => {
+      showTodo(e.target.dataset.name, Number(e.target.dataset.idcategory));
+      history.push(`/category/${id}`);
+    },
+    [showTodo, history, id],
+  );
 
-  const editCategory = () => {};
+  const addNewSubCategory = useCallback(
+    (e) => {
+      addSubCategory(
+        Number(e.target.dataset.id),
+        e.target.dataset.name,
+        `sub  ${e.target.dataset.name}`,
+        Date.now(),
+      );
+    },
+    [addSubCategory],
+  );
+
+  const editCategory = useCallback(
+    (e) => {
+      editNameCategory(
+        prompt('change name Category', e.target.dataset.name) ||
+          e.target.dataset.name,
+        Number(e.target.dataset.id),
+      );
+    },
+    [editNameCategory],
+  );
 
   const delCategory = (e) => {
-    deleteCategory(Number(e.target.dataset.id));
+    // eslint-disable-next-line no-restricted-globals,no-unused-expressions
+    confirm('Are you sure to do this?') &&
+      deleteCategory(Number(e.target.dataset.id)) &&
+      deleteCategoryWithTodo(Number(e.target.dataset.id));
   };
+
   return (
     <>
       <li>
-        <div className="row">
-          <div className="col-6 Edit">
-            <Link className="linkCategory" to={`/category/${id}`}>
+        <div className={style.container}>
+          <div className="Edit">
+            <div className={style.linkCategory}>
               <span
                 role="link"
                 aria-hidden="true"
                 data-name={name}
                 data-idcategory={id}
                 className={
-                  status ? 'nameCategory colorCategory' : 'nameCategory'
+                  status
+                    ? `${style.nameCategory} ${style.colorCategory}`
+                    : `${style.nameCategory}`
                 }
                 onClick={setStatus}
               >
                 {name}
               </span>
-            </Link>
-            <button type="button" data-id={id} onClick={editCategory}>
+            </div>
+          </div>
+          <div className="trash">
+            <button
+              className={style.edit}
+              type="button"
+              data-id={id}
+              data-name={name}
+              onClick={editCategory}
+            >
               edit
             </button>
-          </div>
-          <div className="col-6 trash">
-            <button type="button" data-id={id} onClick={delCategory}>
+            <button
+              className={style.del}
+              type="button"
+              data-id={id}
+              onClick={delCategory}
+            >
               del
             </button>
-            <button type="button" data-id={name} onClick={addNewSubCategory}>
+            <button
+              className={style.add}
+              type="button"
+              data-name={name}
+              data-id={id}
+              onClick={addNewSubCategory}
+            >
               add
             </button>
           </div>
         </div>
       </li>
-      <ul>
+      <ol className={style.list}>
         {subCategory.map((item) => (
           <SubCategory
             name={item.nameSubCategory}
@@ -73,10 +118,12 @@ const Category = ({
             id={item.id}
             showTodo={showTodo}
             deleteSubCategory={deleteSubCategory}
+            deleteCategoryWithTodo={deleteCategoryWithTodo}
+            editNameSubCategory={editNameSubCategory}
             key={item.id}
           />
         ))}
-      </ul>
+      </ol>
     </>
   );
 };

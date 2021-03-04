@@ -1,14 +1,17 @@
 import React, { useCallback } from 'react';
+import { useHistory } from 'react-router-dom';
+import style from './EditTodo.css';
 
 const EditTodo = ({
   editTodoItem,
   setTextarea,
   setInput,
-  editTodoToggle,
   saveTodoItem,
   cancelTodoItem,
   toggleDoneTodo,
 }) => {
+  const history = useHistory();
+
   const setTextareaValue = useCallback(
     (e) => {
       setTextarea(e.target.value);
@@ -23,15 +26,15 @@ const EditTodo = ({
     [setInput],
   );
 
-  const saveTodo = useCallback(() => {
-    editTodoToggle();
+  const saveTodo = () => {
     saveTodoItem();
-  }, [editTodoToggle, saveTodoItem]);
+    history.push(`/category/${editTodoItem.id}`);
+  };
 
-  const cancelTodo = useCallback(() => {
-    editTodoToggle();
+  const cancelTodo = () => {
     cancelTodoItem();
-  }, [editTodoToggle, cancelTodoItem]);
+    history.push(`/category/${editTodoItem.id}`);
+  };
 
   const toggleDone = useCallback(
     (e) => {
@@ -43,10 +46,10 @@ const EditTodo = ({
   return (
     <form>
       <div>
-        <button type="button" onClick={saveTodo}>
+        <button className={style.save} type="button" onClick={saveTodo}>
           Save Changes
         </button>
-        <button type="button" onClick={cancelTodo}>
+        <button className={style.cancel} type="button" onClick={cancelTodo}>
           Cancel
         </button>
       </div>
@@ -59,6 +62,7 @@ const EditTodo = ({
       Done
       <div>
         <input
+          className={style.input}
           value={editTodoItem.nameTodo}
           type="text"
           onChange={setInputValue}
@@ -66,6 +70,7 @@ const EditTodo = ({
       </div>
       <div>
         <textarea
+          className={style.textarea}
           placeholder="Description"
           value={editTodoItem.description}
           onChange={setTextareaValue}

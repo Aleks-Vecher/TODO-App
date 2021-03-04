@@ -5,6 +5,9 @@ const common = require('./webpack.common.js');
 
 module.exports = merge(common, {
   mode: 'production',
+  performance: {
+    hints: false
+  },
   devtool: 'source-map',
   module: {
     rules: [
@@ -22,7 +25,12 @@ module.exports = merge(common, {
       },
       {
         test: /\.css$/i,
-        use: [MiniCssExtractPlugin.loader, 'css-loader'],
+        use: [MiniCssExtractPlugin.loader, {
+          loader: 'css-loader',
+          options: {
+            modules: true,
+          },
+        },],
       },
       {
         test: /\.(png|svg|jpg|jpeg|gif)$/i,

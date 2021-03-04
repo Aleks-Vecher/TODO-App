@@ -1,6 +1,5 @@
 import React, { useEffect } from 'react';
-import { checkCategoryStatus } from '../../store/selectors/categories';
-// import withInput from '../../common/helpers/inputHOC';
+import style from './AddTodo.css';
 
 const AddTodo = ({ categories, addTodo }) => {
   const textInput = React.createRef();
@@ -9,44 +8,36 @@ const AddTodo = ({ categories, addTodo }) => {
   const onSubmit = (e) => {
     e.preventDefault();
     if (textInput.current.value.length) {
-      if (
-        checkCategoryStatus(categories) &&
-        !checkCategoryStatus(categories).subCategories
-      ) {
+      if (categories && !categories.subCategories) {
         addTodo(
           textInput.current.value,
-          checkCategoryStatus(categories).nameCategory,
-          checkCategoryStatus(categories).id,
-          checkCategoryStatus(categories).nameSubCategory,
+          categories.nameCategory,
+          categories.id,
+          categories.nameSubCategory,
           Date.now(),
         );
       } else {
         alert('Please Enter and Choose Category or SubCategory');
       }
     } else {
-      alert('Please Enter Todo');
+      alert('Please Enter TodoItems');
     }
     textInput.current.value = '';
     textInput.current.focus();
   };
   return (
-    <form onSubmit={onSubmit}>
-      <input ref={textInput} type="text" placeholder="Text input with button" />
-      <button type="submit">ADD</button>
+    <form className={style.form} onSubmit={onSubmit}>
+      <input
+        className={style.input}
+        ref={textInput}
+        type="text"
+        placeholder="Enter Todo Name"
+      />
+      <button className={style.button} type="submit">
+        ADD
+      </button>
     </form>
   );
 };
-
-// const StartAddTodo = ({ onSubmit, txt }) => {
-//   return (
-//     <form onSubmit={onSubmit}>
-//       <input type="text" placeholder={txt} />
-//       <button type="submit">ADD</button>
-//     </form>
-//   );
-// };
-// const MainAddTodo = withInput(StartAddTodo);
-//
-// const AddTodo = () => <MainAddTodo txtAlert="Hello" txt="add" />;
 
 export default AddTodo;

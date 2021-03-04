@@ -2,11 +2,10 @@ import { todoReducer } from './todo';
 
 const initialState = {
   todo: [],
-  editToggleTodo: false,
   editTodo: {},
 };
 const ADD_TODO = 'ADD_TODO';
-const EDIT_TODO_TOGGLE = 'EDIT_TODO_TOGGLE';
+// const EDIT_TODO_TOGGLE = 'EDIT_TODO_TOGGLE';
 const EDIT_TODO = 'EDIT_TODO';
 const SET_TEXTAREA_VALUE = 'SET_TEXTAREA_VALUE';
 const SET_INPUT_VALUE = 'SET_INPUT_VALUE';
@@ -14,14 +13,12 @@ const SAVE_TODO_ITEM = 'SAVE_TODO_ITEM';
 const CANCEL_SAVE_TODO_ITEM = 'CANCEL_SAVE_TODO_ITEM';
 const TOGGLE_DONE_TODO = 'TOGGLE_DONE_TODO';
 const SET_DONE_TODO = 'SET_DONE_TODO';
+const DELETE_CATEGORY_WITH_TODO = 'DELETE_CATEGORY_WITH_TODO';
+const DELETE_DELETED_TODO = 'DELETE_DELETED_TODO';
 
 export const editTodo = (id) => ({
   type: EDIT_TODO,
   payload: id,
-});
-
-export const editTodoToggle = () => ({
-  type: EDIT_TODO_TOGGLE,
 });
 
 export const setTextarea = (description) => ({
@@ -52,20 +49,22 @@ export const setDoneTodo = (id) => ({
   payload: id,
 });
 
+export const deleteCategoryWithTodo = (id) => ({
+  type: DELETE_CATEGORY_WITH_TODO,
+  payload: id,
+});
+
+export const deleteTodo = (arrayId) => ({
+  type: DELETE_DELETED_TODO,
+  payload: arrayId,
+});
+
 export const todosReducer = (state = initialState, action) => {
   switch (action.type) {
     case ADD_TODO: {
       return {
         ...state,
         todo: [...state.todo, todoReducer(undefined, action)],
-      };
-    }
-    case EDIT_TODO_TOGGLE: {
-      let nextEditTodo = state.editToggleTodo;
-      nextEditTodo = !nextEditTodo;
-      return {
-        ...state,
-        editToggleTodo: nextEditTodo,
       };
     }
     case EDIT_TODO: {
@@ -128,6 +127,20 @@ export const todosReducer = (state = initialState, action) => {
             completed: !item.completed,
           };
         }),
+      };
+    }
+    case DELETE_CATEGORY_WITH_TODO: {
+      return {
+        ...state,
+        todo: state.todo.filter((item) => item.id !== action.payload),
+      };
+    }
+    case DELETE_DELETED_TODO: {
+      return {
+        ...state,
+        todo: state.todo.filter(
+          (item) => action.payload.indexOf(item.id) === -1,
+        ),
       };
     }
     default:

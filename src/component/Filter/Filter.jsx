@@ -1,4 +1,5 @@
 import React, { useCallback } from 'react';
+import style from './Filter.css';
 
 const Filter = ({ sortCompleted, setSearchValue }) => {
   const setFilterDone = () => {
@@ -11,11 +12,17 @@ const Filter = ({ sortCompleted, setSearchValue }) => {
     [setSearchValue],
   );
   return (
-    <form>
-      <input type="checkbox" onClick={setFilterDone} /> Done
+    <form className={style.form}>
       <input
+        className={style.checkbox}
+        type="checkbox"
+        onClick={setFilterDone}
+      />
+      <p className={style.text}>Done</p>
+      <input
+        className={style.filter}
         type="text"
-        placeholder="Search by name"
+        placeholder="Search Todo by name"
         onChange={searchNameTodo}
       />
     </form>

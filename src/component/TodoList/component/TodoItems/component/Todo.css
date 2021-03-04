@@ -1,0 +1,35 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.colorTodoItem {
+  color: #008000;
+  font-weight: 600;
+}
+.todoItem {
+  width: 100%;
+}
+.todoItem:hover {
+  cursor: pointer;
+  background: #e8efed;
+}
+
+.linkTodo:active,
+.linkTodo,
+.linkTodo:hover {
+  color: black;
+  text-decoration: none;
+}
+
+.item {
+  margin-bottom: 3px;
+}
+
+.edit {
+  composes: edit from '../../../../CategoryList/component/Category.css';
+}
+
+.edit:hover {
+  color: #110b0a;
+}
