@@ -2,15 +2,17 @@ import React, { useCallback } from 'react';
 import style from './Filter.css';
 
 const Filter = ({ sortCompleted, setSearchValue }) => {
-  const setFilterDone = () => {
+  const setFilterDone = useCallback(() => {
     sortCompleted();
-  };
+  }, [sortCompleted]);
+
   const searchNameTodo = useCallback(
     (e) => {
       setSearchValue(e.target.value);
     },
     [setSearchValue],
   );
+
   return (
     <form className={style.form}>
       <input

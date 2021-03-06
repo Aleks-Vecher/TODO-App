@@ -1,30 +1,37 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState, useCallback } from 'react';
 import style from './AddTodo.css';
 
 const AddTodo = ({ categories, addTodo }) => {
   const textInput = React.createRef();
   useEffect(() => textInput.current.focus());
 
-  const onSubmit = (e) => {
-    e.preventDefault();
-    if (textInput.current.value.length) {
-      if (categories && !categories.subCategories) {
-        addTodo(
-          textInput.current.value,
-          categories.nameCategory,
-          categories.id,
-          categories.nameSubCategory,
-          Date.now(),
-        );
+  const [todo, setTodo] = useState('');
+  const onTodoChange = (e) => setTodo(e.target.value);
+
+  const onSubmit = useCallback(
+    (e) => {
+      e.preventDefault();
+      if (todo.length) {
+        if (categories && !categories.subCategories) {
+          addTodo(
+            todo,
+            categories.nameCategory,
+            categories.id,
+            categories.nameSubCategory,
+            Date.now(),
+          );
+        } else {
+          alert('Please Enter and Choose Category or SubCategory');
+        }
       } else {
-        alert('Please Enter and Choose Category or SubCategory');
+        alert('Please Enter TodoItems');
       }
-    } else {
-      alert('Please Enter TodoItems');
-    }
-    textInput.current.value = '';
-    textInput.current.focus();
-  };
+      setTodo('');
+      textInput.current.focus();
+    },
+    [addTodo, categories, todo, textInput],
+  );
+
   return (
     <form className={style.form} onSubmit={onSubmit}>
       <input
@@ -32,6 +39,8 @@ const AddTodo = ({ categories, addTodo }) => {
         ref={textInput}
         type="text"
         placeholder="Enter Todo Name"
+        value={todo}
+        onChange={onTodoChange}
       />
       <button className={style.button} type="submit">
         ADD

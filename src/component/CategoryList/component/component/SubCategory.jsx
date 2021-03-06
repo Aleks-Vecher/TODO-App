@@ -14,10 +14,13 @@ const SubCategory = ({
 }) => {
   const history = useHistory();
 
-  const setStatusSubCategory = (e) => {
-    showTodo(e.target.dataset.name, Number(e.target.dataset.idsubcategory));
-    history.push(`/category/${id}`);
-  };
+  const setStatusSubCategory = useCallback(
+    (e) => {
+      showTodo(e.target.dataset.name, Number(e.target.dataset.idsubcategory));
+      history.push(`/category/${id}`);
+    },
+    [showTodo, history, id],
+  );
   const editSubCategory = useCallback(
     (e) => {
       editNameSubCategory(
@@ -29,15 +32,19 @@ const SubCategory = ({
     [editNameSubCategory],
   );
 
-  const delSubCategory = (e) => {
-    // eslint-disable-next-line no-restricted-globals,no-unused-expressions
-    confirm('Are you sure to do this?') &&
-      deleteSubCategory(
-        Number(e.target.dataset.id),
-        e.target.dataset.namecategory,
-      ) &&
-      deleteCategoryWithTodo(Number(e.target.dataset.id));
-  };
+  const delSubCategory = useCallback(
+    (e) => {
+      // eslint-disable-next-line no-restricted-globals,no-unused-expressions
+      confirm('Are you sure to do this?') &&
+        deleteSubCategory(
+          Number(e.target.dataset.id),
+          e.target.dataset.namecategory,
+        ) &&
+        deleteCategoryWithTodo(Number(e.target.dataset.id));
+    },
+    [deleteSubCategory, deleteCategoryWithTodo],
+  );
+
   return (
     <li>
       <div className={style.container}>

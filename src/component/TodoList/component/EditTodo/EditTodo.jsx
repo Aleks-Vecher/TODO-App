@@ -26,15 +26,15 @@ const EditTodo = ({
     [setInput],
   );
 
-  const saveTodo = () => {
+  const saveTodo = useCallback(() => {
     saveTodoItem();
     history.push(`/category/${editTodoItem.id}`);
-  };
+  }, [saveTodoItem, history, editTodoItem.id]);
 
-  const cancelTodo = () => {
+  const cancelTodo = useCallback(() => {
     cancelTodoItem();
     history.push(`/category/${editTodoItem.id}`);
-  };
+  }, [cancelTodoItem, history, editTodoItem.id]);
 
   const toggleDone = useCallback(
     (e) => {
