@@ -50,12 +50,15 @@ const Category = ({
     [editNameCategory],
   );
 
-  const delCategory = (e) => {
-    // eslint-disable-next-line no-restricted-globals,no-unused-expressions
-    confirm('Are you sure to do this?') &&
-      deleteCategory(Number(e.target.dataset.id)) &&
-      deleteCategoryWithTodo(Number(e.target.dataset.id));
-  };
+  const delCategory = useCallback(
+    (e) => {
+      // eslint-disable-next-line no-restricted-globals,no-unused-expressions
+      confirm('Are you sure to do this?') &&
+        deleteCategory(Number(e.target.dataset.id)) &&
+        deleteCategoryWithTodo(Number(e.target.dataset.id));
+    },
+    [deleteCategory, deleteCategoryWithTodo],
+  );
 
   return (
     <>
