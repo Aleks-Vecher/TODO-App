@@ -1,44 +1,22 @@
-const path = require('path')
+// const path = require('path')
 const webpack = require('webpack')
+const {merge} = require('webpack-merge');
 const HtmlWebpackPlugin = require('html-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const {BundleAnalyzerPlugin} = require('webpack-bundle-analyzer')
 const { CleanWebpackPlugin } = require('clean-webpack-plugin');
+const common = require('./webpack.common.js');
+// const serverConfig = require('./webpack.server')
 
-module.exports = {
+module.exports = merge(common, {
   mode: "development",
   devtool: 'eval-cheap-module-source-map',
-  entry: {
-    main: [ path.resolve(__dirname, './src/index.jsx')]
-  },
   // 'webpack-hot-middleware/client?path=/__webpack_hmr&timeout=2000&overlay=false'
   output: {
-    path: path.resolve(__dirname, './dist'),
     filename: 'main.bundle.js',
-    publicPath: '/',
-  },
-  resolve: {
-    modules: [
-      'node_modules',
-      'src'
-    ],
-    extensions: ['.js', '.json', '.jsx', '.css'],
   },
   module: {
     rules: [
-      {
-        test: /\.js?x$/,
-        exclude: /(node_modules|bower_components)/,
-        use: {
-          loader: 'babel-loader',
-          options: {
-            presets: [
-              '@babel/preset-env',
-              '@babel/preset-react'
-            ]
-          }
-        }
-      },
       {
         test: /\.css$/i,
         use: ['style-loader', {
@@ -49,24 +27,16 @@ module.exports = {
           },
         },
           'postcss-loader'
-          ],
+        ],
       },
-      {
-        test: /\.(png|svg|jpg|jpeg|gif)$/i,
-        type: 'asset/resource',
-      },
-      {
-        test: /\.(woff|woff2|eot|ttf|otf)$/i,
-        type: 'asset/resource',
-      },
-
     ]
   },
   devServer: {
     port: 8090,
     contentBase: './dist',
     hot: true,
-    historyApiFallback: true
+    historyApiFallback: true,
+    // writeToDisk: true,
   },
   plugins: [
     new CleanWebpackPlugin(),
@@ -86,4 +56,4 @@ module.exports = {
   optimization: {
     minimize: true,
   },
-}
+})

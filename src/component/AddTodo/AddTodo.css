@@ -6,11 +6,23 @@
 }
 
 .input {
-  composes: input from '../AddCategory/AddCategory.css';
+  width: 100%;
+  border: 3px solid #b27cf5;
+  border-radius: 3px;
 }
 
 .button {
-  composes: button from '../AddCategory/AddCategory.css';
+  display: inline-block;
+  margin: 0 auto;
+
+  text-decoration: none;
+  text-transform: uppercase;
+
+  color: #ffffff;
+  background-color: #fc5f45;
+  border-radius: 3px;
+
+  transition: all 0.5s linear;
 }
 
 .button:hover {
