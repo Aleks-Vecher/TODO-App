@@ -136,7 +136,6 @@ Category.propTypes = {
   showTodo: PropTypes.func.isRequired,
   status: PropTypes.bool.isRequired,
   addSubCategory: PropTypes.func.isRequired,
-  id: PropTypes.number.isRequired,
 };
 
 export default Category;

@@ -3,7 +3,8 @@
     "browser": true,
     "es2021": true,
     "node": true,
-    "commonjs": true
+    "commonjs": true,
+    "jest": true
   },
   "parser": "babel-eslint",
   "extends": [
@@ -28,6 +29,7 @@
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "warn",
     "react/prop-types": "off",
-    "no-alert": "off"
+    "no-alert": "off",
+    "no-underscore-dangle": "off"
   }
 }

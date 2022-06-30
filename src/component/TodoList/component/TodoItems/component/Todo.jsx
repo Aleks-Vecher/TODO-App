@@ -22,7 +22,7 @@ const Todo = ({ nameTodo, id, completed, setDoneTodo, editTodo }) => {
 
   return (
     <li key={nameTodo} className={style.item}>
-      <div className={style.container}>
+      <div className={style.contain}>
         <div>
           <div className={style.linkTodo}>
             <span
