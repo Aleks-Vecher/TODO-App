@@ -9,7 +9,7 @@
     "ssr:server": "nodemon ./dist/server.bundle.js",
     "watch": "onchange src/**/*.jsx -- npm run ssr:build",
     "start:ssr": "run-s ssr:build ssr:server",
-    "start:spa": "webpack serve --config webpack.config.js",
+    "start:csr": "webpack serve --config webpack.config.js",
     "spa:prod": "webpack --config webpack.prod.js",
     "bundle-report": "webpack-bundle-analyzer --port 4200 dist/stats.json",
     "open bundle-report": "webpack-bundle-analyzer ./dist/stats.json",
